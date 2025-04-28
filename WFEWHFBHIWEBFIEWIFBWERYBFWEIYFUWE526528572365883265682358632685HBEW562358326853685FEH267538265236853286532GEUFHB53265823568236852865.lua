@@ -2070,7 +2070,7 @@ local data = {
 	["username"] = "HUB-LOG", --webhook name thing idk
 	["avatar_url"] = "https://cdn.upload.systems/uploads/haO2MM1R.png", --avatar image url
 
-	["content"] = "**<@&1366351244813406228> " ..game.Players.LocalPlayer.Name.. "** just executed the key system.", --normal message
+	["content"] = "**<@&1366351244813406228> " ..game.Players.LocalPlayer.Name.. "** just executed the hub.", --normal message
 	["embeds"] = {
 		{
 			["title"] = "**" ..game.Players.LocalPlayer.Name.. " just executed the hub.**",
