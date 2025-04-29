@@ -1,0 +1,2126 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local MainTabs = Instance.new("Frame")
+local Tab1 = Instance.new("TextButton")
+local Tab2 = Instance.new("TextButton")
+local Tab4 = Instance.new("TextButton")
+local Tab3 = Instance.new("TextButton")
+local Tabs = Instance.new("Folder")
+local Tab1_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local DTWHBE = Instance.new("TextButton")
+local VTWHBE = Instance.new("TextButton")
+local GERHBE = Instance.new("TextButton")
+local Tab2_2 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local SPOHHBE = Instance.new("TextButton")
+local MIHHBE = Instance.new("TextButton")
+local CMOONHBE = Instance.new("TextButton")
+local Tab4_2 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local KCHBE = Instance.new("TextButton")
+local ULFHBE = Instance.new("TextButton")
+local CRYOHBE = Instance.new("TextButton")
+local Tab3_2 = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local KCRHBE = Instance.new("TextButton")
+local MIHHBE_2 = Instance.new("TextButton")
+local STWVAMPHBE = Instance.new("TextButton")
+local Tab5 = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+local D4CHBE = Instance.new("TextButton")
+local CDHBE = Instance.new("TextButton")
+local Tab5_2 = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local Title = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 5
+Frame.Position = UDim2.new(0.168380469, 0, 0.206766918, 0)
+Frame.Size = UDim2.new(0, 516, 0, 29)
+
+MainTabs.Name = "MainTabs"
+MainTabs.Parent = Frame
+MainTabs.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+MainTabs.BackgroundTransparency = 0.300
+MainTabs.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainTabs.BorderSizePixel = 5
+MainTabs.Position = UDim2.new(0, 0, 1, 0)
+MainTabs.Size = UDim2.new(0, 516, 0, 223)
+
+Tab1.Name = "Tab 1"
+Tab1.Parent = MainTabs
+Tab1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab1.BackgroundTransparency = 1.000
+Tab1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab1.BorderSizePixel = 0
+Tab1.Size = UDim2.new(0, 104, 0, 28)
+Tab1.Font = Enum.Font.Unknown
+Tab1.Text = "Tab 1"
+Tab1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tab1.TextSize = 14.000
+
+Tab2.Name = "Tab 2"
+Tab2.Parent = MainTabs
+Tab2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab2.BackgroundTransparency = 1.000
+Tab2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab2.BorderSizePixel = 0
+Tab2.Position = UDim2.new(0, 0, 0.125560537, 0)
+Tab2.Size = UDim2.new(0, 104, 0, 28)
+Tab2.Font = Enum.Font.Unknown
+Tab2.Text = "Tab 2"
+Tab2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tab2.TextSize = 14.000
+
+Tab4.Name = "Tab 4"
+Tab4.Parent = MainTabs
+Tab4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab4.BackgroundTransparency = 1.000
+Tab4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab4.BorderSizePixel = 0
+Tab4.Position = UDim2.new(0, 0, 0.376681626, 0)
+Tab4.Size = UDim2.new(0, 104, 0, 28)
+Tab4.Font = Enum.Font.Unknown
+Tab4.Text = "Tab 4"
+Tab4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tab4.TextSize = 14.000
+
+Tab3.Name = "Tab 3"
+Tab3.Parent = MainTabs
+Tab3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab3.BackgroundTransparency = 1.000
+Tab3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab3.BorderSizePixel = 0
+Tab3.Position = UDim2.new(0, 0, 0.251121074, 0)
+Tab3.Size = UDim2.new(0, 104, 0, 28)
+Tab3.Font = Enum.Font.Unknown
+Tab3.Text = "Tab 3"
+Tab3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tab3.TextSize = 14.000
+
+Tabs.Name = "Tabs"
+Tabs.Parent = MainTabs
+
+Tab1_2.Name = "Tab1"
+Tab1_2.Parent = Tabs
+Tab1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab1_2.BackgroundTransparency = 0.500
+Tab1_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab1_2.BorderSizePixel = 5
+Tab1_2.Position = UDim2.new(0.201550394, 0, -0.00448430516, 0)
+Tab1_2.Size = UDim2.new(0, 412, 0, 224)
+
+TextLabel.Parent = Tab1_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 5
+TextLabel.Size = UDim2.new(0, 412, 0, 22)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "PAGE 1"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+DTWHBE.Name = "DTWHBE"
+DTWHBE.Parent = Tab1_2
+DTWHBE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DTWHBE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DTWHBE.BorderSizePixel = 0
+DTWHBE.Position = UDim2.new(0, 0, 0.15625, 0)
+DTWHBE.Size = UDim2.new(0, 412, 0, 50)
+DTWHBE.Font = Enum.Font.SourceSans
+DTWHBE.Text = "DTW HBE"
+DTWHBE.TextColor3 = Color3.fromRGB(0, 0, 0)
+DTWHBE.TextScaled = true
+DTWHBE.TextSize = 14.000
+DTWHBE.TextWrapped = true
+
+VTWHBE.Name = "VTWHBE"
+VTWHBE.Parent = Tab1_2
+VTWHBE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VTWHBE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VTWHBE.BorderSizePixel = 0
+VTWHBE.Position = UDim2.new(0, 0, 0.459821433, 0)
+VTWHBE.Size = UDim2.new(0, 412, 0, 50)
+VTWHBE.Font = Enum.Font.SourceSans
+VTWHBE.Text = "VTW HBE"
+VTWHBE.TextColor3 = Color3.fromRGB(0, 0, 0)
+VTWHBE.TextScaled = true
+VTWHBE.TextSize = 14.000
+VTWHBE.TextWrapped = true
+
+GERHBE.Name = "GERHBE"
+GERHBE.Parent = Tab1_2
+GERHBE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GERHBE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GERHBE.BorderSizePixel = 0
+GERHBE.Position = UDim2.new(0, 0, 0.754464269, 0)
+GERHBE.Size = UDim2.new(0, 412, 0, 50)
+GERHBE.Font = Enum.Font.SourceSans
+GERHBE.Text = "GER HBE"
+GERHBE.TextColor3 = Color3.fromRGB(0, 0, 0)
+GERHBE.TextScaled = true
+GERHBE.TextSize = 14.000
+GERHBE.TextWrapped = true
+
+Tab2_2.Name = "Tab2"
+Tab2_2.Parent = Tabs
+Tab2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab2_2.BackgroundTransparency = 0.500
+Tab2_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab2_2.BorderSizePixel = 5
+Tab2_2.Position = UDim2.new(0.201550394, 0, -0.00448430516, 0)
+Tab2_2.Size = UDim2.new(0, 412, 0, 224)
+Tab2_2.Visible = false
+
+TextLabel_2.Parent = Tab2_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 5
+TextLabel_2.Size = UDim2.new(0, 412, 0, 22)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "TAB 2"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+SPOHHBE.Name = "SPOHHBE"
+SPOHHBE.Parent = Tab2_2
+SPOHHBE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SPOHHBE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SPOHHBE.BorderSizePixel = 0
+SPOHHBE.Position = UDim2.new(0, 0, 0.459821433, 0)
+SPOHHBE.Size = UDim2.new(0, 412, 0, 50)
+SPOHHBE.Font = Enum.Font.SourceSans
+SPOHHBE.Text = "SPOH HBE"
+SPOHHBE.TextColor3 = Color3.fromRGB(0, 0, 0)
+SPOHHBE.TextScaled = true
+SPOHHBE.TextSize = 14.000
+SPOHHBE.TextWrapped = true
+
+MIHHBE.Name = "MIHHBE"
+MIHHBE.Parent = Tab2_2
+MIHHBE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MIHHBE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MIHHBE.BorderSizePixel = 0
+MIHHBE.Position = UDim2.new(0, 0, 0.754464269, 0)
+MIHHBE.Size = UDim2.new(0, 412, 0, 50)
+MIHHBE.Font = Enum.Font.SourceSans
+MIHHBE.Text = "MIH HBE"
+MIHHBE.TextColor3 = Color3.fromRGB(0, 0, 0)
+MIHHBE.TextScaled = true
+MIHHBE.TextSize = 14.000
+MIHHBE.TextWrapped = true
+
+CMOONHBE.Name = "CMOONHBE"
+CMOONHBE.Parent = Tab2_2
+CMOONHBE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CMOONHBE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CMOONHBE.BorderSizePixel = 0
+CMOONHBE.Position = UDim2.new(0, 0, 0.15625, 0)
+CMOONHBE.Size = UDim2.new(0, 412, 0, 50)
+CMOONHBE.Font = Enum.Font.SourceSans
+CMOONHBE.Text = "CMOON HBE"
+CMOONHBE.TextColor3 = Color3.fromRGB(0, 0, 0)
+CMOONHBE.TextScaled = true
+CMOONHBE.TextSize = 14.000
+CMOONHBE.TextWrapped = true
+
+Tab4_2.Name = "Tab4"
+Tab4_2.Parent = Tabs
+Tab4_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab4_2.BackgroundTransparency = 0.500
+Tab4_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab4_2.BorderSizePixel = 5
+Tab4_2.Position = UDim2.new(0.201550394, 0, -0.00448430516, 0)
+Tab4_2.Size = UDim2.new(0, 412, 0, 224)
+Tab4_2.Visible = false
+
+TextLabel_3.Parent = Tab4_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 5
+TextLabel_3.Size = UDim2.new(0, 412, 0, 22)
+TextLabel_3.Font = Enum.Font.Unknown
+TextLabel_3.Text = "TAB 4"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+KCHBE.Name = "KCHBE"
+KCHBE.Parent = Tab4_2
+KCHBE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KCHBE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KCHBE.BorderSizePixel = 0
+KCHBE.Position = UDim2.new(0, 0, 0.15625, 0)
+KCHBE.Size = UDim2.new(0, 412, 0, 50)
+KCHBE.Font = Enum.Font.SourceSans
+KCHBE.Text = "KC HBE"
+KCHBE.TextColor3 = Color3.fromRGB(0, 0, 0)
+KCHBE.TextScaled = true
+KCHBE.TextSize = 14.000
+KCHBE.TextWrapped = true
+
+ULFHBE.Name = "ULFHBE"
+ULFHBE.Parent = Tab4_2
+ULFHBE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ULFHBE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ULFHBE.BorderSizePixel = 0
+ULFHBE.Position = UDim2.new(0, 0, 0.754464269, 0)
+ULFHBE.Size = UDim2.new(0, 412, 0, 50)
+ULFHBE.Font = Enum.Font.SourceSans
+ULFHBE.Text = "ULF HBE"
+ULFHBE.TextColor3 = Color3.fromRGB(0, 0, 0)
+ULFHBE.TextScaled = true
+ULFHBE.TextSize = 14.000
+ULFHBE.TextWrapped = true
+
+CRYOHBE.Name = "CRYOHBE"
+CRYOHBE.Parent = Tab4_2
+CRYOHBE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CRYOHBE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CRYOHBE.BorderSizePixel = 0
+CRYOHBE.Position = UDim2.new(0, 0, 0.459821433, 0)
+CRYOHBE.Size = UDim2.new(0, 412, 0, 50)
+CRYOHBE.Font = Enum.Font.SourceSans
+CRYOHBE.Text = "CRYO HBE"
+CRYOHBE.TextColor3 = Color3.fromRGB(0, 0, 0)
+CRYOHBE.TextScaled = true
+CRYOHBE.TextSize = 14.000
+CRYOHBE.TextWrapped = true
+
+Tab3_2.Name = "Tab3"
+Tab3_2.Parent = Tabs
+Tab3_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab3_2.BackgroundTransparency = 0.500
+Tab3_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab3_2.BorderSizePixel = 5
+Tab3_2.Position = UDim2.new(0.201550394, 0, -0.00448430516, 0)
+Tab3_2.Size = UDim2.new(0, 412, 0, 224)
+Tab3_2.Visible = false
+
+TextLabel_4.Parent = Tab3_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 5
+TextLabel_4.Size = UDim2.new(0, 412, 0, 22)
+TextLabel_4.Font = Enum.Font.Unknown
+TextLabel_4.Text = "TAB 3"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+KCRHBE.Name = "KCRHBE"
+KCRHBE.Parent = Tab3_2
+KCRHBE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KCRHBE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KCRHBE.BorderSizePixel = 0
+KCRHBE.Position = UDim2.new(0, 0, 0.15625, 0)
+KCRHBE.Size = UDim2.new(0, 412, 0, 50)
+KCRHBE.Font = Enum.Font.SourceSans
+KCRHBE.Text = "KCR HBE"
+KCRHBE.TextColor3 = Color3.fromRGB(0, 0, 0)
+KCRHBE.TextScaled = true
+KCRHBE.TextSize = 14.000
+KCRHBE.TextWrapped = true
+
+MIHHBE_2.Name = "MIHHBE"
+MIHHBE_2.Parent = Tab3_2
+MIHHBE_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MIHHBE_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MIHHBE_2.BorderSizePixel = 0
+MIHHBE_2.Position = UDim2.new(0, 0, 0.754464269, 0)
+MIHHBE_2.Size = UDim2.new(0, 412, 0, 50)
+MIHHBE_2.Font = Enum.Font.SourceSans
+MIHHBE_2.Text = "SAMURAI HBE"
+MIHHBE_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+MIHHBE_2.TextScaled = true
+MIHHBE_2.TextSize = 14.000
+MIHHBE_2.TextWrapped = true
+
+STWVAMPHBE.Name = "STW/VAMPHBE"
+STWVAMPHBE.Parent = Tab3_2
+STWVAMPHBE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+STWVAMPHBE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+STWVAMPHBE.BorderSizePixel = 0
+STWVAMPHBE.Position = UDim2.new(0, 0, 0.459821433, 0)
+STWVAMPHBE.Size = UDim2.new(0, 412, 0, 50)
+STWVAMPHBE.Font = Enum.Font.SourceSans
+STWVAMPHBE.Text = "STW/VAMP HBE"
+STWVAMPHBE.TextColor3 = Color3.fromRGB(0, 0, 0)
+STWVAMPHBE.TextScaled = true
+STWVAMPHBE.TextSize = 14.000
+STWVAMPHBE.TextWrapped = true
+
+Tab5.Name = "Tab5"
+Tab5.Parent = Tabs
+Tab5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab5.BackgroundTransparency = 0.500
+Tab5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab5.BorderSizePixel = 5
+Tab5.Position = UDim2.new(0.201550394, 0, -0.00448430516, 0)
+Tab5.Size = UDim2.new(0, 412, 0, 224)
+Tab5.Visible = false
+
+TextLabel_5.Parent = Tab5
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 5
+TextLabel_5.Size = UDim2.new(0, 412, 0, 22)
+TextLabel_5.Font = Enum.Font.Unknown
+TextLabel_5.Text = "TAB 5"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+D4CHBE.Name = "D4CHBE"
+D4CHBE.Parent = Tab5
+D4CHBE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+D4CHBE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+D4CHBE.BorderSizePixel = 0
+D4CHBE.Position = UDim2.new(0, 0, 0.15625, 0)
+D4CHBE.Size = UDim2.new(0, 412, 0, 50)
+D4CHBE.Font = Enum.Font.SourceSans
+D4CHBE.Text = "D4C HBE"
+D4CHBE.TextColor3 = Color3.fromRGB(0, 0, 0)
+D4CHBE.TextScaled = true
+D4CHBE.TextSize = 14.000
+D4CHBE.TextWrapped = true
+
+CDHBE.Name = "CDHBE"
+CDHBE.Parent = Tab5
+CDHBE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CDHBE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CDHBE.BorderSizePixel = 0
+CDHBE.Position = UDim2.new(0, 0, 0.459821433, 0)
+CDHBE.Size = UDim2.new(0, 412, 0, 50)
+CDHBE.Font = Enum.Font.SourceSans
+CDHBE.Text = "CD HBE"
+CDHBE.TextColor3 = Color3.fromRGB(0, 0, 0)
+CDHBE.TextScaled = true
+CDHBE.TextSize = 14.000
+CDHBE.TextWrapped = true
+
+Tab5_2.Name = "Tab 5"
+Tab5_2.Parent = MainTabs
+Tab5_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab5_2.BackgroundTransparency = 1.000
+Tab5_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab5_2.BorderSizePixel = 0
+Tab5_2.Position = UDim2.new(0, 0, 0.502242148, 0)
+Tab5_2.Size = UDim2.new(0, 104, 0, 28)
+Tab5_2.Font = Enum.Font.Unknown
+Tab5_2.Text = "Tab 5"
+Tab5_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tab5_2.TextSize = 14.000
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.957364321, 0, 0, 0)
+Close.Size = UDim2.new(0, 22, 0, 28)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 14.000
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(-0.0500000007, 0, 0, 0)
+Title.Size = UDim2.new(0, 197, 0, 28)
+Title.Font = Enum.Font.SciFi
+Title.Text = "Hitbox Expanders"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 14.000
+
+-- Scripts:
+wait(1)
+local function GGVSZ_fake_script() -- Frame.DragGUI 
+	local script = Instance.new('LocalScript', Frame)
+
+	--// Services
+	local Players = game:GetService('Players')
+	local UIS = game:GetService("UserInputService")
+	
+	--// Variables
+	local UI = script.Parent
+	
+	local Player = Players.LocalPlayer
+	local Mouse = Player:GetMouse()
+	
+	local Hovered = false
+	local Holding = false
+	local MoveCon = nil
+	
+	local InitialX, InitialY, UIInitialPos
+	
+	--// Functions
+	
+	local function Drag()
+		if Holding == false then MoveCon:Disconnect(); return end
+		local distanceMovedX = InitialX - Mouse.X
+		local distanceMovedY = InitialY - Mouse.Y
+	
+		UI.Position = UIInitialPos - UDim2.new(0, distanceMovedX, 0, distanceMovedY)
+	end
+	
+	--// Connections
+	
+	UI.MouseEnter:Connect(function()
+		Hovered = true
+	end)
+	
+	UI.MouseLeave:Connect(function()
+		Hovered = false
+	end)
+	
+	UIS.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			Holding = Hovered
+			if Holding then
+				InitialX, InitialY = Mouse.X, Mouse.Y
+				UIInitialPos = UI.Position
+	
+				MoveCon = Mouse.Move:Connect(Drag)
+			end
+		end
+	end)
+	
+	UIS.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			Holding = false
+		end
+	end)
+end
+coroutine.wrap(GGVSZ_fake_script)()
+local function XWAKA_fake_script() -- Tab1.Tab1 
+	local script = Instance.new('LocalScript', Tab1)
+
+	script.Parent.Activated:Connect(function()
+		local tabs = script.Parent.Parent.Tabs
+		tabs.Tab1.Visible = true
+		tabs.Tab2.Visible = false
+		tabs.Tab3.Visible = false
+		tabs.Tab4.Visible = false
+		tabs.Tab5.Visible = false
+	end)
+end
+coroutine.wrap(XWAKA_fake_script)()
+local function WQBXG_fake_script() -- Tab2.Tab2 
+	local script = Instance.new('LocalScript', Tab2)
+
+	script.Parent.Activated:Connect(function()
+		local tabs = script.Parent.Parent.Tabs
+		tabs.Tab1.Visible = false
+		tabs.Tab2.Visible = true
+		tabs.Tab3.Visible = false
+		tabs.Tab4.Visible = false
+		tabs.Tab5.Visible = false
+	end)
+end
+coroutine.wrap(WQBXG_fake_script)()
+local function WWCDOWM_fake_script() -- Tab4.Tab4 
+	local script = Instance.new('LocalScript', Tab4)
+
+	script.Parent.Activated:Connect(function()
+		local tabs = script.Parent.Parent.Tabs
+		tabs.Tab1.Visible = false
+		tabs.Tab2.Visible = false
+		tabs.Tab3.Visible = false
+		tabs.Tab4.Visible = true
+		tabs.Tab5.Visible = false
+	end)
+end
+coroutine.wrap(WWCDOWM_fake_script)()
+local function JRTBE_fake_script() -- Tab3.Tab3 
+	local script = Instance.new('LocalScript', Tab3)
+
+	script.Parent.Activated:Connect(function()
+		local tabs = script.Parent.Parent.Tabs
+		tabs.Tab1.Visible = false
+		tabs.Tab2.Visible = false
+		tabs.Tab3.Visible = true
+		tabs.Tab4.Visible = false
+		tabs.Tab5.Visible = false
+	end)
+end
+coroutine.wrap(JRTBE_fake_script)()
+local function ZCCD_fake_script() -- DTWHBE.DTWHBE 
+	local script = Instance.new('LocalScript', DTWHBE)
+
+	script.Parent.Activated:Connect(function()
+		local char = string.char
+		local byte = string.byte
+		local sub = string.sub
+		local bit = bit32 or bit
+		local bxor = bit.bxor
+		local concat = table.concat
+		local insert = table.insert
+	
+	-- Function to decode strings using XOR and character manipulation
+		local function decodeString(inputString, key)
+			local result = {}
+			for i = 1, #inputString do
+				local decodedChar = char(bxor(byte(sub(inputString, i, i)), byte(sub(key, 1 + ((i - 1) % #key), 1 + ((i - 1) % #key) + 1))) % 256)
+				insert(result, decodedChar)
+			end
+			return concat(result)
+		end
+	
+	-- Teleporting the player to specific locations
+		local player = game.Players.LocalPlayer
+		local rootPart = player.Character.HumanoidRootPart
+	
+		rootPart.CFrame = CFrame.new(-284.0437927246094, 447.1768493652344, -1383.6256103515625)
+		wait(0.3)
+		rootPart.CFrame = CFrame.new(-202.20347595214844, 445.6187744140625, -1541.9969482421875)
+		wait(0.3)
+		rootPart.CFrame = CFrame.new(-353.1253967285156, 446.42181396484375, -1621.104248046875)
+		wait(0.3)
+		rootPart.CFrame = CFrame.new(-435.7509765625, 445.442138671875, -1464.02197265625)
+	
+	-- Set player's health to 0 (likely to kill the player)
+		player.Character.Humanoid.Health = 0
+	
+	-- Handling key presses
+		local mouse = player:GetMouse()
+	
+	-- Function to handle 'f' key
+		mouse.KeyDown:Connect(function(key)
+			if (key == "f") then
+				for _, otherPlayer in ipairs(game.Players:GetChildren()) do
+					if (otherPlayer ~= player) then
+						local args = {
+							[1] = "Damage",
+							[2] = "Punishment",
+							[3] = "DashPunch",
+							[4] = "Punch",
+							[5] = otherPlayer.Character.Humanoid,
+							[6] = CFrame.new(otherPlayer.Character.HumanoidRootPart.CFrame.Position)
+						}
+	
+						game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Input"):FireServer(unpack(args))
+					end
+				end
+			end
+		end)
+	
+	-- Function to handle 'e' key 
+		mouse.KeyDown:Connect(function(key)
+			if (key == "e") then
+				for _, otherPlayer in ipairs(game.Players:GetChildren()) do
+					if (otherPlayer ~= player) then
+						local args = {
+							[1] = "Damage", 
+							[2] = "Kick",
+							[3] = "DashPunch",
+							[4] = "Punch",
+							[5] = otherPlayer.Character.Humanoid,
+							[6] = CFrame.new(otherPlayer.Character.HumanoidRootPart.CFrame.Position)
+						}
+	
+						game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Input"):FireServer(unpack(args))
+					end
+				end
+			end
+		end)
+	
+	-- Function to handle 'r' key 
+		mouse.KeyDown:Connect(function(key)
+			if (key == "r") then
+				for _, otherPlayer in ipairs(game.Players:GetChildren()) do
+					if (otherPlayer ~= player) then
+						local args = {
+							[1] = "DashPunch", 
+							[2] = "PunchALT",
+							[3] = "Damage",
+							[4] = "Punch",
+							[5] = otherPlayer.Character.Humanoid,
+							[6] = CFrame.new(otherPlayer.Character.HumanoidRootPart.CFrame.Position)
+						}
+	
+						game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Input"):FireServer(unpack(args))
+					end
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(ZCCD_fake_script)()
+local function DTMR_fake_script() -- VTWHBE.VTWHBE 
+	local script = Instance.new('LocalScript', VTWHBE)
+
+	script.Parent.Activated:Connect(function()
+		-- Get the player's mouse
+		local a = game.Players.LocalPlayer:GetMouse()
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "j" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "DonutPunch",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "y" key press
+		a.KeyDown:Connect(function(b)
+			if b == "h" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Kick",                         -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid                -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "b" key press
+		a.KeyDown:Connect(function(b)
+			if b == "n" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Bloodsuck",                            -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid                -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "b" key press
+		a.KeyDown:Connect(function(b)
+			if b == "r" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Uppercut",                            -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid                -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "b" key press
+		a.KeyDown:Connect(function(b)
+			if b == "g" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Slam",                            -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid                -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "b" key press
+		a.KeyDown:Connect(function(b)
+			if b == "e" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Barrage",                            -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid                -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "b" key press
+		a.KeyDown:Connect(function(b)
+			if b == "b" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Movement",                            -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid                -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(DTMR_fake_script)()
+local function EGYW_fake_script() -- GERHBE.GERHBE 
+	local script = Instance.new('LocalScript', GERHBE)
+
+	script.Parent.Activated:Connect(function()
+		-- Get the player's mouse
+		local a = game.Players.LocalPlayer:GetMouse()
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "r" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "HeavyPunch",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "y" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Heal",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local UserInputService = game:GetService("UserInputService")
+	
+		-- Ensure Main and Input are properly defined
+		local Main = ReplicatedStorage:WaitForChild("Main")
+		local Input = Main:WaitForChild("Input")
+	
+		-- Function to trigger server event with specified arguments
+		local function triggerServerEvent()
+			local args = {
+				[1] = "Alternate",
+				[2] = "RTZ",
+				[3] = true
+			}
+	
+			Input:FireServer(unpack(args)) -- Trigger the server event with the provided args
+		end
+	
+		-- Keybind setup (F3) to trigger the server event
+		UserInputService.InputBegan:Connect(function(input, isProcessed)
+			if not isProcessed then  -- Check if the input was not processed by other input handlers
+				if input.KeyCode == Enum.KeyCode.F then
+					triggerServerEvent() -- Call the function when F3 is pressed
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(EGYW_fake_script)()
+local function UTPFBUH_fake_script() -- SPOHHBE.SPOHHBE 
+	local script = Instance.new('LocalScript', SPOHHBE)
+
+	script.Parent.Activated:Connect(function()
+		-- Get the player's mouse
+		local a = game.Players.LocalPlayer:GetMouse()
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "r" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "HeavyPunch",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "h" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Slam",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "v" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Blast",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Services
+		local UserInputService = game:GetService("UserInputService")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local Main = ReplicatedStorage:WaitForChild("Main")
+		local Input = Main:WaitForChild("Timestop")
+	
+		-- The script to be triggered
+		local function triggerScript()
+			local args = {
+				[1] = 15,
+				[2] = "jotaroova"
+			}
+			Input:FireServer(unpack(args))
+		end
+	
+		-- Keybind setup (left Ctrl)
+		UserInputService.InputBegan:Connect(function(input, isProcessed)
+			if not isProcessed then  -- Check if the input was not processed by other input handlers
+				if input.KeyCode == Enum.KeyCode.F then
+					wait(1.5)
+					triggerScript()
+				end
+			end
+		end)
+	
+	end)
+end
+coroutine.wrap(UTPFBUH_fake_script)()
+local function RTYSKJN_fake_script() -- MIHHBE.MIHHBE 
+	local script = Instance.new('LocalScript', MIHHBE)
+
+	script.Parent.Activated:Connect(function()
+		-- Get the player's mouse
+		local a = game.Players.LocalPlayer:GetMouse()
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "r" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "HeavyPunch",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "f" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Disc",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "f" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "GravityForce",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "r" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "ReverseChop",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "e" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Chop",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(RTYSKJN_fake_script)()
+local function ILAIMU_fake_script() -- CMOONHBE.CMOONHBE 
+	local script = Instance.new('LocalScript', CMOONHBE)
+
+	script.Parent.Activated:Connect(function()
+		-- Get the player's mouse
+		local a = game.Players.LocalPlayer:GetMouse()
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "r" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "HeavyPunch",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "f" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "GravityForce",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+	
+	end)
+end
+coroutine.wrap(ILAIMU_fake_script)()
+local function QYHF_fake_script() -- KCHBE.KCHBE 
+	local script = Instance.new('LocalScript', KCHBE)
+
+	script.Parent.Activated:Connect(function()
+		-- Get the player's mouse
+		local a = game.Players.LocalPlayer:GetMouse()
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "e" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "HeavyPunch",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "r" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Chop",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "y" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Kick",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(QYHF_fake_script)()
+local function AAYHWBO_fake_script() -- ULFHBE.ULFHBE 
+	local script = Instance.new('LocalScript', ULFHBE)
+
+	script.Parent.Activated:Connect(function()
+		-- Get the player's mouse
+		local a = game.Players.LocalPlayer:GetMouse()
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "r" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "HeavyPunch",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "y" key press
+		a.KeyDown:Connect(function(b)
+			if b == "t" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "BloodSuck",                         -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid                -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "y" key press
+		a.KeyDown:Connect(function(b)
+			if b == "b" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Spin",                         -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid              -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "y" key press
+		a.KeyDown:Connect(function(b)
+			if b == "h" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Kick",                         -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid              -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "y" key press
+		a.KeyDown:Connect(function(b)
+			if b == "r" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "HamonPunch",                         -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid              -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+	
+	end)
+end
+coroutine.wrap(AAYHWBO_fake_script)()
+local function VDUKLAP_fake_script() -- CRYOHBE.CRYOHBE 
+	local script = Instance.new('LocalScript', CRYOHBE)
+
+	script.Parent.Activated:Connect(function()
+		-- Get the player's mouse
+		local a = game.Players.LocalPlayer:GetMouse()
+	
+		-- Listen for the "q" key press
+		a.KeyDown:Connect(function(b)
+			if b == "q" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "HeavyPunch",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-------------------------------FIX
+		a.KeyDown:Connect(function(b)
+			if b == "r" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Jab",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		a.KeyDown:Connect(function(b)
+			if b == "e" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "DashPunch",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		--------------------FIX
+		a.KeyDown:Connect(function(b)
+			if b == "g" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Ice",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		a.KeyDown:Connect(function(b)
+			if b == "h" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Kick",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-------------FIX
+		a.KeyDown:Connect(function(b)
+			if b == "v" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Sky",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(VDUKLAP_fake_script)()
+local function CZPSA_fake_script() -- KCRHBE.KCRHBE 
+	local script = Instance.new('LocalScript', KCRHBE)
+
+	script.Parent.Activated:Connect(function()
+		-- Get the player's mouse
+		local a = game.Players.LocalPlayer:GetMouse()
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "r" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "DonutPunch",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "y" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Grab",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "h" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "DonutPunch",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "h" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Slam",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the left mouse button click
+		mouse.Button1Down:Connect(function()
+			-- Loop through all players in the game
+			for _, targetPlayer in ipairs(game.Players:GetChildren()) do
+				if targetPlayer ~= player then
+					-- Prepare the arguments to fire the server event
+					local args = {
+						[1] = "Damage",                             -- Action type
+						[2] = "Punch",                              -- Attack type
+						[3] = "Damage",                             -- Repeated action type
+						[4] = "Punch",                              -- Secondary attack type
+						[5] = targetPlayer.Character.Humanoid      -- Target's Humanoid
+					}
+					-- Fire the server event with the prepared arguments
+					game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(args))
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(CZPSA_fake_script)()
+local function KQKHL_fake_script() -- MIHHBE_2.MIHHBE 
+	local script = Instance.new('LocalScript', MIHHBE_2)
+
+	script.Parent.Activated:Connect(function()
+		-- Get the player's mouse
+		local a = game.Players.LocalPlayer:GetMouse()
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "r" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "HeavyPunch",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "f" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Disc",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "f" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "GravityForce",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "r" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "ReverseChop",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "e" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Chop",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(KQKHL_fake_script)()
+local function KDYE_fake_script() -- STWVAMPHBE.STW/VAMPHBE 
+	local script = Instance.new('LocalScript', STWVAMPHBE)
+
+	script.Parent.Activated:Connect(function()
+		-- Get the player's mouse
+		local a = game.Players.LocalPlayer:GetMouse()
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "r" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "HeavyPunch",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "y" key press
+		a.KeyDown:Connect(function(b)
+			if b == "y" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "BloodSuck",                         -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid                -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "b" key press
+		a.KeyDown:Connect(function(b)
+			if b == "b" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Freeze",                            -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid                -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "e" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Uppercut",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		local player = game.Players.LocalPlayer
+		local mouse = player:GetMouse() -- Get the player's mouse
+	
+		-- Listen for the left mouse button click
+		mouse.Button1Down:Connect(function()
+			-- Loop through all players in the game
+			for _, targetPlayer in ipairs(game.Players:GetChildren()) do
+				if targetPlayer ~= player then
+					-- Prepare the arguments to fire the server event
+					local args = {
+						[1] = "Damage",                             -- Action type
+						[2] = "Punch",                              -- Attack type
+						[3] = "Damage",                             -- Repeated action type
+						[4] = "Punch",                              -- Secondary attack type
+						[5] = targetPlayer.Character.Humanoid      -- Target's Humanoid
+					}
+					-- Fire the server event with the prepared arguments
+					game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(args))
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(KDYE_fake_script)()
+local function AFJGT_fake_script() -- D4CHBE.D4CHBE 
+	local script = Instance.new('LocalScript', D4CHBE)
+
+	script.Parent.Activated:Connect(function()
+		-- Get the player's mouse
+		local a = game.Players.LocalPlayer:GetMouse()
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "y" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Kick",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		local userInputService = game:GetService("UserInputService")
+		local replicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local args = {
+			[1] = "Alternate",
+			[2] = "Deflect"
+		}
+	
+		-- Function to handle key press
+		local function onKeyPress(input, gameProcessedEvent)
+			if not gameProcessedEvent and input.KeyCode == Enum.KeyCode.J then
+				replicatedStorage:WaitForChild("Main"):WaitForChild("Input"):FireServer(unpack(args))
+			end
+		end
+	
+		-- Connect the function to UserInputService
+		userInputService.InputBegan:Connect(onKeyPress)
+	
+		-- Services
+		local UserInputService = game:GetService("UserInputService")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local Main = ReplicatedStorage:WaitForChild("Main")
+		local Input = Main:WaitForChild("Death")
+	
+		-- Flag variable to control holding state
+		local isHolding = false 
+	
+		-- The script to be triggered
+		local function triggerScript()
+			Input:FireServer("Alternate", "Death") -- Trigger the server event with arguments directly
+		end
+	
+		-- Keybind setup (F3)
+		UserInputService.InputBegan:Connect(function(input, isProcessed)
+			if not isProcessed and input.KeyCode == Enum.KeyCode.F4 and not isHolding then
+				isHolding = true -- Set the holding flag to true
+	
+				-- Start a loop to continuously trigger the script while holding the key
+				while isHolding do
+					triggerScript() -- Call the function to trigger the action
+					wait(0.1) -- Delay between triggers
+				end
+			end
+		end)
+	
+		-- Stop triggering when the key is released
+		UserInputService.InputEnded:Connect(function(input)
+			if input.KeyCode == Enum.KeyCode.F4 then
+				isHolding = false -- Set the holding flag to false to stop the action loop
+			end
+		end)
+		-- Services
+		local UserInputService = game:GetService("UserInputService")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local Main = ReplicatedStorage:WaitForChild("Main")
+		local Input = Main:WaitForChild("Input")
+	
+		-- Flag variable to control holding state
+		local isHolding = false 
+	
+		-- The script to be triggered
+		local function triggerScript()
+			Input:FireServer("Alternate", "Clone") -- Trigger the server event with arguments directly
+		end
+	
+		-- Keybind setup (F3)
+		UserInputService.InputBegan:Connect(function(input, isProcessed)
+			if not isProcessed and input.KeyCode == Enum.KeyCode.F3 and not isHolding then
+				isHolding = true -- Set the holding flag to true
+	
+				-- Start a loop to continuously trigger the script while holding the key
+				while isHolding do
+					triggerScript() -- Call the function to trigger the action
+					wait(0.1) -- Delay between triggers
+				end
+			end
+		end)
+	
+		-- Stop triggering when the key is released
+		UserInputService.InputEnded:Connect(function(input)
+			if input.KeyCode == Enum.KeyCode.F3 then
+				isHolding = false -- Set the holding flag to false to stop the action loop
+			end
+		end)
+	
+	end)
+end
+coroutine.wrap(AFJGT_fake_script)()
+local function UJMQUC_fake_script() -- CDHBE.CDHBE 
+	local script = Instance.new('LocalScript', CDHBE)
+
+	script.Parent.Activated:Connect(function()
+		-- Get the player's mouse
+		local a = game.Players.LocalPlayer:GetMouse()
+	
+		-- Listen for the "r" key press
+		a.KeyDown:Connect(function(b)
+			if b == "r" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "HeavyPunch",                        -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid,               -- Target's Humanoid
+							[6] = CFrame.new(                         -- Position and orientation
+								Vector3.new(1598.6829833984375, 573.8587036132812, -650.6309814453125), 
+								Vector3.new(-0.27500227093696594, 0.7757357954978943, -0.5679856538772583)
+							)
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "y" key press
+		a.KeyDown:Connect(function(b)
+			if b == "y" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "ReverseHeavy",                         -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid                -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+		-- Listen for the "b" key press
+		a.KeyDown:Connect(function(b)
+			if b == "e" then
+				-- Loop through all players in the game
+				for c, d in ipairs(game.Players:GetChildren()) do
+					if d ~= game.Players.LocalPlayer then
+						-- Prepare the arguments to fire the server event
+						local e = {
+							[1] = "Damage",                             -- Action type
+							[2] = "Barrage",                            -- Attack type
+							[3] = "Damage",                            -- Repeated action type
+							[4] = "Punch",                             -- Secondary attack type
+							[5] = d.Character.Humanoid                -- Target's Humanoid
+						}
+						-- Fire the server event with the prepared arguments
+						game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(e))
+					end
+				end
+			end
+		end)
+	
+	
+	end)
+end
+coroutine.wrap(UJMQUC_fake_script)()
+local function MOIG_fake_script() -- Tab5_2.Tab5 
+	local script = Instance.new('LocalScript', Tab5_2)
+
+	script.Parent.Activated:Connect(function()
+		local tabs = script.Parent.Parent.Tabs
+		tabs.Tab1.Visible = false
+		tabs.Tab2.Visible = false
+		tabs.Tab3.Visible = false
+		tabs.Tab4.Visible = false
+		tabs.Tab5.Visible = true
+	end)
+end
+coroutine.wrap(MOIG_fake_script)()
+local function FIFWM_fake_script() -- Close.Exit 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(FIFWM_fake_script)()
