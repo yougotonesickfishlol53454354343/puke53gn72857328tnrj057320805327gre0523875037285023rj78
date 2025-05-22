@@ -444,6 +444,7 @@ Clear.TextSize = 14.000
 
 Home.Name = "Home"
 Home.Parent = Tabs
+Home.Visible = true
 Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Home.BackgroundTransparency = 1.000
 Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1518,6 +1519,7 @@ Home_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Home_2.BackgroundTransparency = 1.000
 Home_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Home_2.BorderSizePixel = 0
+Home_2.Visible = true
 Home_2.Position = UDim2.new(0.139534891, 0, 0, 0)
 Home_2.Size = UDim2.new(0, 25, 0, 25)
 Home_2.Image = "http://www.roblox.com/asset/?id=279461710"
