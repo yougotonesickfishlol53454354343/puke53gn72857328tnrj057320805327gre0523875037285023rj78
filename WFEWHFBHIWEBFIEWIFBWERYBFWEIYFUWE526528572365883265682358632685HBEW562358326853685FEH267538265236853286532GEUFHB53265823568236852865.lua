@@ -2449,13 +2449,9 @@ local function CXQY_fake_script() -- AutofarmButton.ButtonManager
 			print("AUTOFARM ON")
 			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
 			local player = game.Players.LocalPlayer
-			player.Character.HumanoidRootPart.CFrame = Vector3.new(-285, 511, -1486)
-
-	wait(1)
+			
 			while on == true do
-	
-	
-				local spawner = game.Workspace.Map["Farming Zone"]:FindFirstChild("EquipmentSpawner")
+	local spawner = game.Map["Farming Zone"]:FindFirstChild("Spawner")
 if not spawner then
 	warn("Spawner not found in Farming Zone")
 	return
@@ -2463,6 +2459,7 @@ end
 
 local function moveToSpawner()
 	if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+		-- Teleport to the Spawner's CFrame
 		player.Character.HumanoidRootPart.CFrame = spawner.CFrame
 	end
 end
@@ -2492,9 +2489,13 @@ if player.Character:FindFirstChild("Arrow") and standValue == 1 and standValue ~
 end
 
 -- Use Rokaka Fruit if conditions match
-if player.Character:FindFirstChild("Rokaka Fruit") and standValue ~= targetStandValue then
+if player.Character:FindFirstChild("Rokaka Fruit") and standValue == 1 and standValue ~= targetStandValue then
 	game:GetService("ReplicatedStorage"):WaitForChild("ItemEvents"):WaitForChild("Roka"):FireServer()
 end
+
+-- Teleport to custom position if no items are found (e.g., Arrow or Rokaka Fruit)
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-285, 511, -1486)
+
 
 	
 				wait(1.5)
