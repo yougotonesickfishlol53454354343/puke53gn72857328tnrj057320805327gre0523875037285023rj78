@@ -2453,46 +2453,47 @@ local function CXQY_fake_script() -- AutofarmButton.ButtonManager
 			while on == true do
 	
 	
-				-- Check for Arrow tool
-				local arrowTool = player.Character:FindFirstChild("Arrow") or player.Backpack:FindFirstChild("Arrow")
-				local rokakaFruitTool = player.Character:FindFirstChild("Rokaka Fruit") or player.Backpack:FindFirstChild("Rokaka Fruit")
-	
-				if not arrowTool then
-					local arrowInBackpack = player.Backpack:FindFirstChild("Arrow")
-					if arrowInBackpack then
-						arrowInBackpack.Parent = player.Character
-					else
-						local arrowInWorkspace = workspace:FindFirstChild("Arrow")
-						if arrowInWorkspace and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-							player.Character.HumanoidRootPart.CFrame = arrowInWorkspace.Handle.CFrame
-							player.Character.HumanoidRootPart.CFrame = CFrame.new(2116, 670, -519)
-						end
-					end
-				end
-	
-				if not rokakaFruitTool then
-					local rokakaFruitInBackpack = player.Backpack:FindFirstChild("Rokaka Fruit")
-					if rokakaFruitInBackpack then
-						rokakaFruitInBackpack.Parent = player.Character
-					else
-						local rokakaFruitInWorkspace = workspace:FindFirstChild("Rokaka Fruit")
-						if rokakaFruitInWorkspace and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-							player.Character.HumanoidRootPart.CFrame = rokakaFruitInWorkspace.Handle.CFrame
-							player.Character.HumanoidRootPart.CFrame = CFrame.new(2116, 670, -519)
-						end
-					end
-				end
-	
-				local standValue = player.Data.Stand.Value
-				local targetStandValue = script.Parent.Parent.TextLabel.Stand.Text
-	
-				if player.Character:FindFirstChild("Arrow") and standValue == 1 and standValue ~= targetStandValue then
-					game:GetService("ReplicatedStorage"):WaitForChild("ItemEvents"):WaitForChild("Arrow"):FireServer()
-				end
-	
-				if player.Character:FindFirstChild("Rokaka Fruit") and standValue == 1 and standValue ~= targetStandValue then
-					game:GetService("ReplicatedStorage"):WaitForChild("ItemEvents"):WaitForChild("Roka"):FireServer()
-				end
+				local spawner = game.Map["Farming Zone"]:FindFirstChild("EquipmentSpawner")
+if not spawner then
+	warn("Spawner not found in Farming Zone")
+	return
+end
+
+local function moveToSpawner()
+	if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+		player.Character.HumanoidRootPart.CFrame = spawner.CFrame
+	end
+end
+
+-- Ensure Arrow is in Character
+local arrowTool = player.Character:FindFirstChild("Arrow") or player.Backpack:FindFirstChild("Arrow")
+if not player.Character:FindFirstChild("Arrow") and arrowTool then
+	arrowTool.Parent = player.Character
+elseif not arrowTool then
+	moveToSpawner()
+end
+
+-- Ensure Rokaka Fruit is in Character
+local rokakaFruitTool = player.Character:FindFirstChild("Rokaka Fruit") or player.Backpack:FindFirstChild("Rokaka Fruit")
+if not player.Character:FindFirstChild("Rokaka Fruit") and rokakaFruitTool then
+	rokakaFruitTool.Parent = player.Character
+elseif not rokakaFruitTool then
+	moveToSpawner()
+end
+
+-- Use Arrow if conditions match
+local standValue = player.Data.Stand.Value
+local targetStandValue = script.Parent.Parent.TextLabel.Stand.Text
+
+if player.Character:FindFirstChild("Arrow") and standValue == 1 and standValue ~= targetStandValue then
+	game:GetService("ReplicatedStorage"):WaitForChild("ItemEvents"):WaitForChild("Arrow"):FireServer()
+end
+
+-- Use Rokaka Fruit if conditions match
+if player.Character:FindFirstChild("Rokaka Fruit") and standValue ~= targetStandValue then
+	game:GetService("ReplicatedStorage"):WaitForChild("ItemEvents"):WaitForChild("Roka"):FireServer()
+end
+
 	
 				wait(1.5)
 			end
