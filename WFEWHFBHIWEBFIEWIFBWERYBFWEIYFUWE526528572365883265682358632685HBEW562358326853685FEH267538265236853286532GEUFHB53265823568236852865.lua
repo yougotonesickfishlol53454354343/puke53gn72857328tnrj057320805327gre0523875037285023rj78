@@ -2449,11 +2449,12 @@ local function CXQY_fake_script() -- AutofarmButton.ButtonManager
 			print("AUTOFARM ON")
 			ESB.Image = "http://www.roblox.com/asset/?id=6670322349"
 			local player = game.Players.LocalPlayer
-	
+	wait(1)
+				player.Character.HumanoidRootPart.CFrame = Vector3.new(-285, 511, -1486)
 			while on == true do
 	
 	
-				local spawner = game.Map["Farming Zone"]:FindFirstChild("EquipmentSpawner")
+				local spawner = game.Workspace.Map["Farming Zone"]:FindFirstChild("EquipmentSpawner")
 if not spawner then
 	warn("Spawner not found in Farming Zone")
 	return
